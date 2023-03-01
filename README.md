@@ -4,5 +4,5 @@
 
 수업내용: 기초 CS, Git& GitHub, VSC 설정(단축키, Extension 설치)
 
-*기초 CS(URL, IP Port)
+* 기초 CS(URL, IP Port)
 
