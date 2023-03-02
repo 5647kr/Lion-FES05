@@ -1,0 +1,17 @@
+html {
+    font-size: 10px;
+}
+/* html을 기본 10px로 설정하여 사용한다. */
+.hello1 {
+    font-size: 2em;
+}
+.strong1 {
+    font-size: 2em;
+}
+
+.hello2 {
+    font-size: 2rem;
+}
+.strong2 {
+    font-size: 0.5rem;
+}
