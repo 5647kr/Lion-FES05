@@ -1,0 +1,33 @@
+/* 전체 선택자 */
+* {
+    color: red;
+
+}
+section > * {
+    color: blue;
+}
+
+/* 타입 선택자 */
+strong {
+    color : green;
+}
+
+/* 아이디 선택자 */
+#hello {
+    font-size: 20px;
+}
+
+/* 클래스 선택자 */
+.hi {
+    font-size: 50px;
+}
+
+/* 특성 선택자 */
+[class="hi"] {
+    background-color: skyblue;
+}
+
+/* 자손 선택자 */
+div p {
+    color: yellow;
+}
