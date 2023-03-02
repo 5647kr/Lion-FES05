@@ -1,30 +1,26 @@
 /* 전체 선택자 */
 * {
     color: red;
-
-}
-section > * {
-    color: blue;
 }
 
 /* 타입 선택자 */
-strong {
-    color : green;
+h2 {
+    color : orange;
 }
 
 /* 아이디 선택자 */
-#hello {
-    font-size: 20px;
+#hello3 {
+    color: yellow;
 }
 
 /* 클래스 선택자 */
-.hi {
-    font-size: 50px;
+.hello4 {
+    color: green;
 }
 
 /* 특성 선택자 */
-[class="hi"] {
-    background-color: skyblue;
+[class="hello5"] {
+    color: skyblue;
 }
 
 /* 자손 선택자 */
