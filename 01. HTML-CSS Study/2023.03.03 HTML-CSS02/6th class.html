@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th class</title>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: royalblue;
+    }
+    div:nth-child(1) {
+        margin: 20px auto;
+        padding: 10px;
+        border: 10px solid royalblue;
+        box-sizing: border-box;
+        /* border값까지 포함하여 높이와 너비값을 맞춘다. */
+        width: 100px;
+        height: 100px;
+        /* 인라인 요소는 width랑 height값이 적용되지 않는다. */
+    }
+    div:nth-child(2) {
+        overflow: scroll;
+    }
+    div:nth-child(3) {
+        overflow: scroll;
+    }
+    div:nth-child(4) {
+        overflow: scroll;
+    }
+    div:nth-child(5) {
+        border-radius: 50%;
+    }
+    div:nth-child(6) {
+        border-radius: 20px;
+    }
+    div:nth-child(7) {
+        border-radius: 100% 0px 0px 0px;
+    }
+    div:nth-child(8) {
+        border-radius: 100% 0px 100% 0px;
+    }
+    div:nth-child(9) {
+        border-radius: 0px 50% 0px 50%;
+    }
+    div:nth-child(10) {
+        height: 50px;
+        border-radius: 100px 100px 0 0;
+    }
+    div:nth-child(11) {
+        border-radius: 10px 20px 30px 40px/ 40px 30px 20px 10px;
+    }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+
+    <!-- overflow -->
+
+    <div>3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione et magni ipsa optio. At assumenda optio dolore error possimus non voluptatum nostrum cum libero. Quaerat soluta earum dignissimos quam accusantium!</div>
+    <div>4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione et magni ipsa optio. At assumenda optio dolore error possimus non voluptatum nostrum cum libero. Quaerat soluta earum dignissimos quam accusantium!</div>
+
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+</body>
+</html>
