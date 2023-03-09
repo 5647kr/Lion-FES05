@@ -39,6 +39,7 @@
     word-break: break-all;
     margin: 12px 0 16px;
     line-height: 20px;
+    height: 40px;
 }
 
 .underline {
@@ -46,4 +47,12 @@
     font-weight: bold;
     font-size: 14px;
     padding-left: 6px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    gap: 32px 24px;
+    width: min(1224px, calc(100% - 60px));
+    margin: auto;
 }

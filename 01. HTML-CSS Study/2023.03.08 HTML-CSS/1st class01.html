@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st class01</title>
+    <style>
+        /* 기본 설정 */
+        [class^="container"]:not(:first-child) {
+            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            background: #eee;        
+            border: 2px solid #ddd;
+            margin-bottom: 20px;
+            height: 120px;
+        }
+        .row {
+            flex-direction: row;
+        }
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+        .column {
+            flex-direction: column;
+        }
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+        div.flex-item {
+            background: skyblue;
+            border: 2px solid royalblue;
+        }
+        span.flex-item {
+            background: greenyellow;
+            border: 2px solid royalblue;
+        }
+
+
+        /* justify-content의 값을 조정해서 변화하는걸 보자 */
+
+        [class^="container"] {
+            justify-content: flex-end;
+        }
+
+        /* justify-content: 
+        flex-start, flex-end, center, space-between, space-around, space-evenly */
+    </style>
+</head>
+<body>
+    <!-- 블록 flex-direction, justify-content -->
+
+    <div class="container row">
+        <div class="flex-item">row block A</div>
+        <div class="flex-item">row block B</div>
+        <div class="flex-item">row block C</div>
+    </div>
+
+    <div class="container row-reverse">
+        <div class="flex-item">row-reverse block A</div>
+        <div class="flex-item">row-reverse block B</div>
+        <div class="flex-item">row-reverse block C</div>
+    </div>
+
+    <div class="container column">
+        <div class="flex-item">column block A</div>
+        <div class="flex-item">column block B</div>
+        <div class="flex-item">column block C</div>
+    </div>
+    
+    <div class="container column-reverse">
+        <div class="flex-item">column-reverse block A</div>
+        <div class="flex-item">column-reverse block B</div>
+        <div class="flex-item">column-reverse block C</div>
+    </div>
+
+
+    <!-- 인라인 flex-direction, justify-content -->
+
+    <span class="container row">
+        <span class="flex-item">row inline A</span>
+        <span class="flex-item">row inline B</span>
+        <span class="flex-item">row inline C</span>
+    </span>
+
+    <span class="container row-reverse">
+        <span class="flex-item">row-reverse inline A</span>
+        <span class="flex-item">row-reverse inline B</span>
+        <span class="flex-item">row-reverse inline C</span>
+    </span>
+
+    <span class="container column">
+        <span class="flex-item">column inline A</span>
+        <span class="flex-item">column inline B</span>
+        <span class="flex-item">column inline C</span>
+    </span>
+
+    <span class="container column-reverse">
+        <span class="flex-item">column-reverse inline A</span>
+        <span class="flex-item">column-reverse inline B</span>
+        <span class="flex-item">column-reverse inline C</span>
+    </span>
+</body>
+</html>

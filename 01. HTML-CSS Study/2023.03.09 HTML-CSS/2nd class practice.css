@@ -1,3 +1,5 @@
+/* grid 사용방법 */
+
 .card-item {
     width: 288px;
     background: #fff;
@@ -46,4 +48,12 @@
     font-weight: bold;
     font-size: 14px;
     padding-left: 6px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 1400px;
+    height: 840px;
 }

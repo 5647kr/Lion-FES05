@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st class</title>
+    <style>
+        .wrap {
+            background: royalblue;
+            height: 100px;
+            width: 1400px;
+            margin: auto;
+            max-width: calc(100% - 80px);
+        }
+
+        /* float */
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .float {
+            overflow: hidden;
+        }
+        .float li {
+            float: left;
+            background: gold;
+            width: calc((100% - (24px * 2)) / 3);
+        }
+        
+        .float li:not(:first-child) {
+            margin-left: 24px;
+        }
+
+        /* flex */
+
+        .flex {
+            display: flex;
+            gap: 24px;
+        }
+        .flex li {
+            background: gold;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS 변수, 함수 -->
+
+    <!-- calc 함수 -->
+
+    <div class="wrap">
+        contents
+    </div>
+
+    <!-- float -->
+    <ul class="float">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+        <!-- flex -->
+        <ul class="flex">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+</body>
+</html>

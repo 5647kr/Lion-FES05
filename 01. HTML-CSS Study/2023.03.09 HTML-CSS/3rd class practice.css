@@ -1,3 +1,5 @@
+/* flex 사용 */
+
 .card-item {
     width: 288px;
     background: #fff;
@@ -46,4 +48,10 @@
     font-weight: bold;
     font-size: 14px;
     padding-left: 6px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd class</title>
+    <style>
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        background: #eee;
+        border: 2px solid #ddd;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+
+    .flex-item {
+        background: skyblue;
+        border: 3px solid royalblue
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .flow {
+        flex-flow: row wrap;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container wrap">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <div class="flex-container flow">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+</html>
