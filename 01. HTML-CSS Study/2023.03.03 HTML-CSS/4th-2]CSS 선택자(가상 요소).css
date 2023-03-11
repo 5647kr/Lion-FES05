@@ -1,0 +1,21 @@
+/* CSS: CSS 선택자(가상 요소) */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul::before {
+    content: '';
+}
+li::before, li::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+}

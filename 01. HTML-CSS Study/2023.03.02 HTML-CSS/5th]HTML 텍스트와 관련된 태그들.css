@@ -1,0 +1,6 @@
+/* HTML: 텍스트와 관련된 태그 */
+
+/* wbr 태그 */
+.word-break {
+    word-break: keep-all;
+}

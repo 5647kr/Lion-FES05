@@ -1,0 +1,56 @@
+/* CSS: CSS 선택자(기본) */
+
+
+/* 전체 선택자: * */
+* {
+    color: red;
+}
+
+/* 타입 선택자: tag */
+h2 {
+    color : orange;
+}
+
+/* 아이디 선택자: # */
+/* HTML에서 아이디는 고유해야한다. */
+/* 숫자시작은 안된다. */
+#hello3 {
+    color: yellow;
+}
+
+/* 클래스 선택자: . */
+/* 숫자시작은 안된다. */
+/* class^="classname"에서 ^는 class의 값이 classname인 것 모두를 선택한다. */
+.hello4 {
+    color: green;
+}
+
+/* 특성 선택자: [] */
+[class="hello5"] {
+    color: skyblue;
+}
+
+/* 자식 선택자: > */
+div > h6 {
+    color: blue;
+}
+
+/* 자손 선택자: 공백 */
+div a {
+    color: purple;
+}
+
+p, strong {
+    color: blueviolet;
+}
+
+
+/* CSS: CSS 상속 */
+
+.inheritance {
+    color: red;
+    border: 5px solid pink;
+}
+
+/* inferit: 상속받겠다. */
+/* initial: 초기값, 브라우저의 기본설정 */

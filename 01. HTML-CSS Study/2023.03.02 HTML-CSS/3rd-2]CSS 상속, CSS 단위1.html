@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3rd-2]CSS 상속, CSS 단위1.css">
+    <title>3rd-2]CSS 상속, CSS 단위1</title>
+</head>
+<body>
+    <!-- CSS: CSS 상속 -->
+
+    <section>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <p>hello</p>
+        <button>안녕</button>
+        <!-- button, input처럼 form관련 태그는 상속받지 않는다. -->
+    </section>
+
+    <!-- CSS: CSS 단위1 -->
+    <div class="unit">
+        <p style="font-size: 10px;">PIXEL UNIT</p>
+        <p style="width: 100px;">PIXEL UNIT</p>
+        <!-- px의 경우엔 절대단위이기에 크기가 유동적으로 변하진 않는다.  -->
+        <p style="width: 50%;">PERCENTAGE UNIT</p>
+        <!-- %: 부모속성을 기준으로 삼는다. -->
+        <p style="width: 50vw;">VIEWPORTWIDTH UNIT</p>
+        <!-- vw:브라우저의 상을 기준으로 삼는다. -->
+        <p style="height: 50%;">안녕하세요5</p>
+        <!-- %: 컨텐츠의 높이만큼 자동으로 설정되는데, 고정값을 설정하지 않는 경우엔 부모요소를 참고할 게 없어 늘어나지 않는다. -->
+        <p style="height: 50vh;">안녕하세요6</p>
+        <!-- vw:브라우저의 상을 기준으로 삼는다. -->
+    </div>
+</body>
+</html>

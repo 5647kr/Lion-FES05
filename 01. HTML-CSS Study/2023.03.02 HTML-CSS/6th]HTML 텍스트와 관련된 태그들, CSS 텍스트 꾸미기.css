@@ -1,0 +1,56 @@
+/* CSS: 텍스트 꾸미기 */
+
+/* font color: 색상 */
+
+h1 {
+    background-color: red;
+    color: transparent;
+    /* transparent: 투명한 색을 의미한다. */
+}
+div {
+    color: sandybrown;
+}
+h2 {
+    border: 1px solid currentColor;
+}
+/* currentcolor: 부모색상을 상속받는다. */
+
+
+/* font-family: 글꼴 */
+
+
+/* font-weight: 굶기 */
+/* normal: 기본 */
+/* bold: 굵게 */
+/* lighter: 부모요소보다 한 단계 가볍게 */
+/* bolder: 부모요소보다 한 단계 두껍게 */
+/* 100~900 */
+
+
+/* text-transform */
+h3 {
+    text-transform: uppercase;
+}
+/* uppercase: 대문자로 변형 */
+/* lowercase: 소문자로 변형 */
+/* capitalize: 모든 단어의 첫글자를 대문자로 변형 */
+
+
+/* text-decoration: 텍스트 꾸미기 */
+h4 {
+    text-decoration: line-through;
+}
+/* text-decoration: color,line,style thickness */
+/* text-decoration-line */
+/* underline: 밑줄긋기 */
+/* overline: 오버라인 */
+/* line-through: 취소선 */
+h5 {
+    text-decoration: lime underline overline dashed auto;
+}
+h6 {
+    text-decoration-color: royalblue;
+    text-decoration: line-through underline overline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+}
