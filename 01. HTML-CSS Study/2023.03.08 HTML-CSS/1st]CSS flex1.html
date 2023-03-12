@@ -4,52 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st class02</title>
-    <style>
-        /* 기본 설정 */
-        [class^="container"]:not(:first-child) {
-            margin-top: 50px;
-        }
-        .container {
-            display: flex;
-            background: #eee;        
-            border: 2px solid #ddd;
-            margin-bottom: 20px;
-            height: 120px;
-        }
-        .row {
-            flex-direction: row;
-        }
-        .row-reverse {
-            flex-direction: row-reverse;
-        }
-        .column {
-            flex-direction: column;
-        }
-        .column-reverse {
-            flex-direction: column-reverse;
-        }
-        div.flex-item {
-            background: skyblue;
-            border: 2px solid royalblue;
-        }
-        span.flex-item {
-            background: greenyellow;
-            border: 2px solid royalblue;
-        }
-
-        /* align-items의 값을 조정해서 변화하는걸 보자 */
-
-        [class^="container"] {
-            align-items: flex-start;
-        }
-
-        /* align-items:
-        flex-start, flex-end, center, space-between, space-around, space-evenly */
-    </style>
+    <link rel="stylesheet" href="1st]CSS flex1.css">
+    <title>1st]CSS flex1</title>
 </head>
 <body>
-    <!-- 블록 flex-direction, align-items -->
+<!-- CSS: flex -->
+
+<!-- 블록 justify-content -->
 
     <div class="container row">
         <div class="flex-item">row block A</div>
@@ -75,8 +36,9 @@
         <div class="flex-item">column-reverse block C</div>
     </div>
 
-    <!-- 인라인 flex-direction, align-items -->
-    
+
+<!-- 인라인  justify-content -->
+
     <span class="container row">
         <span class="flex-item">row inline A</span>
         <span class="flex-item">row inline B</span>

@@ -1,0 +1,42 @@
+/* align-items */
+
+/* 기본 설정 */
+[class^="container"]:not(:first-child) {
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    background: #eee;        
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    height: 120px;
+}
+.row {
+    flex-direction: row;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.column {
+    flex-direction: column;
+}
+.column-reverse {
+    flex-direction: column-reverse;
+}
+div.flex-item {
+    background: skyblue;
+    border: 2px solid royalblue;
+}
+span.flex-item {
+    background: greenyellow;
+    border: 2px solid royalblue;
+}
+
+/* align-items의 값을 조정해서 변화하는걸 보자 */
+
+[class^="container"] {
+    align-items: flex-start;
+}
+
+/* align-items:
+flex-start, flex-end, center, space-between, space-around, space-evenly */

@@ -1,3 +1,5 @@
+/* [해보기]로그인T */
+
 @font-face {
     font-family: "SpoqaHanSansNeo-Regular";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
@@ -12,14 +14,6 @@
 
 body {
     background: salmon;
-}
-
-.login {
-    border: 1px solid #dbdbdb;
-    background: #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 18px 16px;
 }
 
 .a11y-hidden {
@@ -48,6 +42,14 @@ body {
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
+}
+
+.login {
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 18px 16px;
 }
 
 .btn-login {

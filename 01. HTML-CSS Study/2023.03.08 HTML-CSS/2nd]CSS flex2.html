@@ -4,36 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-    .flex-container {
-        display: flex;
-        background: #eee;
-        border: 2px solid #ddd;
-        margin-bottom: 20px;
-        height: 150px;
-    }
-
-    .flex-item {
-        background: skyblue;
-        border: 3px solid royalblue;
-        width: 200px;
-        height: 100px;
-        flex-basis: 200px;
-    }
-
-    .shrink {
-        flex-shrink: 0;
-    }
-    </style>
-</head>
+    <link rel="stylesheet" href="2nd]CSS flex2.css">
+    <title>2nd]CSS flex2</title>
 <body>
+<!-- CSS: flex -->
+
+<!-- flex-basis -->
+
     <div class="flex-container basis">
-        <div class="flex-item">A</div>
-        <div class="flex-item">B</div>
-        <div class="flex-item">C</div>
+        <div class="flex-item">basis A</div>
+        <div class="flex-item">basis B</div>
+        <div class="flex-item">basis C</div>
     </div>
 
+<!-- flex-shrink -->
     <div class="flex-container shrink">
         <div class="flex-item">A</div>
         <div class="flex-item">B</div>
@@ -42,5 +26,12 @@
         <div class="flex-item">E</div>
         <div class="flex-item">F</div>
     </div>
+
+<!-- flex-grow -->
+<div class="flex-container grow">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+</div>
 </body>
 </html>

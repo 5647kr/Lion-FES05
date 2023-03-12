@@ -1,5 +1,0 @@
-1교시: flex, grid 복습 / CSS 변수, 함수
-2교시: clamp 함수, 카드 리스트 grid 실습 
-3교시: 카드 리스트 flex 실습
-4교시: 카드 리스트 float 실습
-5교시: 카드 리스트 float 실습

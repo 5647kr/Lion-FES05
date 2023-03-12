@@ -1,0 +1,36 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+/* flex-basis */
+
+.flex-item {
+    background: skyblue;
+    border: 3px solid royalblue;
+    width: 200px;
+    height: 100px;
+    flex-basis: 100px;
+}
+
+/* flex-shrink */
+
+.shrink {
+    flex-shrink: 0;
+}
+
+/* flex-grow */
+
+.grow {
+    flex-direction: row;
+}
+.grow .flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+.grow .flex-item:nth-child(3) {
+    flex-grow: 4;
+}

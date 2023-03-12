@@ -1,6 +1,0 @@
-1교시 : Layout History / sections 
-2교시 : Layout 나누기
-3교시 : float / 실습	
-4교시 : login 실습
-5교시 : login 실습
-6교시 : 웹접근성을 고려한 숨김처리 / flex

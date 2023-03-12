@@ -1,6 +1,0 @@
-1교시: flex 
-2교시: flex
-3교시: flex 실습 
-4교시: grid
-5교시: grid
-6교시: grid

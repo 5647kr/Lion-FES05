@@ -1,0 +1,21 @@
+/* CSS: float */
+
+.wrap{
+    border:1px solid #ddd;
+    margin-bottom:20px;
+}
+[class^="box"]{
+    width:100px;
+    height:100px;
+    background:rgba(141, 75, 246, 0.8);
+    color:#fff;
+    line-height:100px;
+    text-align:center;
+}
+
+.box-left{
+    float:left;
+}
+.box-right{
+    float:right;
+}

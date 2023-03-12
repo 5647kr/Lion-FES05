@@ -1,0 +1,17 @@
+/* flex 속성 */
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background: #eee;
+    border: 2px solid #ddd;
+}
+
+/* flex */
+
+.flex-item {
+    background: skyblue;
+    border: 3px solid royalblue;
+    flex: 0 0 100px;
+}
+/* 단축속성으로 grow, shrink, basis순서로 작성한다. */

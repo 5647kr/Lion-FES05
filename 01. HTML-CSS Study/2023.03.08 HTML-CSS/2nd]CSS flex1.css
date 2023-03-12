@@ -1,0 +1,31 @@
+[class^="container"]:not(:first-child) {
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    background: #eee;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    height: 150px;
+}
+.flex-item {
+    background: skyblue;
+    border: 3px solid royalblue;
+    width: 200px;
+}
+
+/* wrap */
+/* 한줄에 배치할건지, 여러행으로 나눌건지를 결정한다. */
+/* 웹브라우저 창 줄여보며 비교 */
+.wrap {
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/* flow 속성 */
+/* flex-direction, wrap의 단축 속성이다. */
+.flow {
+    flex-flow: row wrap;
+}
