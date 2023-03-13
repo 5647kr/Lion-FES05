@@ -1,0 +1,33 @@
+/* CSS: transform */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background: royalblue;
+}
+.box:hover {
+    transform: scale(1.5, 1.0);
+}
+.box:nth-child(2) {
+    transform-origin: top left;
+} 
+
+.rotate:hover {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.translate:hover {
+transform: translate(20px, 40px);
+}
+
+.skew:hover {
+    transform: skew(30deg, 20deg);
+    }

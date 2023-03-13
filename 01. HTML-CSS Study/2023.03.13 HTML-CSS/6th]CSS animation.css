@@ -1,0 +1,17 @@
+.licat {
+    width: 168px;
+    height: 200px;
+    background: url(keyframes-licat.png) no-repeat 0 0 / auto 100%;
+    animation: move-licat 0.8s infinite steps(6);
+}
+
+/* .licat:hover {
+    background-position: right 0;
+    transition: background-position 10s;
+} */
+
+@keyframes move-licat {
+    to {
+        background-position: right 0;
+    }
+}
