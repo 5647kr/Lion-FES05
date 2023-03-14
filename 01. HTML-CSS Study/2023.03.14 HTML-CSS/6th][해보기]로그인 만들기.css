@@ -1,0 +1,25 @@
+body {
+    background-color: #fffaf0;
+    margin: 0;
+}
+header {
+    background: #fff;
+}
+header .box {
+    /* box-shadow: inset 0 0 10px skyblue; */
+    width: 1224px;
+    margin: auto;
+    padding: 22px;
+}
+header .logo {
+    height: 75px;
+}
+header .user-join {
+    /* display: block; */
+    padding: 1em 1em 1em 2.8em;
+    margin: 10px;
+    float: right;
+    text-decoration: none;
+    color: #5a6a72;
+    background: url(icon-join.svg) no-repeat 0.8em center / 2em;
+}
