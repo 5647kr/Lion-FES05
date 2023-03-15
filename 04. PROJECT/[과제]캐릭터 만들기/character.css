@@ -1,6 +1,6 @@
 .frame {
     padding: 100px;
-    box-shadow: inset 0 0 10px skyblue;
+    /* box-shadow: inset 0 0 10px skyblue; */
 }
 
 .mon {
@@ -176,4 +176,5 @@
     left: 348px;
     top: 485px;
     z-index: 1;
+    background: pink;
 } 

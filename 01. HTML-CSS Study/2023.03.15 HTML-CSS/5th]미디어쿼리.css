@@ -1,0 +1,13 @@
+/* CSS: 미디어쿼리 */
+
+@media(orientation:portrait) {
+    body {
+        background: royalblue;
+    }
+}
+
+@media(orientation:landscape) {
+    body {
+        background: skyblue;
+    }
+}
