@@ -1,3 +1,164 @@
+/* common */
 body {
+    margin: 0;
+    height: 100vh;
     background: #EAE8FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h2, p, span {
+    margin: 0;
+}
+
+/* select-box style */
+.wrap {
+    width: 748px;
+    box-shadow: inset 0 0 10px royalblue;
+    display: flex;
+    justify-content: space-between;
+}
+.vending-machine,
+.p-money,
+.total {
+    width: 360px;
+    background: #fff;
+    box-shadow: inset 0 0 10px red;
+}
+.vending-machine {
+    padding: 31px 27px 28px;
+    box-sizing: border-box;
+}
+.select-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.card {
+    background: #fff;
+    width: 94px;
+    padding: 11px 0;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:hover {
+    cursor: pointer;
+}
+.card:active {
+    outline: 3px solid #6327FE;
+}
+.card:nth-child(1),
+.card:nth-child(5) {
+    outline: 3px solid #6327FE;
+}
+.card h2 {
+    color: #333;
+    font-weight: 500;
+    font-size: 9px;
+    margin: 6px 0;
+}
+.card span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #6327FE;
+    padding: 2px 15px;
+    border-radius: 50px;
+}
+
+
+/* price-box style */
+
+.price-box {
+    box-shadow: inset 0 0 10px skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.price-box div {
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.first,
+.second,
+.third {
+    width: 200px;
+}
+.first {
+    background: #eae8fe;
+    border-radius: 5px;
+    padding: 6px 10px 7px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.second {
+    border: 0;
+    padding: 6px 0 7px 6px;
+    font-size: 13px;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.third {
+    background: #eae8fe;
+    border: 1px solid #bdbdbd;
+    max-height: 106px;
+    padding: 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.order-list {
+    width: 170px;
+    box-shadow: inset 0 0 10px red;
+    padding: 6px 8px 7px 10px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+.order-list img {
+    width: 18px;
+}
+.order-list span {
+    font-size: 9px;
+    margin-left: 10px;
+}
+.order-list div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.forth, .fith, .sixth {
+    width: 94px;
+    box-shadow: inset 0 0 10px orange;
 }
