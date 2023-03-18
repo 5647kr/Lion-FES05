@@ -15,7 +15,7 @@ h2, p, span {
 /* select-box style */
 .wrap {
     width: 748px;
-    box-shadow: inset 0 0 10px royalblue;
+    /* box-shadow: inset 0 0 10px royalblue; */
     display: flex;
     justify-content: space-between;
 }
@@ -24,7 +24,7 @@ h2, p, span {
 .total {
     width: 360px;
     background: #fff;
-    box-shadow: inset 0 0 10px red;
+    /* box-shadow: inset 0 0 10px red; */
 }
 .vending-machine {
     padding: 31px 27px 28px;
@@ -49,10 +49,23 @@ h2, p, span {
     flex-direction: column;
     align-items: center;
 }
-.card:hover {
+.select-box .disabled {
+    position: relative;
+    overflow: hidden;
+}
+.select-box .disabled::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8) url(./img/Sold-out.svg) no-repeat center;
+}
+.card:not(:nth-child(2)):hover {
     cursor: pointer;
 }
-.card:active {
+.card:not(:nth-child(2)):active {
     outline: 3px solid #6327FE;
 }
 .card:nth-child(1),
@@ -78,7 +91,7 @@ h2, p, span {
 /* price-box style */
 
 .price-box {
-    box-shadow: inset 0 0 10px skyblue;
+    /* box-shadow: inset 0 0 10px skyblue; */
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -87,12 +100,12 @@ h2, p, span {
     border-radius: 5px;
     box-sizing: border-box;
 }
-.first,
-.second,
-.third {
+.balance,
+.money-btn,
+.list-box {
     width: 200px;
 }
-.first {
+.balance {
     background: #eae8fe;
     border-radius: 5px;
     padding: 6px 10px 7px;
@@ -100,7 +113,7 @@ h2, p, span {
     display: flex;
     justify-content: space-between;
 }
-.second {
+.money-btn {
     border: 0;
     padding: 6px 0 7px 6px;
     font-size: 13px;
@@ -108,7 +121,7 @@ h2, p, span {
     box-sizing: border-box;
     border-radius: 5px;
 }
-.third {
+.list-box {
     background: #eae8fe;
     border: 1px solid #bdbdbd;
     max-height: 106px;
@@ -118,10 +131,11 @@ h2, p, span {
 }
 .order-list {
     width: 170px;
-    box-shadow: inset 0 0 10px red;
+    background: #fff;
     padding: 6px 8px 7px 10px;
     margin-bottom: 6px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .order-list img {
@@ -131,34 +145,91 @@ h2, p, span {
     font-size: 9px;
     margin-left: 10px;
 }
-.order-list div {
+.order-list .order-num {
     width: 30px;
     height: 30px;
     border: 1px solid #BDBDBD;
     text-align: center;
-    font-size: 14px;
+}
+.change, .fith, .get-btn {
+    width: 94px;
+    /* box-shadow: inset 0 0 10px orange; */
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border: 0;
+    font-size: 13px;
+}
+.get-btn {
+    background-color: #6327fe;
+    color: #fff;
 }
 
+/* 우측 박스 영역 */
+.p-money {
+    padding: 9px 27px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.money {
+    background: #eae8fe;
+    border-radius: 5px;
+    padding: 6px 10px 7px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.total {
+    height: 474px;
+    padding: 25px 27px 0;
+    box-sizing: border-box;
+}
+.drink-name {
+    /* box-shadow: inset 0 0 10px orange; */
+    text-align: center;
+    margin: 0;
+}
+.total-list {
+    margin-top: 13px;
+    /* box-shadow: inset 0 0 10px yellow; */
+    /* min-height: 364px; */
+    height: 364px;
+    background: #eae8fe;
+    padding: 12px 18px 0 12px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
+.drink-list {
+    width: 276px;
+    background: #fff;
+    padding: 6px 8px 7px 10px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.drink-list img {
+    width: 18px;
+}
+.drink-list span {
+    font-size: 9px;
+    margin-left: 10px;
+}
+.drink-list .order-num {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.forth, .fith, .sixth {
-    width: 94px;
-    box-shadow: inset 0 0 10px orange;
+.total-price {
+    font-size: 12px;
+    float: right;
+    margin-top: 6px;
 }

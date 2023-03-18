@@ -1,0 +1,37 @@
+h1, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.l_wrapper {
+    box-shadow: inset 0 0 10px red;
+    width: 800px;
+    margin: 100px auto;
+}
+.section-timeline {
+    margin: 0 -10px;
+}
+
+.section-timeline li {
+    /* box-shadow: inset 0 0 10px royalblue; */
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.setion h1 {
+    margin-bottom: 30px;
+}
+.section-timeline li:nth-child(even) {
+    margin-left: auto;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+.year {
+    background: orange;
+    padding: 20px;
+    min-height: 120px;
+}
