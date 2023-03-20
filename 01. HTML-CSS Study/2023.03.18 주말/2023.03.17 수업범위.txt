@@ -4,6 +4,5 @@
 4교시: HTML-CSS[종찬님 특강]
 5교시: HTML-CSS[종찬님 특강]
 6교시: HTML-CSS[종찬님 특강]
-7교시: HTML-CSS[종찬님 특강]
-8교시: HTML-CSS[종찬님 특강]
+
 
