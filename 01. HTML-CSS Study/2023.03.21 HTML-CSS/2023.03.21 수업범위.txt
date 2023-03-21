@@ -1,8 +1,8 @@
-1교시: [현직자 특강]
-2교시: [현직자 특강]
-3교시: [현직자 특강]
-4교시: HTML-CSS[종찬님 특강]
-5교시: HTML-CSS[종찬님 특강]
-6교시: HTML-CSS[종찬님 특강]
+1교시: [[과제]벤딩머신T]
+2교시: [[과제]벤딩머신T]
+3교시: [custom form]
+4교시: [custom form]
+5교시: [custom form / notice]
+6교시: [noticeT]
 
 

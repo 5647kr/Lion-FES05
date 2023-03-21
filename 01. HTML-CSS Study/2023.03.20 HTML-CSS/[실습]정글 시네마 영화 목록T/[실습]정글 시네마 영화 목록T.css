@@ -1,0 +1,147 @@
+/* reset */
+body, h1, h2, h3, p, ul, li button {
+    padding: 0;
+    margin: 0;
+}
+button {
+    border: 0;
+    background: none;
+    font: inherit;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+/* header */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    width: 650px;
+    border-bottom: 2px solid #bdbdbd;
+    padding-bottom: 37px;
+    margin: auto;
+}
+.cinema-nav ul {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 18px;
+}
+.cinema-nav button {
+    padding: 10px 20px;
+    color: #828282;
+}
+.cinema-nav button.active {
+    font-weight: bold;
+    color: #000;
+}
+
+/* main */
+.cinema-card {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* width: 220px; */
+    border: 1px solid #bdbdbd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px
+}
+.cinema-content {
+    padding: 19px 20px 18px;
+}
+.cinema-content img {
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    aspect-ratio: 180 / 250;
+    width: 100%;
+    object-fit: cover;
+}
+.cinema-title {
+    font-size: 16px;
+    margin: 12px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cinema-info {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cinema-info li :first-child {
+    color: #828282;
+    margin-right: 5px;
+}
+.star {
+    background: url(./img/icon-star.svg) no-repeat 0 60% / 1em;
+    padding-left: 1.3em;
+}
+.btn-group {
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+
+}
+.btn-group a,
+.btn-group button {
+    background: #f2f2f2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.btn-group a {
+    border-right: 1px solid #bdbdbd;
+    border-radius: 0 0 0 10px;
+}
+.btn-group a:focus {
+    z-index: 1;
+}
+.btn-group button {
+    border-radius: 0 0 10px 0;
+}
+.btn-group button::before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: url(./img/icon-play.svg)no-repeat 0 60% / 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    gap: 24px 23px ;
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background: #fff;
+    padding: 30px;
+    margin-top: 28px;
+}
+.wrap {
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
+    background: #f2f2f2;
+    padding: 40px 30px 30px;
+    width: 1060px;
+    margin: 86px auto 135px;
+}
