@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4th]로그인 화면.css">
+    <title>4th]로그인 화면</title>
+</head>
+<body>
+    <form class="login-box">
+        <h1>로그인 또는 회원가입</h1>
+        <button class="close-btn" type="button"><img src="./img/close.png" alt="닫기"></button>
+        <div class="input-login">
+            <h2 class="login-head">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+            <label for="ID"></label>
+            <input class="input-id" id="ID" type="text" placeholder="아이디">
+            <p class="warn-id">아이디를 입력해 주세요.</p>
+            <label for="PW"></label>
+            <input class="input-pw" id="PW" type="password" placeholder="비밀번호">
+            <p class="warn-pw">아이디 혹은 비밀번호가 일치하지 않습니다.</p>
+        
+        <div class="hold-btn">
+            <input class="hold-check" id="hold" type="checkbox">
+            <label for="hold">로그인 상태 유지</label>
+        </div>
+            <button class="login-btn" type="button">로그인</button>
+        <div class="finding">
+            <a href="#" class="join">회원가입</a>
+            <a href="#" class="find">아이디/비밀번호 찾기</a>
+        </div>
+
+        <p class="login-or">또는</p>
+
+        <div class="platform">
+            <ul>
+                <li>
+                    <a href="https://accounts.google.com/InteractiveLogin/identifier?elo=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=ko&ifkv=AWnogHdCgAJR5d8TNK1CrpKyCFh9ubvk3SKEc2koAHgyMzmyIiy3KdCFkpRB5XDKj6X4G0j4Sd5k5A">
+                    <p class="platform-name google">구글 계정으로 로그인</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ko-kr.facebook.com/">
+                        <p class="platform-name facebook">페이스북 계정으로 로그인</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                        <p class="platform-name naver">네이버 계정으로 로그인</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25#login">
+                        <p class="platform-name kakao">카카오 계정으로 로그인</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </form>
+</body>
+</html>

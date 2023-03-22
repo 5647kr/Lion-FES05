@@ -4,3 +4,5 @@
 4교시: HTML-CSS[grid]
 5교시: HTML-CSS[grid]
 6교시: HTML-CSS[gird / [실습]해보기]
+7교시: 자습
+8교시: 자습

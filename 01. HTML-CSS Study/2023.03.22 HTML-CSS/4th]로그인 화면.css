@@ -1,0 +1,173 @@
+/* reset */
+h1, h2, p, button, a, input, ul, li {
+    margin: 0;
+    padding: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #767676;
+}
+ul, li {
+    list-style: none;
+}
+.login-box {
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    position: relative;
+    width: 520px;
+}
+.login-box h1 {
+    font-size: 16px;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #c4c4c4;
+}
+.login-box button img {
+    /* display: inline-block; */
+    width: 16px;
+    height: 16px;
+}
+.login-box .close-btn {
+    border: 0;
+    background: #fff;
+    position: absolute;
+    top: 22px;
+    right: 24px;
+}
+
+.input-login {
+    padding: 26px 24px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.input-login .login-head {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.input-login .input-id {
+    padding: 15px 16px;
+    border: 2px solid #f4492e;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+
+.input-login .input-id::placeholder,
+.input-login .input-pw::placeholder {
+    color: #767676;
+    font-size: 16px;
+}
+.warn-id,
+.warn-pw {
+    font-size: 14px;
+    color: #f4492e;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.warn-pw {
+    margin-bottom: 12px;
+}
+.input-pw {
+    padding: 15px 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    margin-bottom: 17px;
+}
+/* hold checkbox */
+.hold-btn {
+    margin-left: 4px;
+}
+.hold-check {
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    margin: 0 4px 3px 0;
+    vertical-align: middle;
+    transition: all 0.3s
+}
+.hold-check {
+    background: url(./img/check-box.svg) no-repeat center / 90%;
+}
+.hold-check + label {
+    flex-direction: row;
+    color: #767676;
+    font-size: 16px;
+}
+.hold-check:checked {
+    background-image: url(./img/checked.svg);
+}
+/* login-btn */
+.login-btn {
+    display: block;
+    background: #2f80ed;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px;
+    margin: 20px 0;
+}
+
+/* finding */
+.finding {
+margin: 0 auto 30px;
+font-size: 14px;
+}
+.finding a:first-child::after {
+    content: "|";
+    font-size: 18px;
+    margin: 0 12px;
+}
+
+.login-or {
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+    position: relative;
+    margin-bottom: 20px;
+}
+.login-or::before,
+.login-or::after {
+    content: "";
+    width: 210px;
+    border: 1px solid #c4c4c4;
+    position: absolute;
+    top: 50%;
+}
+.login-or::before {
+    left: 0;
+}
+.login-or::after {
+    right: 0;
+}
+/* platform */
+li .platform-name {
+    border: 1px solid #767676;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0 15px 12px;
+    border-radius: 5px;
+    /* url, position, size, repeat */
+}
+
+li .google {
+    background: url(./img/Google__G__Logo\ 1.svg) 12px 11px no-repeat;
+}
+li .facebook {
+    background: url(./img/facebook.svg) 12px 11px no-repeat;
+    border-color: #2D9CDB;
+}
+li .naver {
+    background: url(./img/naver-logo.svg) 12px 11px no-repeat;
+    border-color: #00BF18;
+}
+li .kakao {
+    background: url(./img/message-circle.svg) 12px 11px no-repeat;
+    border-color: #F2C94C;
+}

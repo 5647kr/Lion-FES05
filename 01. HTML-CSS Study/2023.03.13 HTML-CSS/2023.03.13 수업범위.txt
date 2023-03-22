@@ -4,4 +4,6 @@
 4교시: HTML-CSS[[해보기] 버튼만들기T / transform]
 5교시: HTML-CSS[transform / 웹페이지 렌더링 / [해보기]화면 정가운데 배치하기 / transition]
 6교시: HTML-CSS[animation]
+7교시: 자습
+8교시: 자습
 

@@ -21,5 +21,5 @@ header .user-join {
     float: right;
     text-decoration: none;
     color: #5a6a72;
-    background: url(icon-join.svg) no-repeat 0.8em center / 2em;
+    background: url(./img/icon-join.svg) no-repeat 0.8em center / 2em;
 }

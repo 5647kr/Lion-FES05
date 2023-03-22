@@ -1,7 +1,7 @@
 .licat {
     width: 168px;
     height: 200px;
-    background: url(keyframes-licat.png) no-repeat 0 0 / auto 100%;
+    background: url(./img/keyframes-licat.png) no-repeat 0 0 / auto 100%;
     animation: move-licat 0.8s infinite steps(6);
 }
 

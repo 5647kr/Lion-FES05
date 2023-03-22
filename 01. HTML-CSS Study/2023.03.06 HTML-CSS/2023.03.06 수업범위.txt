@@ -4,3 +4,5 @@
 4교시: HTML-CSS[이미지 img / 이미지 비율 유지하기 / position]
 5교시: HTML-CSS[position/ Z-index / [해보기]카드 UI 만들기]
 6교시: HTML-CSS[[해보기]카드 UI 만들기T]
+7교시: 자습
+8교시: 자습

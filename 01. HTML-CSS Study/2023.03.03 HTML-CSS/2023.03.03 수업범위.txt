@@ -4,3 +4,5 @@
 4교시: HTML-CSS[CSS 단위2 / HTML 텍스트와 관련된 태그들]
 5교시: HTML-CSS[CSS 선택자(가상 요소) / CSS 선택자 우선순위 / 블록 레벨 요소 vs 인라인 레벨 요소 / 콘텐츠 카테고리 / CSS Box Model]
 6교시: HTML-CSS[CSS Box Model]
+7교시: 자습
+8교시: 자습

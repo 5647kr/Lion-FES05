@@ -4,4 +4,5 @@
 4교시: HTML-CSS[iframe / SVG, Canvas / 양식(form)]
 5교시: HTML-CSS[양식(form) / [해보기]로그인 만들기]
 6교시: HTML-CSS[[해보기]로그인 만들기T]
-
+7교시: 자습
+8교시: 자습
