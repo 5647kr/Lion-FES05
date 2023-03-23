@@ -3,15 +3,15 @@
 /* font color: 색상 */
 
 h1 {
-    background-color: red;
-    color: transparent;
-    /* transparent: 투명한 색을 의미한다. */
+  background-color: red;
+  color: transparent;
+  /* transparent: 투명한 색을 의미한다. */
 }
 div {
-    color: sandybrown;
+  color: sandybrown;
 }
 h2 {
-    border: 1px solid currentColor;
+  border: 1px solid currentColor;
 }
 /* currentcolor: 부모색상을 상속받는다. */
 
@@ -29,7 +29,7 @@ h2 {
 
 /* text-transform */
 h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 /* uppercase: 대문자로 변형 */
 /* lowercase: 소문자로 변형 */
@@ -38,7 +38,7 @@ h3 {
 
 /* text-decoration: 텍스트 꾸미기 */
 h4 {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 /* text-decoration: color,line,style thickness */
 /* text-decoration-line */
@@ -46,11 +46,11 @@ h4 {
 /* overline: 오버라인 */
 /* line-through: 취소선 */
 h5 {
-    text-decoration: lime underline overline dashed auto;
+  text-decoration: lime underline overline dashed auto;
 }
 h6 {
-    text-decoration-color: royalblue;
-    text-decoration: line-through underline overline;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 5px;
+  text-decoration-color: royalblue;
+  text-decoration: line-through underline overline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px;
 }

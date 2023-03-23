@@ -1,9 +1,9 @@
 /* [해보기] 나의 슬로건을 꾸며보자 */
 
 pre {
-    font-family: 'Dancing Script', cursive;
-    font-style: italic;
-    font-size: 50px;
-    text-shadow: 2px 1px 0px gray;
-    text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+  font-size: 50px;
+  text-shadow: 2px 1px 0px gray;
+  text-align: center;
 }

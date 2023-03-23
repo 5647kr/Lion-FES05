@@ -1,40 +1,40 @@
 /* [해보기]레이아웃 만들기 flex 이용 */
 
 body {
-    border: 2px solid darkblue;
+  border: 2px solid darkblue;
 }
 header {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 section {
-    background-color: royalblue;
+  background-color: royalblue;
 }
 aside {
-    background-color: gold;
+  background-color: gold;
 }
 footer {
-    background-color: sandybrown;
+  background-color: sandybrown;
 }
 
 .wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 400px;
 }
 
 .wrap2 {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 header, footer {
-    flex-basis: 50px;
+  flex-basis: 50px;
 }
 .wrap2 section {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .wrap2 aside {
-    flex-basis: 200px;
+  flex-basis: 200px;
 }

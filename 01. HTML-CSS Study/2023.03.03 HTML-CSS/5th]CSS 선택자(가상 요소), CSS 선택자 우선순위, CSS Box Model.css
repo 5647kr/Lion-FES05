@@ -1,46 +1,46 @@
 /* CSS: CSS 선택자(가상 요소) */
 
 input {
-    color: royalblue;
+  color: royalblue;
 }
 input::placeholder {
-    color: red;
+  color: red;
 }
 
 /* CSS: CSS 선택자 우선순위 */
 
 p {
-    color: red;
-    border: 2px solid red;
+  color: red;
+  border: 2px solid red;
 }
 .ptag1 {
-    color: orange;
+  color: orange;
 }
 #ptag2 {
-    color: yellow;
+  color: yellow;
 }
 :nth-child(4) {
-    color: green;
+  color: green;
 }
 [class="ptag3"] {
-    color: skyblue;
+  color: skyblue;
 }
 /* 100줄 생략 */
 p {
-    color: royalblue;
+  color: royalblue;
 }
 
 
 /* CSS: CSS Box Model */
 
 div, span {
-    background-color: skyblue;
-    margin: 10px;
-    padding: 10px;
-    border: 10px solid royalblue;
-    box-sizing: border-box;
-    /* border값까지 포함하여 높이와 너비값을 맞춘다. */
-    width: 100px;
-    height: 100px;
-    /* 인라인 요소는 width, height, margin상하값이 적용되지 않는다. */
+  background-color: skyblue;
+  margin: 10px;
+  padding: 10px;
+  border: 10px solid royalblue;
+  box-sizing: border-box;
+  /* border값까지 포함하여 높이와 너비값을 맞춘다. */
+  width: 100px;
+  height: 100px;
+  /* 인라인 요소는 width, height, margin상하값이 적용되지 않는다. */
 }

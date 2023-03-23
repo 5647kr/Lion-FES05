@@ -1,46 +1,46 @@
 header {
-    background: salmon;
+  background: salmon;
 }
 section {
-    background: gold;
+  background: gold;
 }
 aside {
-    background: slateblue;
+  background: slateblue;
 }
 footer {
-    background: seagreen;
+  background: seagreen;
 }
 .wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 400px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 400px;
+  justify-content: space-between;
 }
 
 .wrap2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-grow: 1;
 }
 
 header, footer {
-    flex-basis: 50px;
+  flex-basis: 50px;
 }
 
 .wrap2 section {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .wrap2 aside {
-    flex-basis: 200px;
+  flex-basis: 200px;
 }
 
 header,
 section,
 aside,
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

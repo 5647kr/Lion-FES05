@@ -1,24 +1,24 @@
 /* HTML: table */
 table {
-    width: 100%;
-    border: 1px solid #000;
-    border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .blue {
-    background: skyblue;
+  background: skyblue;
 }
 .blue th {
-    text-align: left;
+  text-align: left;
 }
 .gold {
-    background: gold;
+  background: gold;
 }
 .pink {
-    background: pink;
+  background: pink;
 }

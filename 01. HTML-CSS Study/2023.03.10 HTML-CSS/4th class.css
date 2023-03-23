@@ -1,27 +1,27 @@
 /* selector */
 body {
-    background-image: url(./csscook/profile/images/background.gif);
+  background-image: url(./csscook/profile/images/background.gif);
 }
 
 h1, h2, p, ul {
-    margin: initial;
-    padding: initial;
+  margin: initial;
+  padding: initial;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .container {
-    background-color: #ddd;
-    width: 800px;
-    margin: 40px auto;
-    border: 10px solid red;
-    text-align: center;
+  background-color: #ddd;
+  width: 800px;
+  margin: 40px auto;
+  border: 10px solid red;
+  text-align: center;
 }
 /* type selector */
 /* 프로포토: 벨류 */
@@ -30,47 +30,47 @@ img {
 /* 기본적으로 height는 auto로 */
 
 .header {
-    background-image: url(./csscook/profile/images/cover03.png);
-    color: white;
-    padding: 100px 0;
-    background-size: cover;
+  background-image: url(./csscook/profile/images/cover03.png);
+  color: white;
+  padding: 100px 0;
+  background-size: cover;
 }
 .header img.profile {
-    border: 10px solid white;
-    width: 150px;
-    border-radius: 0 40px 40px 0;
+  border: 10px solid white;
+  width: 150px;
+  border-radius: 0 40px 40px 0;
 }
 .header h1 {
-    border-bottom: 4px solid;
-    width: 200px;
-    margin: 30px auto;
+  border-bottom: 4px solid;
+  width: 200px;
+  margin: 30px auto;
 
 }
 /* .header p {
-    box-shadow: inset 0 0 10px cyan;
+  box-shadow: inset 0 0 10px cyan;
 } */
 /* h1태그가 가운데 정렬된것이 아니라 h1태그 안에있는 텍스트가 가운데 정렬한 것이다. */
 /* 어떻게 공간을 차지하고 있는지 보려면 box-shadow를 사용해서 확인한다. box-shadow: inset 0 0 10px lime */
 
 .contents {
-    text-align: left;
+  text-align: left;
 }
 .section {
-    background-color: white;
-    margin: 30px;
-    padding: 30px;
-    background-image: url(./csscook/profile/images/icon-information.png);
-    background-repeat: no-repeat;
-    background-position: right 40px center;
+  background-color: white;
+  margin: 30px;
+  padding: 30px;
+  background-image: url(./csscook/profile/images/icon-information.png);
+  background-repeat: no-repeat;
+  background-position: right 40px center;
 }
 .section h2 {
-    color: #ff6600;
-    margin-bottom: 20px;
+  color: #ff6600;
+  margin-bottom: 20px;
 }
 .skills {
-    background-image: url(./csscook/profile/images/icon-skills.png);
+  background-image: url(./csscook/profile/images/icon-skills.png);
 }
 
 .footer {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }

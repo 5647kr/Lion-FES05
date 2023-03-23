@@ -1,57 +1,57 @@
 /* reset */
 h1, a, p, ul, li {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 a {
-    text-decoration: none;
-    color: #29363D;
+  text-decoration: none;
+  color: #29363D;
 }
 ul, li {
-    list-style: none;
+  list-style: none;
 }
 
 
 section {
-    position: relative;
-    width: 728px;
+  position: relative;
+  width: 728px;
 }
 /* notice-title */
 .notice-title {
-    font-size: 30px;
-    font-weight: bold;
-    color: #29363D;
-    margin-bottom: 22px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #29363D;
+  margin-bottom: 22px;
 }
 
 /* notice-list */
 .notice-list {
-    border-top: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 .notice-list li {
-    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .notice-list li p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .notice-list li a {
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 56px;
-    gap: 36px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  gap: 36px;
 }
 strong {
-    color: #2e6ff2;
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 16px;
+  color: #2e6ff2;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 16px;
 }
 .plus {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

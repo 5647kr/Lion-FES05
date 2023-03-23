@@ -1,51 +1,51 @@
 /* HTML: button */
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* CSS: CSS 선택자(동적 가상 선택자) */
 
 .active:active {
-    background-color: royalblue;
+  background-color: royalblue;
 }
 .hover:hover {
-    background-color: sandybrown;
+  background-color: sandybrown;
 }
 .focus:focus {
-    background-color: gold;
+  background-color: gold;
 }
 .disabled:disabled {
-    color: skyblue;
+  color: skyblue;
 }
 .visited:visited {
-    color: orange;
+  color: orange;
 }
 
 /* [해보기]버튼 만들기 */
 
 .button-practice {    
-    width: 85.5px;
-    height: 29.5px;
-    background-color: #343F50;
-    box-shadow: inset 1px 1px 0 #4A5568;
-    text-align: center;
-    border: 1px solid #1a202c;
-    font-size: 12px;
-    color: #cbd5df;
+  width: 85.5px;
+  height: 29.5px;
+  background-color: #343F50;
+  box-shadow: inset 1px 1px 0 #4A5568;
+  text-align: center;
+  border: 1px solid #1a202c;
+  font-size: 12px;
+  color: #cbd5df;
 }
 .button-practice:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 .button-practice:active {
-    color: #fff;
-    text-decoration: underline;
-    box-shadow: inset 1px 1px 0 #262F3E;
+  color: #fff;
+  text-decoration: underline;
+  box-shadow: inset 1px 1px 0 #262F3E;
 }
 .disable:disabled {
-    color: #4A5568;
-    border: 1px solid #1a202c;
-    box-shadow: none;
-    text-decoration: none;
+  color: #4A5568;
+  border: 1px solid #1a202c;
+  box-shadow: none;
+  text-decoration: none;
 }

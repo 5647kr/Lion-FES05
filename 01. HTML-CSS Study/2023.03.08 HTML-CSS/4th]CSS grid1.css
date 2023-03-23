@@ -1,46 +1,46 @@
 /* CSS: grid */
 
 .container1 {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 1fr 2fr;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 1fr 2fr;
 }
 .grid-item1 {
-    background: skyblue;
-    border: 3px solid royalblue;
+  background: skyblue;
+  border: 3px solid royalblue;
 }
 
 .container2 {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(50px, 150px));
-    grid-template-rows: 1fr 2fr;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 150px));
+  grid-template-rows: 1fr 2fr;
 }
 .grid-item2 {
-    background: skyblue;
-    border: 3px solid royalblue;
+  background: skyblue;
+  border: 3px solid royalblue;
 }
 
 
 .container {
-    display: grid;
-    width: 600px;
-    gap: 10px;
-    background-color: #ddd;
-    margin-bottom: 10px;
-    border: 10px solid #aaa;
+  display: grid;
+  width: 600px;
+  gap: 10px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border: 10px solid #aaa;
 }
 .grid-item3 {
-    background-color: skyblue;
-    height: 100px;
-    border: 10px solid royalblue;
+  background-color: skyblue;
+  height: 100px;
+  border: 10px solid royalblue;
 }
 
 .autofill{
-    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
 }
 /* auto-fill은 여백을 남긴다. */
 
 .autofit{
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
 }
 /* auto-fit은 여백을 남기지 않는다. */

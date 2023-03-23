@@ -3,10 +3,10 @@
 /* HTML: 이미지 img */
 
 .wrap {
-    background-color: yellow;
+  background-color: yellow;
 }
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 /* img가 인라인 요소라서 이미지 하단에 빈 공간이 생긴다. */
 /* 해결하기 위해 vertical-align: top으로 해결한다. */
@@ -14,22 +14,22 @@ img {
 /* CSS: 이미지 비율 유지하기 */
 
 .ratio {
-    display: block;
-    width: 300px;
-    aspect-ratio: 2/1;
-    object-fit: cover;
+  display: block;
+  width: 300px;
+  aspect-ratio: 2/1;
+  object-fit: cover;
 }
 
 .padding-ratio {
-    position: relative;
-    height: 0;
-    padding-top: 50%;
+  position: relative;
+  height: 0;
+  padding-top: 50%;
 }
 .padding-ratio img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }   
