@@ -1,0 +1,6 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: clamp(10px, 2vw, 60px);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="2nd]Embedded content.css">
+  <title>2nd]Embedded content</title>
+</head>
+<body>
+<!-- HTML: Embedded content -->
+
+  <!-- <img srcset=
+  "./img/rabbit_500.png 500w, 
+  ./img/peng.png 300w, 
+  ./img/rabbit_150.png 150w" 
+  src="./img/rabbit_150.png" 
+  sizes=
+  "(min-width: 960px) 250px,
+  (min-width: 620px) 150px,
+  300px"
+  alt=""> -->
+
+<!-- picture -->
+<picture>
+  <source srcset="./img/rabbit_500.png" media="(min-width:960px)">
+  <source srcset="./img/rabbit_500.png" media="(min-width:620px)">
+  <img src="./img/rabbit_500.png" alt="토끼">
+</picture>
+</body>
+</html>

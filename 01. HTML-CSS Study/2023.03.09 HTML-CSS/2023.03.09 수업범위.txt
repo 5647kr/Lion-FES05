@@ -1,0 +1,8 @@
+1교시: HTML-CSS[변수, 함수]
+2교시: HTML-CSS[[실습]카드UI Grid배치]
+3교시: HTML-CSS[[실습]카드UI Flex배치]
+4교시: HTML-CSS[[실습]카드UI Float배치]
+5교시: HTML-CSS[[실습]카드UI Float배치 / 미디어쿼리]
+6교시: [피그마 특강]
+7교시: [피그마 특강]
+8교시: [피그마 특강]
