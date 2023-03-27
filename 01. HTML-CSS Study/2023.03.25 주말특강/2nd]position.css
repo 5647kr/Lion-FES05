@@ -1,0 +1,29 @@
+body {
+  background-color: royalblue;
+  margin: 0;
+  height: 00px;
+}
+div {
+  height: 130px;
+  background-color: yellow;
+}
+.parent {
+  position: absolute;
+  /* display: flow-root; */
+}
+
+.second {
+  /* position: relative; */
+  position: absolute;
+  /* absolute가 적용되면 display가 block으로 바뀐다. */
+  /* top: 30px; */
+  /* bottom: 30px;
+  right: 50px; */
+  width: 100px;
+  height: 70px;
+  background-color: red;
+}
+.third {
+  height: 30px;
+  background-color: green;
+}

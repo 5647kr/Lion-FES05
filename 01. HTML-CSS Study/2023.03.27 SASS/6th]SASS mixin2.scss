@@ -1,0 +1,68 @@
+// before
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+.product {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+.project-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+// after
+@mixin flex($display: flex, $justify-content: center, $align-items: center) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin item($width: 100px, $height: 100px, $border-radius: 10%) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+.card {
+  @include flex;
+}
+.card-item {
+  @include item;
+}
+.product {
+  @include flex(flex, right, right);
+}
+.product-item {
+  @include item(200px, 200px, 20%);
+}
+// T
+@mixin flex ($direction) {
+  display: flex;
+  justify-content: $direction;
+  align-items: $direction;
+}
+@mixin item ($length, $radius) {
+  width: $length;
+  height: $length;
+  border-radius: $radius;
+}
+.card {
+  @include flex (center)
+}
+.card-item {
+  @include item(100px, 10%)
+}
+
+.product {
+  @include flex (right)
+}
+.project-item {
+  @include item(200px, 20%)
+}

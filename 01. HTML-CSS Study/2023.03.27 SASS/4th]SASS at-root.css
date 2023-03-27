@@ -1,0 +1,12 @@
+.one {
+  color: green;
+}
+.one .two {
+  color: blue;
+}
+.one .two .three {
+  color: pink;
+}
+.four {
+  color: red;
+}/*# sourceMappingURL=4th]SASS at-root.css.map */

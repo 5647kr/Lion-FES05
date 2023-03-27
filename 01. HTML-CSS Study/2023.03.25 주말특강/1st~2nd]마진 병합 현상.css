@@ -1,0 +1,41 @@
+body {
+  background-color: royalblue;
+  margin: 0;
+}
+div {
+  width: 100px;
+  background-color: yellow;
+  display: inline-block;
+}
+.parent {
+  /* 1. 해결방법: 부모요소에 overflow: hidden 값을 준다. */
+  /* overflow: hidden; */
+
+/* 2. 해결방법: border값을 준다. */
+  /* border: 1px solid black; */
+
+/* 3. display: inline-block을 준다 */
+  /* display: inline-block; */
+  /* 빈칸이 생기는데 그건 second와 third 사이의 빈 공간이다. */
+
+  /* vertical-align: top; */
+  /* inline-block이여서 빈공간이 생겼다 그래서 vertical-align: top으로 빈공간을 매꾼다. */
+
+  /* 4. display: flow-root를 준다. */
+  display: flow-root;
+}
+/* 부모와 자식사이의 간격은 padding / 요소와 요소사이의 간격은 margin으로 설정한다. */
+.second {
+  width: 20px;
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: red;
+}
+.third {
+  height: 30px;
+  background-color: green;
+}
+.forth {
+  height: 30px;
+  background-color: blue;
+}

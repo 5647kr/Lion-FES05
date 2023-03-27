@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+div {
+  height: 130px;
+  background-color: yellow;
+}
+.parent {
+  display: flow-root;
+}
+
+.second {
+  transform: translate(50px, 60px);
+  width: 100px;
+  height: 70px;
+  background-color: red;
+}
+.third {
+  height: 30px;
+  background-color: green;
+}
+span {
+  background-color: pink;
+  transform: translate(10px, 10px);
+  /* inline요소에서는 작동을 안한다. */
+}
