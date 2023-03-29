@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>3rd]Tailwindcss flex,grid2</title>
+</head>
+<body>
+<!-- https://tailwindcss.com/docs/grid-template-columns -->
+<!-- https://tailwindcss.com/docs/grid-column -->
+<!-- https://tailwindcss.com/docs/grid-template-rows -->
+<h2>grid</h2>
+<div class="grid grid-cols-3 gap-2 border-2 border-red-400">
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+</div>
+
+<h2>grid-반응형</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 border-2 border-red-400">
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+</div>
+
+<h2>grid-문제</h2>
+<!-- 모바일: 옆으로 2개  -->
+<!-- 테블릿: 옆으로 3개 -->
+<!-- 테스크톱: 옆으로 4개 -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 border-2 border-red-400">
+  <!-- 가장 작은것부터 진행 -->
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+</div>
+
+<h2>grid-row</h2>
+<div class="grid grid-cols-2 grid-rows-3 gap-2 border-2 border-red-400">
+  <!-- 가장 작은것부터 진행 -->
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+  <div class="border-2 border-blue-200">hello world</div>
+</div>
+</body>
+</html>

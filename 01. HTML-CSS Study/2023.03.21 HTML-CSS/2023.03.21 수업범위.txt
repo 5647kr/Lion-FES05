@@ -4,5 +4,8 @@
 4교시: [custom form]
 5교시: [custom form / notice]
 6교시: [noticeT]
+7교시: 자습
+8교시: 자습
+
 
 

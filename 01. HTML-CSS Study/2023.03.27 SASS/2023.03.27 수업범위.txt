@@ -1,10 +1,10 @@
 1교시: 스프린트 회고
 2교시: 스프린트 회고
 3교시: SASS
-4교시: [Bootstrap]
-5교시: [Bootstrap / iconfont]
-6교시: [Bootstrap / iconfont]
-7교시: 자습
+4교시: SASS
+5교시: SASS
+6교시: SASS
+7교시: SASS
 8교시: 자습
 
 

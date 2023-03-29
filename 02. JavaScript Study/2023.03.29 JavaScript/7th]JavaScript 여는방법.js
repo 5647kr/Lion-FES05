@@ -1,0 +1,1 @@
+// window.alert('외부 script 방식');
