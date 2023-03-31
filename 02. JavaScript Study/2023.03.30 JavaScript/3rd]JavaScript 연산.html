@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3rd]JavaScript 연산</title>
+</head>
+<body>
+  <script>
+    const a = true; // 1
+    const b = false; // 0
+    const c = 10;
+    console.log(a && b); // and(곱)
+    console.log(a || b); // or(합)
+    console.log(!a); //not true -> false
+    console.log(!!c); // 참인지 판별
+
+    // 중요하지 않다.
+    console.log(a & b);
+    console.log(a | b);
+
+    // 비트연산자중에서 중요한 부정연산(~)
+    console.log(~3);
+    // 3+1한 다음 음수값을 붙인다.
+    console.log(~7);
+    
+    console.log(~~3.14);
+    // 소수점 뒷자리를 없앤다.
+    console.log(parseInt(3.14));
+    // parseInt를 사용한다.
+
+    console.log('----------------------------');
+
+    // 비교연산자
+
+    const i = 3;
+    const j = 7;
+    console.log(i > j); // i가 j보다 큰가
+    console.log(i >= j); // i가 j보다 크거나 같은가
+    console.log(i < j); // i가 j보다 작은가
+    console.log(i <= j); // i가 j보다 작거나 같은가
+    console.log(i == j); // i가 j랑 같은가 (변수의 타입을 확인하지 않는다.)
+    console.log(i === j); // i가 j랑 같은가 (변수의 타입을 확인한다.)
+    console.log(i != j); // i가 j랑 다른가
+    console.log(i !== j); // i가 j랑 다른가
+    console.log('----------------------------');
+    // 예시
+    const k = 1;
+    const l = "1";
+    console.log(k == l);
+    console.log(k === l);
+    console.log(k != l);
+    console.log(k !== l);
+</script>
+</body>
+</html>

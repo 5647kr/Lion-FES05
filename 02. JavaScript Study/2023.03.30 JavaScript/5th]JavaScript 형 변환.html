@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5th]JavaScript 형 변환</title>
+</head>
+<body>
+  <script>
+    // 형 변환(num -> string / string -> num)
+
+    // 다른type -> string
+    let hojun = 10;
+    console.log(hojun.toString()); // 권하지 않는다.
+    console.log('' + 10 + 10);
+    console.log(String(10));
+
+
+    console.log('----------------------------');
+
+    // 다른type -> num
+    console.log(+'10'); // 실무팁
+    console.log(Number('10')); // 권하지 않는다.
+    console.log(parseInt('10')); // 권함
+    console.log(parseInt(true)); // NaN
+    console.log(parseInt(false)); // NaN
+    console.log(Number(true)); // 1
+    console.log(Number(false)); // 0
+    console.log(parseFloat('10.1'));
+
+    // 다른 type -> boolean
+    let hojun2 = 10;
+    console.log(!!hojun2);
+    console.log(Boolean(-1));
+    console.log(Boolean(0));
+    console.log(Boolean(0.1));
+    console.log(!!1000);
+  </script>
+</body>
+</html>
