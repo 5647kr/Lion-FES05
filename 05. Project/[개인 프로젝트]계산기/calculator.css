@@ -1,0 +1,51 @@
+/* reset css */
+body {
+  font-size: 10px;
+}
+body, h1, h2, h3, h4, h5, h6, p, button {
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: initial;
+  background-color: initial;
+}
+/* //reset css */
+
+.calculator {
+  background-color: #ea8fea;
+  width: 600px;
+  height: 960px;
+  margin: 20px auto;
+  border-radius: 60px;
+}
+
+.result {
+  background-color: #b9f3e4;
+  width: 480px;
+  height: 144px;
+  margin: 40px auto;
+  border-radius: 30px;
+}
+
+.btn-box {
+  margin: 40px;
+  display: grid;
+  grid-template-rows: repeat(5, 120px);
+  grid-template-columns: repeat(4, 120px);
+  gap: 13px;
+}
+.cal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #b9f3e4;
+}
+button {
+  font-size: 80px;
+  color: #ffaacf;
+
+}
