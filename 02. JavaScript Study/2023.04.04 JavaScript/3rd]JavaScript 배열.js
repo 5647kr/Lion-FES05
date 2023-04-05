@@ -33,6 +33,7 @@ console.log(arr4);
 console.log("-------------------------");
 
 // forEach: 배열의 각 요소에 대해 주어진 함수를 실행한다.
+// 돌아가면서 작업할때 사용한다.
 
 const arr5 = [10, 20, 30, 40, 50];
 console.log("forEach1");
@@ -78,7 +79,7 @@ console.log(arr9);
 
 console.log("-------------------------");
 
-console.log("1~100까지 배열 만드는 연습");
+console.log("1~100까지 배열 만드는 연습1");
 const arr10 = Array(100).fill(0);
 // 0이 100개 생성됨
 const arr11 = [];
@@ -90,7 +91,7 @@ console.log(arr11);
 
 console.log("-------------------------");
 
-console.log("1~100까지 배열 만드는 연습1");
+console.log("1~100까지 배열 만드는 연습2");
 const arr12 = Array(100).fill(0);
 // 0이 100개 생성됨
 const arr13 = [];
@@ -102,7 +103,7 @@ console.log(arr13);
 
 console.log("-------------------------");
 
-console.log("1~100까지 배열 만드는 연습2");
+console.log("1~100까지 배열 만드는 연습3");
 const arr14 = Array(100).fill(0);
 // 0이 100개 생성됨
 const arr15 = [];
@@ -114,14 +115,55 @@ console.log(arr15);
 console.log("-------------------------");
 
 // map: 데이터를 뽑는 용도로 사용하고 forEach랑 다르게 새로운 배열을 생성한다.
-
+// map의 반환값은 배열이며, 원본배열은 변하지 않는다.
 const arr16 = [1, 2, 3];
-arr16.map(function (a) {
+const arr17 = arr16.map(function (a) {
   return a ** 2;
 })
-console.log(a);
+console.log("map1");
+console.log(arr16);
+console.log(arr17);
 
+console.log("-------------------------");
 
+const arr18 = [1, 2, 3];
+console.log("map2");
+console.log(arr18.map((a) => a ** 2));
+
+console.log("-------------------------");
+
+const arr19 = Array(100).fill(0);
+console.log("map3");
+console.log(arr19.map((v, i) => i));
+
+console.log("-------------------------");
+
+const arr20 = Array(100).fill(0);
+const arr21 = arr20.map(function (v, i) {
+  return i
+});
+console.log("map4");
+console.log(arr21);
+
+console.log("-------------------------");
+
+const arr22 = Array(100).fill(0);
+function hojun(v, i) {
+  return i
+};
+console.log("map5");
+console.log(hojun);
+
+console.log("-------------------------");
+
+const arr24 = Array(100).fill(0);
+const arr25 = arr24.map((v, i) => {
+  return i
+});
+console.log("map6");
+console.log(arr25);
+
+console.log("-------------------------");
 
 // slice 실무 팁
 let tip1 = [1, 2, 3, 4, 5];

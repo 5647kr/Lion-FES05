@@ -1,0 +1,189 @@
+/* reset css */
+body {
+  font-size: 10px;
+}
+body, h1, h2, h3, h4, h5, h6, p, a, button, ul, li {
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+}
+button {
+  border: initial;
+  background-color: initial;
+}
+button:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* //reset css */
+.container {
+  width: 520px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+
+.login-header {
+  padding: 19px 0;
+  border-bottom: 1px solid #c4c4c4;
+  position: relative;
+}
+.login-header h1 {
+  font-size: 1.6em;
+  text-align: center;
+}
+.login-close {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+}
+.login-close img {
+  width: 16px;
+}
+.wrapper {
+  padding: 26px 24px 25px;
+}
+
+/* login-main */
+.login-main h2 {
+  font-size: 2em;
+  margin-bottom: 24px;
+}
+.login-main form {
+  display: flex;
+  flex-direction: column;
+}
+.login-main-input input {
+  padding: 15px 0 15px 16px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+.login-hold-btn {
+  font-size: 1.6em;
+  color: #767676;
+  margin: 7px 0 30px;
+  /* box-shadow: inset 0 0 10px red; */
+}
+.hold-btn {
+  appearance: none;
+  background: url(./img/check-box-sprites.png) -10px -10px/ 84px 42px;
+}
+.hold-btn::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: -5px;
+}
+.hold-btn:checked {
+  background: url(./img/check-box-sprites.png) -52px -10px/ 84px 42px;
+}
+.login-btn{
+  width: 100%;
+  font-size: 1.8em;
+  font-weight: 700;
+  padding: 14px 0;
+  color: #fff;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.login-join-find {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-join-find a {
+  font-size: 1.4em;
+  color: #767676;
+}
+.login-join-find a:first-child::after {
+  content: "";
+  width: 1px;
+  height: 18px;
+  display: inline-block;
+  background-color: #767676;
+  margin: 0 12px;
+  vertical-align: bottom;
+}
+.login-or {
+  font-size: 1.4em;
+  color: #767676;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.login-or::before,
+.login-or::after {
+  content: "";
+  width: 210px;
+  height: 1px;
+  display: inline-block;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 50%;
+}
+.login-or::before {
+  left: 0;
+}
+.login-or::after {
+  right: 0;
+}
+.list-link {
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  position: relative;
+}
+.list-link a {
+  font-size: 1.6em;
+  color: #767676;
+}
+.list-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+.list-link::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  background: url(./img/icon-sprites.png);
+}
+.facebook {
+  border-color: #2d9cdb;
+}
+.naver {
+  border-color: #00bf18;
+}
+.kakao {
+  border-color: #f2c94c; 
+}
+.google::before {
+  background-position: -10px -11px;
+}
+.facebook::before {
+  background-position: -212px -10px;
+}
+.naver::before {
+  background-position: -116px -10px;
+}
+.kakao::before {
+  background-position: -20px -10px;
+}

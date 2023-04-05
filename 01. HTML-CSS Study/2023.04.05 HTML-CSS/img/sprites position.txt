@@ -1,0 +1,10 @@
+google: -20px -20px;
+facebook: -212px -20px;
+naver : -116px -20px;
+kakao: -20px -116px;
+
+
+
+
+check-box: -20px -20px;
+checked-box: -104px -20px;

@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+article {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(./img/a.jpg) center center / cover no-repeat; */
+  background: url(./img/logo_google.jpeg) black center center / contain no-repeat;
+  /* position값을 바꿔서 배경이미지를 반응형으로 바꿀 수 있다. */
+}
+
+img {
+  width: 100px;
+}
+
