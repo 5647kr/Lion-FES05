@@ -1,8 +1,8 @@
-// 반복문
+console.log("----------반복문 1----------");
 
 const cars1 = ["BMW", "VOLVO", "SAAB", "FORD", "FLAT", "AUDI"];
 
-let text = "";
+let text1 = "";
 
 // 아래와 같이 출력하려 할때
 /* 
@@ -17,72 +17,52 @@ let text = "";
 `
 */
 // 아래와 같이 해서 코드줄이 굉장히 길다.
-text += '<section><h2>' + cars1[0] + '</h2></section>'
-text += '<section><h2>' + cars1[1] + '</h2></section>'
-text += '<section><h2>' + cars1[2] + '</h2></section>'
-text += '<section><h2>' + cars1[3] + '</h2></section>'
-text += '<section><h2>' + cars1[4] + '</h2></section>'
-console.log(text);
+text1 += '<section><h2>' + cars1[0] + '</h2></section>'
+text1 += '<section><h2>' + cars1[1] + '</h2></section>'
+text1 += '<section><h2>' + cars1[2] + '</h2></section>'
+text1 += '<section><h2>' + cars1[3] + '</h2></section>'
+text1 += '<section><h2>' + cars1[4] + '</h2></section>'
+text1 += '<section><h2>' + cars1[5] + '</h2></section>'
+console.log(text1);
 
-console.log("-------------------------");
+console.log("----------반복문 2----------");
 
 const cars2 = ["BMW", "VOLVO", "SAAB", "FORD", "FLAT", "AUDI"];
 let text2 = "";
 for(let i = 0; i < cars2.length; i++) {
   text2 += '<section><h2>' + cars2[i] + '</h2></section>'
 }
-console.log(text);
+console.log(text2);
 
-console.log("-------------------------");
+console.log("----------반복문 3----------");
 
 for(let i = 0; i < 10; i++) {
   console.log(i);
 }
+// !console.log(i); 반복문이 끝난 다음 호출할 수 없다!
 
-console.log("-------------------------");
+console.log("----------반복문 4----------");
 
 for(let i = 0; i < 10; ++i) {
   console.log(i);
 }
 
-console.log("-------------------------");
+console.log("----------반복문 5----------");
+
+for(let i = 0; i < 10; i += 2) {
+  // * (i += 2) == (i = i + 2)
+  console.log(i);
+}
+
+console.log("----------반복문 6----------");
 
 for(let i = 0; i < 10; i += 2) {
   console.log(i);
 }
 
-console.log("-------------------------");
+console.log("----------무한 반복문----------");
 
-for(let i = 0; i < 10; i += 2) {
-  console.log(i);
-}
-
-console.log("-------------------------");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log("-------------------------");
-
-// 무한반복 코드
-/* 
+/* 실행하지 말 것!
 for(;;) {
   console.log("실행하지 마세요!");
 }

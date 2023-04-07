@@ -8,9 +8,9 @@ console.log(arr2);
 console.log("----------Switch 1----------");
 
 // 특징
-/* 
-1. 
-*/
+
+//코드 실행을 한 뒤, break에 의해서 조건문을 빠져나오게 된다.
+// ! 점점 안쓰는 추세다.
 
 const value1 = "one";
 switch (value1) {
@@ -110,32 +110,7 @@ console.log(new Date().getDay());
 일(0) 월(1) 화(2) 수(3) 목(4) 금(5) 토(6)
 */
 
-console.log("-------------------------");
-
-// 단축키
-
-/* 
-줄 복사: alt + shift + 방향키 위아래
-같은 단어 찾고 싶을 때 ctrl + d
-같은 모든 단어 ctrl + shift + l
-자동정렬: ctrl + a로 전체 선택 후 ctrl+k+f 이건 모르겠음
-커서 줄 선택: ctrl + l
-커서 위치 행 삭제: ctrl + shift + k
-*/
-
-const value5 = "two";
-switch (value5) {
-        case "one" :
-    console.log("hello one");
-        case "two" :
-      console.log("hello two");
-  case "three" :
-      console.log("hello three");
-  default :
-        console.log("hello default");
-}
-
-console.log("-------------------------");
+console.log("----------Switch 5----------");
 
 const date1 = new Date().getDay();
 const date1객체 = {
@@ -149,9 +124,9 @@ const date1객체 = {
 };
 console.log(date1객체[date1]);
 
-console.log("-------------------------");
+console.log("----------Switch nullish 연산자 사용----------");
 
-// nullish 연산자 사용
+// *default 처리는?
 const date2 = 10
 const date2객체 = {
   0: "일요일",
@@ -163,10 +138,10 @@ const date2객체 = {
   6: "토요일"
 };
 console.log(date2객체[date2] ?? "hello");
+console.log(undefined ?? "hello");
 
-console.log("-------------------------");
+console.log("----------Switch 단락회로평가 사용----------");
 
-// 단락회로평가 사용
 const date3 = 10
 const date3객체 = {
   0: "일요일",
@@ -178,3 +153,15 @@ const date3객체 = {
   6: "토요일"
 };
 console.log(date3객체[date3] || "hello");
+console.log(undefined || "hello");
+
+// 단축키
+
+/* 
+줄 복사: alt + shift + 방향키 위아래
+같은 단어 찾고 싶을 때 ctrl + d
+같은 모든 단어 ctrl + shift + l
+자동정렬: ctrl + a로 전체 선택 후 ctrl+k+f 이건 모르겠음
+커서 줄 선택: ctrl + l
+커서 위치 행 삭제: ctrl + shift + k
+*/

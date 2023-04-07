@@ -1,13 +1,5 @@
 console.log("----------구조분해 할당 1----------");
 
-// 데이터 구조를 분해하여 안에 있는 데이터를 변수에 순서대로 할당해준다.
-
-for(const [a, b] of [[1, 2], [3, 4], [5, 6]]) {
-  console.log(a, b);
-} 
-
-console.log("----------구조분해 할당 2----------");
-
 const 위니브1 = {개리: 1, 빙키: 2};
 const 위니브2 = {라이캣: 3};
 const 위니브3 = {...위니브1, ...위니브2};
@@ -18,38 +10,60 @@ const 위니브임직원 = {
   뮤라: "재직중",
   해골왕: "재직중"
 };
-
-for(const [c, d] of Object.entries(위니브임직원)) {
-  console.log(c, d); 
+console.log(Object.entries(위니브임직원));
+for(const [i, j] of Object.entries(위니브임직원)) {
+  console.log(i, j); 
 }
 
-console.log("----------구조분해 할당 3----------");
+console.log("----------구조분해 할당 2----------");
 
 const test1 = [
   [1, 2, [10, 20]],
   [3, 4, [30, 40]],
   [5, 6, [50, 60]]
 ];
-for(const [e, f, [g, h]] of test1) {
-  console.log(e, f, g, h);
+for(const [i, j, k] of test1) {
+  console.log(i, j, k);
+}
+
+console.log("----------구조분해 할당 3----------");
+
+const test2 = [
+  [1, 2, [10, 20]],
+  [3, 4, [30, 40]],
+  [5, 6, [50, 60]]
+];
+for(const [i, j, [k, l]] of test2) {
+  console.log(i, j, k, l);
 }
 
 console.log("----------구조분해 할당 4----------");
 
-const test2 = [
+const test3 = [
   [1, 2, 10, 20],
   [3, 4, 30, 40],
   [5, 6, 50, 60]
 ];
-for(const [e, f, ...g] of test2) {
-  console.log(e, f, g);
+for(const [i, j, k] of test3) {
+  console.log(i, j, k);
 }
 
 console.log("----------구조분해 할당 5----------");
 
-let [a, b] = [10, 20];
-console.log(a);
-console.log(b);
+const test4 = [
+  [1, 2, 10, 20],
+  [3, 4, 30, 40],
+  [5, 6, 50, 60]
+];
+for(const [i, j, ...k] of test4) {
+  console.log(i, j, k);
+}
+
+console.log("----------구조분해 할당 5----------");
+
+let [i, j] = [10, 20];
+console.log(i);
+console.log(j);
 let [one, two, three] = "010-5044-2903".split("-");
 console.log(one);
 console.log(two);
