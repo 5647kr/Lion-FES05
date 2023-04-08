@@ -77,7 +77,7 @@ console.log('----------------------------');
 let hojun = 10;
 console.log(hojun.toString());
 
-console.log(+'10'); // 실무팁
-console.log(Number('10')); // 권하지 않는다.
-console.log(parseInt('10')); // 권함
-console.log(parseFloat('10.1'));
+console.log(+"10"); // 실무팁
+console.log(Number("10")); // 권하지 않는다.
+console.log(parseInt("10")); // 권함
+console.log(parseFloat("10.1"));

@@ -9,12 +9,12 @@ console.log("----------타입----------");
 1. 값을 변수에 저장할 때 값 자체가 저장된다.
 2. 원시값을 다른 변수에 할당할때는 값의 참조가 저장되는것이 아닌 값 자체가 복사되어 저장된다.
 */
-let str1 = 'hello';
+let str1 = "hello";
 let str2 = str1;
 // str1 -> hello 
 // str2 -> hello
 // str2 -> str1을 가르키는것이 아니다.
 console.log(str2); // 'hello'
 
-str1 = 'world';
+str1 = "world";
 console.log(str2); // str2에 할당된 값은 여전히 'hello' 입니다.
