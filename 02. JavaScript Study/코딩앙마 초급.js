@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko-KR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>코딩앙마 초급</title>
-</head>
-<body>
-  <script>
-// 변수
+console.log("----------변수----------");
 /*
 변수 선언할 때,
 변하지 않는 값은 const, 변할 수 있는 값은 let으로 선언한다.
@@ -21,7 +11,7 @@ tip: const로 먼저 변수 선언 후 let으로 수정할 부분은 그때 수�
 5. 변수명은 읽기 쉽고 이해할 수 있게 선언한다.
 */
 
-// 자료형
+console.log("----------자료형----------");
 
 /* 
 문자형(string): ("" ,'', ``)
@@ -77,7 +67,7 @@ let result = ++num;
 // 비교연산자
 
 /* 
-=: 값을 할당한다,
+= 값을 할당한다,
 == 같은지 비교한다.
 === type까지 비교한다.
 != 다른지 비교한다.
@@ -318,6 +308,3 @@ let add = (num1, num2) => {
   for(let day of days) {
     console.log(day);
   }
-  </script>
-</body>
-</html>

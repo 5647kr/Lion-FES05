@@ -70,7 +70,7 @@ console.log(typeof [10, 20, 30]); // array 인데 typeof로 출력하면 object�
 console.log(typeof {a: 10, b: 20});
 console.log(typeof /정규표현식/gi);
 
-console.log('----------------------------');
+console.log("----------형 변환----------");
 
 // 형 변환(num -> string / string -> num)
 

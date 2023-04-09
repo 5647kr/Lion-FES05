@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko-KR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5th]JavaScript number</title>
-</head>
-<body>
-  // isNaN
+// isNaN
 /* https://en.wikipedia.org/wiki/IEEE_754 Because 'Not a Number' is not a number, and is not equal to anything, including Not a Number. */
 
 // console.log(NaN === NaN);
@@ -45,7 +36,7 @@ console.log(Number.isNaN(null)); // false
 console.log(Number.isNaN(NaN)); // true
 
 /*
-// https://www.designcise.com/web/tutorial/what-is-the-difference-between-isnan-and-number-isnan-in-javascript
+https://www.designcise.com/web/tutorial/what-is-the-difference-between-isnan-and-number-isnan-in-javascript
 
 x                Number(x)    isNaN(x)
 undefined        NaN            true
@@ -61,5 +52,4 @@ undefined        false                    false
 'foo'            false                    false
 new Date('')    false                    false
 new Number(0/0)    false                    false
-</body>
-</html>
+*/

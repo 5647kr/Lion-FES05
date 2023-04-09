@@ -1,48 +1,38 @@
-<!DOCTYPE html>
-<html lang="ko-KR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>6th]JavaScript 코드쇼맨쉽</title>
-</head>
-<body>
-  <script>
-    // step1
-    fetch('http://test.api.weniv.co.kr/mall')
-    .then(data => data.json())
-    .then(data => console.log(data))
+// step1
+fetch('http://test.api.weniv.co.kr/mall')
+.then(data => data.json())
+.then(data => console.log(data))
 
-    // step2
-    fetch('http://test.api.weniv.co.kr/mall')
-    .then(data => data.json())
-    .then(data => {
-      data.forEach(item => {
-        console.log(item);
-      });
-    })
+// step2
+fetch('http://test.api.weniv.co.kr/mall')
+.then(data => data.json())
+.then(data => {
+  data.forEach(item => {
+    console.log(item);
+  });
+})
 
-    // step3 
-    fetch('http://test.api.weniv.co.kr/mall')
-    .then(data => data.json())
-    .then(data => {
-      data.forEach(item => {
-        console.log(item.thumbnailImg);
-        console.log(item.productName);
-        console.log(item.price);
-      });
-    })
+// step3 
+fetch('http://test.api.weniv.co.kr/mall')
+.then(data => data.json())
+.then(data => {
+  data.forEach(item => {
+    console.log(item.thumbnailImg);
+    console.log(item.productName);
+    console.log(item.price);
+  });
+})
 
-    // step4
-    fetch('http://test.api.weniv.co.kr/mall')
-    .then(data => data.json())
-    .then(data => {
-      data.forEach(item => {
-        console.log('http://test.api.weniv.co.kr/' + item.thumbnailImg);
-        console.log(item.productName);
-        console.log(item.price);
-      });
-    })
+// step4
+fetch('http://test.api.weniv.co.kr/mall')
+.then(data => data.json())
+.then(data => {
+  data.forEach(item => {
+    console.log('http://test.api.weniv.co.kr/' + item.thumbnailImg);
+    console.log(item.productName);
+    console.log(item.price);
+  });
+})
 
 // step5 DOM을 생성하여 화면에 출력되게 해봅시다!
 fetch('http://test.api.weniv.co.kr/mall')
@@ -68,7 +58,7 @@ fetch('http://test.api.weniv.co.kr/mall')
     document.body.appendChild(main)
   })
 
-  // step6 DOM을 생성하여 화면에 출력되게 해봅시다!
+// step6 DOM을 생성하여 화면에 출력되게 해봅시다!
 fetch('http://test.api.weniv.co.kr/mall')
   .then(data => data.json())
   .then(data => {
@@ -88,11 +78,8 @@ fetch('http://test.api.weniv.co.kr/mall')
       productCard.appendChild(productimg)
       productCard.appendChild(productName)
       productCard.appendChild(productPrice)
-
+      
       main.appendChild(productCard)
     })
     document.body.appendChild(main)
   })
-  </script>
-</body>
-</html>
