@@ -5,71 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="calculator.css">
-  <title>calculator</title>
+  <title>계산기</title>
 </head>
 <body>
-  <div class="calculator">...
-    <div class="result">
-
+  <div class="container">
+    <div class="result-box">
+      <label for="current-cal" class="a11y-hidden">계산진행창</label>
+      <input type="number" id="current-cal">
+      <label for="input-num" class="a11y-hidden">계산입력창</label>
+      <input type="number" id="input-num">
     </div>
-    <div class="btn-box">
-      <div class="cal-btn">
-        <button>C</button>
-      </div>
-      <div class="cal-btn">
-        <button>X<sup>2</sup></button>
-      </div>
-      <div class="cal-btn">
-        <button>÷</button>
-      </div>
-      <div class="cal-btn">
-        <button>빼기</button>
-      </div>
-      <div class="cal-btn">
-        <button>7</button>
-      </div>
-      <div class="cal-btn">
-        <button>8</button>
-      </div>
-      <div class="cal-btn">
-        <button>9</button>
-      </div>
-      <div class="cal-btn">
-        <button>X</button>
-      </div>
-      <div class="cal-btn">
-        <button>4</button>
-      </div>
-      <div class="cal-btn">
-        <button>5</button>
-      </div>
-      <div class="cal-btn">
-        <button>6</button>
-      </div>
-      <div class="cal-btn">
-        <button>-</button>
-      </div>
-      <div class="cal-btn">
-        <button>1</button>
-      </div>
-      <div class="cal-btn">
-        <button>2</button>
-      </div>
-      <div class="cal-btn">
-        <button>3</button>
-      </div>
-      <div class="cal-btn">
-        <button>+</button>
-      </div>
-      <div class="cal-btn">
-        <button>0</button>
-      </div>
-      <div class="cal-btn">
-        <button>.</button>
-      </div>
-      <div class="cal-btn">
-        <button>=</button>
-      </div>
+    <div class="button-box">
+      <button class="">루트</button>
+      <button class="">제곱</button>
+      <button class="reset">C</button>
+      <button class="divide">÷</button>
+      <button class="numbtn seven">7</button>
+      <button class="numbtn eight">8</button>
+      <button class="numbtn nine">9</button>
+      <button class="multi">X</button>
+      <button class="numbtn four">4</button>
+      <button class="numbtn five">5</button>
+      <button class="numbtn six">6</button>
+      <button class="">-</button>
+      <button class="numbtn one">1</button>
+      <button class="numbtn two">2</button>
+      <button class="numbtn three">3</button>
+      <button class="plus">+</button>
+      <button class="numbtn zero">0</button>
+      <button class="dot">.</button>
+      <button class="result">=</button>
     </div>
   </div>
 </body>
