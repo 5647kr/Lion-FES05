@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd]JavaScript DOM</title>
+  <style>
+    /* ----------textcontent vs innerHTML vs innerTEXT---------- */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<!-- ----------textcontent vs innerHTML vs innerTEXT---------- -->
+<ul>
+  <li>
+    <figure></figure>
+    <img src="#" alt="잭필드">
+    <figcaption>
+      상품 가격: 39,990원 <span class="hidden">(주의)VIP만 받을 수 있는 혜택입니다.</span>
+    </figcaption>
+  </li>
+</ul>
+
+<!-- ----------innerHTML 오류---------- -->
+
+<p>hello</p>
+
+<!-- ----------속성 제어하기---------- -->
+<p class="p1">hello1</p>
+
+<!-- ----------set attribute---------- -->
+
+<p id="mytxt">hello2</p>
+<img class="myimg1" src='https://static.ebs.co.kr/images/public/lectures/2014/06/19/10/bhpImg/44deb98d-1c50-4073-9bd7-2c2c28d65f9e.jpg'>
+
+<!-- ----------data---------- -->
+<img
+  class="myimg2"
+  src="battle-cruiser.png"
+  data-ship-id="324"
+  data-weapons="laser"
+  data-health="400"
+  data-mana="250"
+  data-skill="yamato-cannon"
+/>
+
+  <script src="2nd]JavaScript DOM.js"></script>
+</body>
+</html>
