@@ -25,7 +25,6 @@ for(const i in arr2) {
 
 console.log("----------반복문 for in 2----------");
 
-console.log("for in2");
 let arr3 = [10, 20, 30, 40, 50];
 let obj1 = {"one": 10, "two": 20};
 for(const i in obj1) {
