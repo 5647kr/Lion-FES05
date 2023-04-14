@@ -13,7 +13,7 @@ div {
 h2 {
   border: 1px solid currentColor;
 }
-/* currentcolor: 부모색상을 상속받는다. */
+/** currentcolor: 부모색상을 상속받는다. */
 
 
 /* font-family: 글꼴 */

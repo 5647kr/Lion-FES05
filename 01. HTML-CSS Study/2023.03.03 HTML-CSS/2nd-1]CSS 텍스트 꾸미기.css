@@ -7,18 +7,21 @@
 }
 
 /* text-align */
+/* 텍스트의 가로정렬을 설정한다. */
 .align {
-  text-align: justify;
-  word-break: break-all;  /* justufy 때문에 사용한다. */
+  text-align: justify; /* justify: 양쪽 정렬 */
+  word-break: break-all;  /* justify 때문에 사용한다. */
 }
 
 /* vertical-align */
+/* 텍스트의 세로정렬을 설정한다. */
+/*! 인라인, 인라인 블록 및 테이블 셀요소에만 적용된다. */
 .va {
   font-size:2rem;
 }
 .va strong {
   font-size: 0.5em;
-  vertical-align: top;
+  vertical-align: center;
 }
 
 /* line-height */
@@ -27,24 +30,24 @@
 } /* 배수로 사용하는것이 좋다. */
 
 /* letter-spacing */
+/* 글자 하나하나를 분리시킨다. */
 .ls {
   letter-spacing: 20px;
 }
 
 /* word-spacing */
+/* 단어 하나하나를 분리시킨다. */
 .ws {
   word-spacing: 20px;
 }
 
 /* text-indent */
+/* 들여쓰기 */
 .ti {
   text-indent: 2em;
 }
 
 /* word-break */
-
-
-/* text-overflow */
 
 .tof {
   width: 400px;

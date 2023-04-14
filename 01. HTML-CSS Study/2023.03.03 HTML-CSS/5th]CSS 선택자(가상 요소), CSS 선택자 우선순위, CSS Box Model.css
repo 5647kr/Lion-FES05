@@ -1,5 +1,5 @@
 /* CSS: CSS 선택자(가상 요소) */
-
+/*! 빈태그 img, br, input 등에서는 적용할 수 없다. */
 input {
   color: royalblue;
 }
@@ -8,6 +8,10 @@ input::placeholder {
 }
 
 /* CSS: CSS 선택자 우선순위 */
+/*
+1. 후자우선의 원칙
+2. 구체성의 원칙
+*/
 
 p {
   color: red;

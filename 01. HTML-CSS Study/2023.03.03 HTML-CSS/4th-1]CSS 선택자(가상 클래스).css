@@ -8,7 +8,7 @@ body {
   background: var(--main-color);
 }
 
-li:first-child {
+li:first-child { /* 형제 요소 그룹 중 첫번째 요소(즉 부모에 first-child를 하는것이 아니다) */
   color: red;
 }
 
@@ -21,7 +21,7 @@ li:nth-child(odd) {
 }
 /* 홀수 */
 
-li:nth-child(even) {
+li:nth-child(even) { /* even = 2n */
   text-decoration: line-through;
 }
 /* 짝수 */
