@@ -2,6 +2,7 @@ console.log("----------number vs parseInt 1----------");
 
 console.log(Number(true));
 console.log(Number(false));
+
 console.log(parseInt(true));
 console.log(parseInt(false));
 
@@ -28,6 +29,7 @@ console.log("----------number vs parseInt 3----------");
 console.log(Number("        10")); // 10
 console.log(Number("10        ")); // 10
 console.log(Number("    10    ")); // 10
+
 console.log(parseInt("        10")); // 10
 console.log(parseInt("10        ")); // 10
 console.log(parseInt("    10    ")); // 10

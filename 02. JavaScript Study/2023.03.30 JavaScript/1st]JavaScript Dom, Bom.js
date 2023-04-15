@@ -52,7 +52,7 @@ console.log("----------dir----------");
 let data3 = [10, 20, 30];
 console.dir(data3);
 
-// console.info(info)
+// console.info(info) 자주 사용하지 않는다.
 
 // console.warn(warn)
 

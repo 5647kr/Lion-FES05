@@ -52,7 +52,7 @@ console.log("----------symbol----------");
 // 고유한 값을 만들 때 symbol을 사용한다.
 console.log(typeof Symbol());
 
-console.log("----------객체타입----------");
+console.log("----------참조타입----------");
 
 // 객체타입(object types): object
 /* 
@@ -72,12 +72,14 @@ console.log(typeof /정규표현식/gi);
 
 console.log("----------형 변환----------");
 
-// 형 변환(num -> string / string -> num)
+// (num => string / string => num)
 
 let hojun = 10;
 console.log(hojun.toString());
 
-console.log(+"10"); // 실무팁
-console.log(Number("10")); // 권하지 않는다.
-console.log(parseInt("10")); // 권함
-console.log(parseFloat("10.1"));
+console.log(typeof "10");
+console.log(typeof +"10"); // 실무팁
+console.log(typeof Number("10")); // 권하지 않는다.
+console.log(typeof parseInt("10")); // 권함
+console.log(typeof parseFloat("10.1"));
+

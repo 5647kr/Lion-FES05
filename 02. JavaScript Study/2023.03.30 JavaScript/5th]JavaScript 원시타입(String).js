@@ -13,9 +13,9 @@ let test2 = "ABCDEFGHIJK";
 console.log(test2.length); // length: 문자의 개수를 확인할 수 있다.
 
 console.log("----------indexOf, search----------");
-
+// 특정한 키워드의 위치를 확인할 수 있다.
 let test3 = "ABCDEFGHIJK";
-console.log(test3.indexOf("E")); // 특정한 키워드의 위치를 확인할 수 있다.
+console.log(test3.indexOf("E")); 
 console.log(test3.search("E"));
 console.log(test3.indexOf("Z")); // 없는값은 -1
 console.log(test3.search("Z")); // 없는값은 -1

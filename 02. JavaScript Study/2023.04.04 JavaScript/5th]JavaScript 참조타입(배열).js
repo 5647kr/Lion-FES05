@@ -1,3 +1,11 @@
+console.log("----------filter----------");
+
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arr2 = arr1.filter(function (el) {
+  return el % 2 === 0
+})
+console.log(arr2);
+
 console.log("----------모음 제거----------");
 
 Array.from("hello world").filter(v => !["a", "e", "i", "o", "u"].includes(v));
