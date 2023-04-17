@@ -16,14 +16,12 @@ delete human.job;
 console.log("age" in human);
 
 console.log("----------in 연산자----------");
-
 // in 연산자 (다른 언어와 동작방식이 달라 주의해야한다.)
+
 console.log(20 in [10, 20, 30, 40]);
 console.log("length" in [10, 20, 30, 40]);
 
 console.log("----------객체의 메소드----------");
-
-// 객체의 메소드
 
 const aespa = {
   members: ['카리나', '윈터', '지젤', '닝닝'],

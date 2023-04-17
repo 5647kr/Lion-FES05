@@ -13,9 +13,8 @@ console.log(Array.from("hello world").filter(v => !["a", "e", "i", "o", "u"].inc
 
 console.log("----------reduce----------");
 
-// 0을 항상 넣어준다.(암기한다.) 배열의 값을 합한다
 const arr3 = [1, 2, 3, 4, 5];
-arr3.reduce((a, c) => a + c, 0);
+arr3.reduce((a, c) => a + c, 0); // 0을 항상 넣어줘야하는걸 기억할 것, 배열의 값을 합한다
 console.log(arr3.reduce((a, c) => a + c, 0));
 
 console.log("----------includes----------");

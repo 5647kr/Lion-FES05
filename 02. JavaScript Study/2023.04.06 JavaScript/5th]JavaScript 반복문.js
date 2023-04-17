@@ -107,6 +107,7 @@ result3 + b[9] => "hello wor" + "l" => "hello worl"
 result3 + b[10] => "hello worl" + "d" => "hello world"
 */
 console.log("--------------------");
+
 console.log(result4);
 /* 
 b[0] + result4 => "h" + "" => "h"
