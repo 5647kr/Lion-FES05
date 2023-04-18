@@ -1,6 +1,6 @@
 console.log("----------함수 1----------");
 
-// 읽어볼만한 문헌 : https://ko.javascript.info/function-basics
+// 읽어볼만한 문헌: https://ko.javascript.info/function-basics
 /* 
 함수를 사용하는 이유
 1. 재사용성이 높아진다.
