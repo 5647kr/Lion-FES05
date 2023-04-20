@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6th]JavaScript 최적화</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* transition: .2s; */
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script>
+    // const div = document.querySelector("div");
+    // let location = 0;
+    // document.addEventListener("keyup", (event) => {
+    //   if(event.keyCode == 37) {
+    //     location += 10
+    //     div.style.transform
+    //   } 
+    // })
+
+    console.log("----------최적화 실습 해설----------");
+
+    const target = document.querySelector("div");
+    let pos = 0;
+    // 사용자가 어떤 키를 눌렀는지 정보를 저장하는 객체
+    let keys = {};
+    document.addEventListener("keydown", move);
+    document.addEventListener("keyup", stop);
+
+    // 사용자가 키를 눌렀을 때 실행
+    function move(event) {
+      keys[event.key] = true;
+      console.log(keys);
+    }
+    
+    // 사용자가 키에서 손을 땔 때 실행
+    function stop(event) {
+      keys[event.key] = false;
+      console.log(keys);
+    }
+
+    // function move(event) {
+    //   const keyName = event.key;
+    //   console.log(keyName);
+      
+    //   if(keyName === "ArrowRight") {
+    //     pos = pos + 5
+    //     target.style.transform = `translateX(${pos}px)`;
+    //   } else if(keyName === "ArrowLeft") {
+    //     pos = pos - 5
+    //     target.style.transform = `translateX(${pos}px)`;
+    //   }
+    // }
+
+    function play() {
+      if(keys.ArrowRight) {
+        pos += 5;
+        target.style.transform = `translateX(${pos}px)`;
+      }
+      if(keys.ArrowLeft) {
+        pos -= 5;
+        target.style.transform = `translateX(${pos}px)`;
+      }
+      requestAnimationFrame(play);
+    }
+    play();
+  </script>
+</body>
+</html>
