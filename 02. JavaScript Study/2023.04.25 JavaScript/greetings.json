@@ -1,0 +1,12 @@
+{
+  "greetings": [
+    {
+      "userName": "jaehyun",
+      "greetings": "기사가 되시겠습니까?"
+    },
+    {
+      "userName": "wonbum",
+      "greetings": "근위병이 되시겠습니까?"
+    }
+  ]
+}

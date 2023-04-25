@@ -34,32 +34,42 @@ button {
   background-color: #fff;
 }
 
-.memo_write {
+.memo {
   border: 1px solid black;
   background-color: #ffff99;
-  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 250px;
   padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   min-height: 250px;
   box-shadow: 10px 10px 10px gray;
   box-sizing: border-box;
 }
-.memo_write.list {
+.memo.write {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.memo.list {
+  border: 1px solid black;
+  background-color: #ffff99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  padding: 20px;
+  min-height: 250px;
+  box-shadow: 10px 10px 10px gray;
+  box-sizing: border-box;
   position: static;
   top: 0;
   left: 0;
   transform: translate(0, 0);
 }
 
-
-
-.memo_write  * {
+.memo * {
   font-size: 16px;
 }
 textarea, input {
