@@ -6,6 +6,10 @@ body, ul {
   padding: 0;
   margin: 0;
 }
+p {
+  font-size: 16px;
+  margin: 0;
+}
 /* /reset css */
 
 button {
@@ -25,13 +29,14 @@ button {
   bottom: 30px;
   right: 30px;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 100px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
+
 }
 
 .memo {
@@ -52,7 +57,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.memo.list {
+.list {
   border: 1px solid black;
   background-color: #ffff99;
   display: flex;
@@ -60,13 +65,14 @@ button {
   justify-content: space-between;
   width: 250px;
   padding: 20px;
-  min-height: 250px;
+  height: 250px;
   box-shadow: 10px 10px 10px gray;
   box-sizing: border-box;
   position: static;
   top: 0;
   left: 0;
   transform: translate(0, 0);
+  overflow: auto;
 }
 
 .memo * {
@@ -83,4 +89,15 @@ textarea, input {
 .memo_btn button {
   background-color:#ffff99;
   border: none;
+}
+
+.del {
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  right: 10px;
+  top: 10px;
 }
