@@ -1,0 +1,37 @@
+/* reset css */
+body {
+  font-size: 10px;
+  font-family: 'East Sea Dokdo', cursive;
+  background-image: url("./img/dark_wood_bg1.jpg");
+  background-size: cover;
+}
+body, h1, h2, h3, h4, h5, h6, p, button, ul, li {
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+}
+button {
+  border: initial;
+  background-color: initial;
+  font: inherit;
+  
+}
+/* //reset css */
+
+/* layout */
+#container-wrapper {
+  margin: auto;
+  width: 750px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#item-wrap {
+  box-shadow: inset 0 0 10px black;
+}
+#purchase-wrap {
+  box-shadow: inset 0 0 10px blue;
+}
+/* //layout */
