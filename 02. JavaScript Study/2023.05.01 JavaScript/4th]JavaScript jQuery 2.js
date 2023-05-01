@@ -1,0 +1,1 @@
+$("p:contains(world)").css("color", "red");

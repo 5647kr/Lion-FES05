@@ -8,6 +8,3 @@ const calendar = document.querySelector(".btn3");
  * memo, todo, calendar가 위로 올라온다.
  * x를 누르면 다시 memo, todo, calendar가 아래로 들어간다. */
 
-add.addEventListener("click", () => {
-  add.style.rotate("25%");
-})
