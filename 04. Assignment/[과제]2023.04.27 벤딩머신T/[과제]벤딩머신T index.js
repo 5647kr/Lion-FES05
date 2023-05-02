@@ -1,5 +1,5 @@
 import ColaGenerator from "./[과제]벤딩머신T colaGenerator.js";
-import VendingMachineEvent from "./[과제]벤딩머신T VendingMachineEvent.js";
+import VendingMachineEvent from "./[과제]벤딩머신T vendingMachineEvent.js";
 
 const colaGenerator = new ColaGenerator();
 const vendingMachineEvent = new VendingMachineEvent();

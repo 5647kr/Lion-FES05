@@ -1,26 +1,35 @@
 /* reset css */
 body {
   font-size: 10px;
-  font-family: 'East Sea Dokdo', cursive;
+  font-family: "East Sea Dokdo", cursive;
   /* background-image: url("./img/dark_wood_bg1.jpg"); */
   background-size: cover;
 }
-body, h1, h2, h3, h4, h5, h6, p, button, ul, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+li {
   padding: 0;
   margin: 0;
 }
-ul, li {
+ul,
+li {
   list-style: none;
 }
 button {
   border: initial;
   background-color: initial;
   font: inherit;
-}
-/* [!]버튼 활성화일 경우만 커서를 포인터로 변경합니다 */
-button:enabled {
   cursor: pointer;
 }
+
 .a11y-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -51,6 +60,7 @@ h1 {
   background-position: 50%, 90px;
   background-repeat: no-repeat;
   background-size: 400px 200px;
+
   /* color: #fff; */
   font-size: 9em;
   text-align: center;
@@ -75,62 +85,47 @@ h1 {
   width: 100%;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px ;
+  box-shadow: 3px 3px 10px;
   padding: 10px;
-  position: relative;
-}
-.item-btn div {
-  font-size: 20px;
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
-  border-radius: 50%;
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .item-btn img {
   width: 42px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+
 .item-btn p,
-.item-btn span {
+span {
   font-size: 2em;
-}
-.item-name {
-  display: block;
 }
 /* /shopping-container */
 
 /* purchase-wrap layout */
 #purchase-wrap {
   display: grid;
-  grid-template-rows: .5fr 3fr 3fr;
+  grid-template-rows: 0.5fr 3fr 3fr;
   gap: 10px;
   padding: 20px;
   box-shadow: inset 0 0 10px orange;
 }
 #my-money {
   box-shadow: inset 0 0 10px darkblue;
-  /* width: 100%; */
+  width: 100%;
 }
+
 #shopping-list {
   display: flex;
   flex-direction: column;
   padding: 10px;
   box-sizing: border-box;
   box-shadow: inset 0 0 10px skyblue;
-  /* width: 100%; */
+  width: 100%;
 }
 #pocket-list {
   padding: 10px;
   box-sizing: border-box;
   box-shadow: inset 0 0 10px royalblue;
-  /* width: 100%; */
+  width: 100%;
 }
 h3 {
   font-size: 3em;
@@ -155,13 +150,13 @@ h3 {
   padding: 10px;
   box-sizing: border-box;
   box-shadow: inset 0 0 10px greenyellow;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 129px;
 }
 .shopped-list {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 16px;
   box-shadow: inset 0 0 10px darkgreen;
   width: 100%;
   position: relative;
@@ -186,7 +181,7 @@ h3 {
   width: 30px;
 }
 .shopped-list span {
-  font-size: 1.6em;
+  width: 30px;
 }
 .shopped-list button {
   font-size: 2em;
@@ -208,46 +203,26 @@ h3 {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: .5fr; /* 이거 문제였음 기록할 것! */
   gap: 12px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 .pocket-item-list {
   width: 64%;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px ;
+  box-shadow: 3px 3px 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  position: relative;
-}
-.pocket-item-list div {
-  font-size: 20px;
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
-  border-radius: 50%;
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .pocket-item-img {
   width: 32px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-.pocket-item-list p,
-.pocket-item-list button {
-  font-size: 1.6em;
-}
 /* /pocket-list */
-
 
 /* #shopping-container ul {
   display: grid;
@@ -266,15 +241,6 @@ h3 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
- */
-
-/* 
-추가할것
-1. 품절 하나 넣기
-2. 주문목록 li의 요소들의 위치 고정시키기
-2.1 주문목록 li의 요소 글자크기 키우기
-2.2 주문목록 li의 갯수 화살표로 제어하기
-3. 주머니 아이템이 4개 이하일때 높이값 고정시키기
-
-
-*/
+.item-btn p, span {
+  font-size: 2em;
+} */
