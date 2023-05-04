@@ -5,4 +5,4 @@ Type ".help" for more information.
 > global.console.log("hello");
 hello
 undefined
- */y
+ */
