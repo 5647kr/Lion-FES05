@@ -209,13 +209,6 @@ h2 {
   font-size: 2em;
   margin-left: 20px;
 }
-.shopped-list input {
-  border: 1px solid;
-  font-family: inherit;
-  font-size: 2em;
-  background-color: transparent;
-  width: 30px;
-}
 .shopped-list-count,
 .shopped-list-price {
   font-size: 1.6em;
@@ -357,14 +350,66 @@ h2 {
 
 /* sell-wrap */
 #sell-wrap {
-  box-shadow: inset 0 0 10px red;
+  /* box-shadow: inset 0 0 10px red; */
   background: url(./img/section3-1.png) no-repeat 0 0 / 100% 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 390px;
+  width: 300px;
   padding: 40px;
 }
-
+.sell-container {
+  padding: 10px;
+  box-sizing: border-box;
+  background: url(./img/old_paper_bg2.png);
+  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6); */
+  border-radius: 10px;
+}
+.sell-list {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  /* box-shadow: inset 0 0 10px darkgreen; */
+  border-bottom: 2px solid black;
+  border-radius: 1px;
+  width: 100%;
+  position: relative;
+}
+.sell-list:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sell-list img {
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.sell-list p {
+  font-size: 2em;
+  margin-left: 20px;
+}
+.sell-list-count,
+.sell-list-price {
+  font-size: 1.6em;
+  position: absolute;
+}
+.sell-list-count {
+  left: 46%;
+}
+.sell-list-price {
+  left: 70%;
+}
+.sell-btn {
+  /* box-shadow: inset 0 0 10px black; */
+  font-size: 2.5em;
+  display: block;
+  margin: 10px auto;
+}
+.total-sell {
+  justify-content: space-around;
+}
+.total-sell p,
+.total-sell span {
+  font-size: 2.5em;
+}
 /* sell-wrap */

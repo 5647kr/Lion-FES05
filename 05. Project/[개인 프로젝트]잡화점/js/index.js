@@ -8,3 +8,4 @@ const itemSell = new ItemSell();
 
 itemGenerator.setup();
 itemSell.setup();
+shoppingEvent.bindEvent();

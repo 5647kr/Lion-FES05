@@ -82,9 +82,3 @@ const init = () => {
   }
 };
 init();
-
-const int = fdsaf;
-
-var inst = fdsafa;
-
-let hello = fdsfdsa;

@@ -5,7 +5,6 @@ class ItemSell {
 
   async setup() {
     const response = await this.loadData();
-    console.log(response);
     this.sellItem(response);
   }
 

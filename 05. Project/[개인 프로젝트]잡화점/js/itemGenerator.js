@@ -5,7 +5,6 @@ class ItemGenerator {
 
   async setup() {
     const response = await this.loadData();
-    console.log(response);
     this.itemFactory(response);
   }
 
