@@ -1,0 +1,9 @@
+/* HTML: 텍스트와 관련된 태그2 */
+
+/* wbr 태그 */
+.ko-word-break {
+  word-break: keep-all;
+}
+.en-word-break {
+  word-break: normal;
+}

@@ -25,9 +25,16 @@
 }
 
 /* line-height */
-.lh {
+.lh1 {
   line-height: 20px;
 } /* 배수로 사용하는것이 좋다. */
+.box {
+  background-color: salmon;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
 
 /* letter-spacing */
 /* 글자 하나하나를 분리시킨다. */

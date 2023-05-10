@@ -4,7 +4,7 @@
 
 h1 {
   background-color: red;
-  color: transparent;
+  color: transparent; /*! font-color로 표기하지 않는다 */
   /* transparent: 투명한 색을 의미한다. */
 }
 div {
