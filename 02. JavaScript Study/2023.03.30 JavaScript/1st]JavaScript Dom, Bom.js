@@ -6,17 +6,17 @@ console.log("----------DOM----------");
 console.log("----------BOM----------");
 // BOM(Bowser Object Model)을 컨트롤한다.
 
-// window.alert() 
+//* window.alert() 
 // 브라우저에 메세지 다이얼로그를 띄웁니다.
 
-// window.prompt() 
+//* window.prompt() 
 // 브라우저에 사용자의 데이터를 입력받을 수 있는 입력 창을 띄웁니다.
 // 입력값이 숫자여도 문자열로 받는다.
 
-// window.confirm() 
+//* window.confirm() 
 // true 혹은 false 값을 반환하는 다이얼로그를 띄웁니다.
 
-// window.console.log() 
+//* window.console.log() 
 // 콘솔창에 로그 메세지를 보여줍니다.
 
 // 사용예시
@@ -28,7 +28,7 @@ console.log(
   "color:blue;font-size:16px"
 );
 */
-// console.error() 
+//* console.error() 
 //: 콘솔창에 에러 메세지를 보여줍니다.
 
 console.log("----------table 1----------");
