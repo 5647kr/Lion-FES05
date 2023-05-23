@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Fascinate&family=Kdam+Thmor+Pro&family=Noto+Sans+KR:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="inputText">
+  <input type="button" value="Click me!" onclick="
+  const value = document.getElementById('inputText').value
+  store.dispatch({type:'TEXT', text:value})">
+  <input type="button" value="Rounded!" onclick="
+  store.dispatch({type:'STYLE_BORDER', borderRadius:'10px'})
+  ">
+  <input type="button" value="Circle!" onclick="
+  store.dispatch({type:'STYLE_BORDER', borderRadius:'50px'})
+  ">
+  <input type="button" value="Rect!" onclick="
+  store.dispatch({type:'STYLE_BORDER', borderRadius:'0px'})
+  ">
+  <input type="button" value="border color: Red!" onclick="
+  store.dispatch({type:'STYLE_BORDER_COLOR', border:'5px solid red'})">
+  <input type="button" value="border color: Green!" onclick="
+  store.dispatch({type:'STYLE_BORDER_COLOR', border:'5px solid green'})">
+  <input type="button" value="border color: Blue!" onclick="
+  store.dispatch({type:'STYLE_BORDER_COLOR', border:'5px solid blue'})">
+
+  <br>
+  <br>
+
+  <div class="container">
+    <!-- (#item${}.item)*6 -->
+    <div id="item1" class="item"></div>
+    <div id="item2" class="item"></div>
+    <div id="item3" class="item"></div>
+    <div id="item4" class="item"></div>
+    <div id="item5" class="item"></div>
+    <div id="item6" class="item"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
