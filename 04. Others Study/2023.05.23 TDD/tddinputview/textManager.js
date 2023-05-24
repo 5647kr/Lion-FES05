@@ -4,7 +4,7 @@ class TextManager {
   }
   
   getValue() {
-    return this.Value.data;
+    return this.value.data;
   }
 
   setValue(newValue) {
