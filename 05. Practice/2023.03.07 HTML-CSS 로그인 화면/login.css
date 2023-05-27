@@ -1,0 +1,73 @@
+/* reset css */
+body {
+  font-size: 10px;
+}
+body, h1, h2, h3, h4, h5, h6, p, a, button, ul, li {
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+}
+button {
+  border: initial;
+  background-color: initial;
+}
+a {
+  text-decoration: none;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+/* /reset css */
+
+form {
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 19px 16px;
+  margin: 100px auto;
+}
+
+form h1 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+form .loginbtn {
+  background-color: #711bff;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 4px;
+  line-height: baseline;
+  margin-bottom: 17px;
+}
+
+form img {
+  width: 56px;
+  aspect-ratio: 56.58px / 10.8px;
+  object-fit: cover;
+  margin-right: 7px;
+  color: #fff;
+}
+
+.find-join .id a,
+.find-join .pw a {
+  font-size: 12px;
+  color: #767676;
+}
+
+.find-join .id a {
+  margin: ;
+  margin-left: 20px;
+}
