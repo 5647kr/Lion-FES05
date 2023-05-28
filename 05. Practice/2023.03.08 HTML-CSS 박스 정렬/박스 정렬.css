@@ -1,0 +1,39 @@
+.wrap{  
+  background:#ddd;
+  width:350px;
+  height:300px;
+}
+
+.box{
+  width:50px;
+  height:50px;
+  color:#fff;
+  text-align:center;
+  line-height:50px;
+  font-weight:bold;
+}
+
+.blue{background:royalblue;}
+.pink{background:salmon;}
+.yellow{background:gold;}
+
+.wrap > div {
+  height:300px;
+}
+
+.wrap,
+.left-side,
+.center,
+.right-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side,
+.center {
+  flex-direction: column;
+}
+
+.right-side {
+  flex-direction: column-reverse;
+}
