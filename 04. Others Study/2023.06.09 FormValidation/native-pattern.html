@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    input:required {
+      border: 1px solid green;
+    }
+
+    /*  */
+    input:invalid {
+      border: 1px solid red;
+    }
+
+    input:valid {
+      border: 1px solid teal;
+    }
+
+    input:required:invalid {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <label for="">사과를 입력하세요</label>
+    <input type="text" pattern="사과">
+
+    <label for="">사과와 배중 하나를 입력하세요</label>
+    <input type="text" pattern="사과|배">
+
+    <label for=""></label>
+    <input type="text" pattern="...">
+
+    <label for="">사과를 입력하세요</label>
+    <input type="text" pattern="[사,과,배][1,2,3]">
+
+    <label for="">한글만 입력하세요</label>
+    <input type="text" pattern="[ㄱ-ㅎㅏ-ㅗ가-힣0-9]*">
+
+    <button>제출</button>
+    <!-- 이메일을 입력하는 인풋창을 만들고 폼을 제출했을 때 만약 이메일 양식에 어긋나면 ‘알맞는 양식의 이메일 주소를 입력하세요’ 메세지를 출력하도록 합니다. 양식이 올바르다면 제출하도록 만들어보세요. -->
+
+    <!-- 사용자가 입력한 비밀번호를 벨리데이션하는 폼을 만들어 봅시다.
+input은 비밀번호, 비밀번호 확인 두 가지가 있어야하며
+
+이때 만약 
+1 input에 아무것도 입력하지 않았거나
+2 비밀번호 input과 비밀번호 확인 input의 값이 동일하지 않거나,
+3 비밀번호의 패턴이 정규표현식과 일치하지 않은 경우
+
+에러메시지를 출력하도록 만들어보세요 
+
+(?=.*[!@#$%^&*()_+=-])(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}
+
+
+-->
+  </form>
+</body>
+</html>
