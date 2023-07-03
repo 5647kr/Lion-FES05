@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 다중 스타일 시트 */
 @import url(#style1.css);
 @import url(#style2.css);
@@ -10,3 +11,17 @@ h3 {
   color: yellow;
 }
 
+=======
+/* 다중 스타일 시트 */
+@import url(#style1.css);
+@import url(#style2.css);
+@import url(#style3.css);
+
+
+/** CSS: CSS 적용하기 */
+
+h3 {
+  color: yellow;
+}
+
+>>>>>>> 3f30aedba3393f27d44b1e732f0c82c9a04cc335

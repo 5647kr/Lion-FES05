@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** CSS: 텍스트 꾸미기 */
 
 /** font color: 색상 */
@@ -55,4 +56,63 @@ h6 {
   text-decoration-color: royalblue;
   text-decoration-style: wavy;
   text-decoration-thickness: 5px;
+=======
+/** CSS: 텍스트 꾸미기 */
+
+/** font color: 색상 */
+/* 키워드, HEX(# + 16진수 표기법), rgb()등 다양한 방법으로 표기할 수 있다. */
+
+h1 {
+  background-color: red;
+  color: transparent; /*! font-color로 표기하지 않는다 */
+  /* transparent: 투명한 색을 의미한다. */
+  /*! 크롬개발자도구에서 color에 대한 명도대비를 확인할 수 있다. */
+}
+div {
+  color: sandybrown;
+}
+h2 {
+  border: 1px solid currentColor;
+}
+/** currentcolor: 부모색상을 상속받는다. */
+
+
+/** font-family: 글꼴 */
+
+/* font-weight: 굵기 */
+/* normal: 기본 (400) */
+/* bold: 굵게 (700) */
+/* lighter: 부모요소보다 한 단계 가볍게 */
+/* bolder: 부모요소보다 한 단계 두껍게 */
+/* 100~900 */
+
+
+/** text-transform */
+h3 {
+  text-transform: uppercase;
+}
+/* uppercase: 대문자로 변형 */
+/* lowercase: 소문자로 변형 */
+/* capitalize: 모든 단어의 첫글자를 대문자로 변형 */
+
+
+/** text-decoration: 텍스트 꾸미기 */
+h4 {
+  text-decoration: line-through;
+}
+/* text-decoration: color,line,style thickness */
+/* text-decoration-line */
+/* underline: 밑줄긋기 */
+/* overline: 오버라인 */
+/* line-through: 취소선 */
+h5 {
+  text-decoration: lime underline overline dashed auto;
+}
+
+h6 {
+  text-decoration: line-through underline overline;
+  text-decoration-color: royalblue;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px;
+>>>>>>> 3f30aedba3393f27d44b1e732f0c82c9a04cc335
 }

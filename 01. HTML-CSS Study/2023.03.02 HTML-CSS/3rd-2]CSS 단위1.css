@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* CSS: CSS 단위1 */
 
 .unit h1 {
@@ -17,4 +18,25 @@
 }
 .unit h6 {
   background-color: purple;
+=======
+/* CSS: CSS 단위1 */
+
+.unit h1 {
+  background-color: red;
+}
+.unit h2 {
+  background-color: orange;
+}
+.unit h3 {
+  background-color: yellow; 
+}
+.unit h4 {
+  background-color: green;
+}
+.unit h5 {
+  background-color: blue;
+}
+.unit h6 {
+  background-color: purple;
+>>>>>>> 3f30aedba3393f27d44b1e732f0c82c9a04cc335
 }
