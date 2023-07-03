@@ -1,5 +1,6 @@
 const container = document.querySelector("#root");
 
+// 환경변수
 const NEWSLIST_URL = 'https://api.hnpwa.com/v0/news/1.json';
 const CONTENT_URL = 'https://api.hnpwa.com/v0/item/$id.json';
 
@@ -9,6 +10,7 @@ const store = {
   datasPerPage: 10
 };
 
+// api 데이터 받아오는 함수
 async function getData(url) {
   try {
     const response = await fetch(url);
@@ -21,6 +23,7 @@ async function getData(url) {
   }
 }
 
+// api를 통해 받아온 데이터를 저장하는 함수
 async function newsFeed() {
   const newsFeed = await getData(NEWSLIST_URL);
   const totalPages = Math.ceil(newsFeed.length / store.datasPerPage);
