@@ -1,5 +1,20 @@
 /* CSS: CSS 단위1 */
 
-.unit p {
+.unit h1 {
+  background-color: red;
+}
+.unit h2 {
   background-color: orange;
+}
+.unit h3 {
+  background-color: yellow; 
+}
+.unit h4 {
+  background-color: green;
+}
+.unit h5 {
+  background-color: blue;
+}
+.unit h6 {
+  background-color: purple;
 }

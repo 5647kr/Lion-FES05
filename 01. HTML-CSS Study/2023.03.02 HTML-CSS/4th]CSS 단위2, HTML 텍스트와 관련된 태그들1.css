@@ -12,8 +12,70 @@ html {
 }
 
 .hello2 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .strong2 {
   font-size: 0.5rem;
+}
+
+/*? html 기준인 10px에서 0.5rem이면 5px이여야 하는데 왜 10px인가? */
+
+/* 추가 예정 */
+
+.px{
+  font-size:20px;
+}
+.px .btn1{
+  font-size:20px;
+  padding:4px 20px;
+  border-radius:0.2em;
+}
+.px .btn2{
+  font-size:40px;
+  padding:8px 40px;
+  border-radius:0.2em;
+}
+.px .btn3{
+  font-size:80px;
+  padding:16px 80px;
+  border-radius:0.2em;
+}
+
+
+.em{
+  font-size: 2em;
+}
+.em .btn1,
+.em .btn2,
+.em .btn3{
+  padding:0.2em 1em;
+  border-radius:0.2em;
+}
+.em .btn1{
+  font-size:1em;
+}
+.em .btn2{
+  font-size:2em;
+}
+.em .btn3{
+  font-size:4em;
+}
+
+.rem{
+  font-size:2rem;
+}
+.rem .btn1,
+.rem .btn2,
+.rem .btn3{
+  padding:0.2em 1em;
+  border-radius:0.2em;
+}
+.rem .btn1{
+  font-size:2rem;
+}
+.rem .btn2{
+  font-size:4rem;
+}
+.rem .btn3{
+  font-size:8rem;
 }

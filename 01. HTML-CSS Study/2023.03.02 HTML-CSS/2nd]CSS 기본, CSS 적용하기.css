@@ -1,0 +1,12 @@
+/* 다중 스타일 시트 */
+@import url(#style1.css);
+@import url(#style2.css);
+@import url(#style3.css);
+
+
+/** CSS: CSS 적용하기 */
+
+h3 {
+  color: yellow;
+}
+
