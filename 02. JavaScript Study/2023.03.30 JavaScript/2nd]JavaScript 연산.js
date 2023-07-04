@@ -5,7 +5,7 @@ const y = 3;
 console.log(x + y); // 더하기
 console.log(x - y); // 빼기
 console.log(x * y); // 곱하기
-console.log(x ** y);// 거듭제곱
+console.log(x ** y);// 제곱
 console.log(x / y); // 나누기
 console.log(x % y); // 나머지
 

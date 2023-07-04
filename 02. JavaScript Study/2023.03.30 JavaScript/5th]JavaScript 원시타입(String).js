@@ -5,12 +5,14 @@ console.log(test1 + test1);
 console.log(test1[0]);
 console.log(test1[2]);
 // Sass는 1부터 다른언어는 0부터 시작한다.
+// 공백도 포함한다.
 console.log(test1[-1]); // 지원하지 않는다.
 
 console.log("----------length----------");
 
 let test2 = "ABCDEFGHIJK";
-console.log(test2.length); // length: 문자의 개수를 확인할 수 있다.
+console.log(test2.length);
+// length: 문자의 개수를 확인할 수 있다.(1부터)
 
 console.log("----------indexOf, search----------");
 // 특정한 키워드의 위치를 확인할 수 있다.

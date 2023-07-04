@@ -1,5 +1,4 @@
 console.log("----------string----------");
-
 /* 
 특징:
 1. 순서가 있으며 0부터 시작하고, 띄어쓰기도 포함한다.
@@ -32,7 +31,8 @@ console.log("----------undefined----------");
 
 console.log(typeof undefined);
 let a;
-console.log(a); // a에 값이 없어 undefined로 출력된다.
+console.log(a); 
+// a에 값이 없어 undefined로 출력된다.
 
 console.log("----------null----------");
 // null(값이 비어있음을 명시적으로 나타낸다.)
@@ -54,7 +54,7 @@ console.log(typeof Symbol());
 
 console.log("----------참조타입----------");
 
-// 객체타입(object types): object
+//* 객체타입(object types): object
 /* 
 참조타입: 객체로서 저장한다.
 종류: Array, function
@@ -62,7 +62,8 @@ console.log("----------참조타입----------");
 1. 값을 변수에 저장할 때 값의 위치가 저장된다.
 2. 원시값을 다른 변수에 할당할때는 값의 자체가 저장되는것이 아닌 값의 참조(위치)가 저장된다.
 */
-// function
+
+//* function
 console.log(typeof function () {}); 
 
 // object
@@ -76,10 +77,14 @@ console.log("----------형 변환----------");
 
 let hojun = 10;
 console.log(hojun.toString());
+// console.log(10.toString());
+//! 10.까지를 소숫점으로 보기 때문에 권하지 않는다. 
 
 console.log(typeof "10");
 console.log(typeof +"10"); // 실무팁
 console.log(typeof Number("10")); // 권하지 않는다.
 console.log(typeof parseInt("10")); // 권함
 console.log(typeof parseFloat("10.1"));
-
+s
+console.log(typeof parseInt(true)); // NaN
+console.log(typeof parseInt(false)); // NaN

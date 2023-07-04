@@ -34,11 +34,7 @@ console.log(
 console.log("----------table 1----------");
 
 //: 콘솔창에 데이터를 테이블 형태로 제공합니다.
-let data1 = {
-  a: 10,
-  b: 20,
-  c: 30
-};
+let data1 = {a: 10, b: 20, c: 30};
 console.table(data1);
 
 console.log("----------table 2----------");
@@ -53,14 +49,14 @@ let data3 = [10, 20, 30];
 console.dir(data3);
 
 // console.info(info) 자주 사용하지 않는다.
-
-// console.warn(warn)
+// console.warn(warn) 자주 사용하지 않는다.
+// 실행은 하되 경고문구는 읽는 warn
 
 console.log("----------group----------");
 
+// 자주 사용은 안하지만 한번 사용할 때 중요하게 사용되는 것
 // console.group()
 // console.groupEnd()
-// 자주 사용은 안하지만 한번 사용할 때 중요하게 사용되는 것
 
 console.group('위니브')
 console.group('경영지원')

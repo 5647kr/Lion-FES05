@@ -21,7 +21,7 @@ console.log("----------변수의 특징----------");
 변수 선언(변할 수 있는 값): var, let
 상수 선언(변할 수 없는 값, 파이, DOM): const
 */
-// var은 키워드를 생략할 수 있으나 (엄격모드 에러)생략과 사용하지 말 것
+//! var은 키워드를 생략할 수 있으나 (엄격모드 에러)생략과 사용하지 말 것
 
 // let과 const는 블록 레벨 선언(scope)
 if(true) {
@@ -29,8 +29,8 @@ if(true) {
   console.log(x);
 }
 // console.log(x);
+//! 안에 console.log는 출력할 수 있지만, 밖에 console.log는 출력할 수 없다.
 /* 
-안에 console.log는 출력할 수 있지만, 밖에 console.log는 출력할 수 없다.
 const의 경우에는 반드시 초기화
 권하는 변수선언은 const를 권하는데 그 이유는 값 변경하지 못하고, 가독성을 높일 수 있다.
 */
@@ -39,3 +39,14 @@ const x = 100;
 let y = 1000;
 // 1000줄 코드
 console.log(x, y);
+
+const a = 10;
+// a = 12; error
+console.log(a);
+
+const b = [];
+b.push(10); // error(X)
+console.log(b);
+
+//? 왜 에러가 나지 않는걸까?
+// b가 가르키는 것이 배열자체이기 때문에 b에 10이라는 값을 push해도 b가 가르키는 배열자체에는 변화가 없기 때문에 에러가 나지 않는다.

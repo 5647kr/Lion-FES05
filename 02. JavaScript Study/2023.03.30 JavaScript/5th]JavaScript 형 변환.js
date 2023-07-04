@@ -2,7 +2,7 @@ console.log("----------형 변환(다른type -> string)----------");
 
 let hojun = 10;
 console.log(typeof hojun);
-console.log(typeof hojun.toString()); // 권하지 않는다.
+console.log(typeof hojun.toString()); //! 권하지 않는다.
 console.log(typeof ('' + 10 + 10));
 console.log('' + 10 + 10);
 // 문자열로 취급이 되어 20이 아닌 1010으로 출력된다.

@@ -13,10 +13,11 @@ console.log(i !== j); // i가 j랑 다른가 (변수의 타입을 확인한다.)
 
 console.log("----------비교연산 예시----------");
 
-const k = 1;
-const l = "1";
-console.log(k == l);
-console.log(k === l);
+const k = 1; // 수
+const l = "1"; // 문자
+console.log(k == l); // i가 j랑 같은가 (변수의 타입을 확인하지 않는다.)
+console.log(k === l); //! 권장 i가 j랑 같은가 (변수의 타입을 확인한다.)
+// 견고한 코딩, 성능상의 이점
 console.log(k != l);
 console.log(k !== l);
 
