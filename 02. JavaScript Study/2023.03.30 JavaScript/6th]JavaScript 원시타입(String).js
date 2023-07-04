@@ -61,6 +61,7 @@ let test1 = "aa bb cc dd";
 let test2 = "aa-bb-cc-dd";
 let test3 = "aa,bb,cc,dd";
 let test4 = "aa,bb-cc-dd"; // 중급자만
+// 아래처럼 출력되게 
 ["aa", "bb", "cc", "dd"]
 console.log(test1.split(" "));
 console.log(test2.split("-"));

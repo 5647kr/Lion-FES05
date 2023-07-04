@@ -33,7 +33,7 @@ console.log(
 
 console.log("----------table 1----------");
 
-//: 콘솔창에 데이터를 테이블 형태로 제공합니다.
+// 콘솔창에 데이터를 테이블 형태로 제공합니다.
 let data1 = {a: 10, b: 20, c: 30};
 console.table(data1);
 
