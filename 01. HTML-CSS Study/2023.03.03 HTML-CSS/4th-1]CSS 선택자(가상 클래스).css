@@ -8,7 +8,8 @@ body {
   background: var(--main-color);
 }
 
-li:first-child { /* 형제 요소 그룹 중 첫번째 요소(즉 부모에 first-child를 하는것이 아니다) */
+li:first-child { /* 형제 요소 그룹 중 첫번째 요소 */
+  /*! 즉 부모에 first-child를 하는것이 아니다 */
   color: red;
 }
 
@@ -36,12 +37,14 @@ li:not(:first-child) {
 }
 
 p:nth-of-type(3) {
+  /* p의 3번째 type을 선택한다. */
   color: yellow;
 }
 p:nth-child(3) {
   text-decoration: underline;
 }
-/* 3번째 요소가 p태그가 아니여서 적용이 안된다. */
+/*! 3번째 요소가 p태그가 아니여서 적용이 안된다. */
+
 div:only-of-type {
   border: 3px solid orange;
 }

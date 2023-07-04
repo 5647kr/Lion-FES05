@@ -8,10 +8,38 @@
   <title>4th-2]CSS 선택자(가상 요소)</title>
 </head>
 <body>
-<!-- CSS: CSS 선택자(가상 요소) -->
+<!--* CSS: CSS 선택자(가상 요소) -->
   <ul>
     <li>안녕하세요1</li>
     <li>안녕하세요2</li>
   </ul>
+
+  <!--* HTML: Block vs inline -->
+  <!-- Block -->
+  <!-- 
+    - 모든 너비를 차지한다.
+    - 블록 요소는 인라인 요소안에 중첩할 수 없지만,
+      인라인 요소는 블록 요소 안에 중첩할 수 있다.
+    - width, height, padding, border, margin 등 속성을 사용할 수 있다.
+    - div, p, nav, li, footer 등이 있다.
+  -->
+
+  <!-- inline -->
+  <!-- 
+    - 컨텐츠 만큼 공간만 차지한다.
+    - width, height 크기를 지정할 수 없고, padding, border,          
+      margin속성은 사용할 수 있다
+    - margin-top, bottom값을 지정할 수 없다.
+    - a, em, strong 등이 있다.
+  -->
+
+  |         |  block  | inline  | inlineblock |
+  |---------|---------|---------|-------------|
+  |요소 포함 |인라인요소|a태그만  |             |
+  |줄바꿈    |   O     |    X    |      X      |
+  |너비,높이 |    O     |    X    |      O      |
+  |padding  |     O    |    O    |      O      |
+  |margin   |     O    |    %    |      O      |
+  |border   |     O    |    O    |      O      |
 </body>
 </html>
