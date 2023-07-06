@@ -4,6 +4,7 @@ console.log("----------DOM----------");
 // document.write('hello');
 
 console.log("----------BOM----------");
+
 // BOM(Bowser Object Model)을 컨트롤한다.
 
 //* window.alert() 
@@ -29,7 +30,7 @@ console.log(
 );
 */
 //* console.error() 
-//: 콘솔창에 에러 메세지를 보여줍니다.
+// 콘솔창에 에러 메세지를 보여줍니다.
 
 console.log("----------table 1----------");
 

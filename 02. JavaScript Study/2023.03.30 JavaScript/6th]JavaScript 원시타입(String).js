@@ -1,17 +1,17 @@
 console.log("----------slice----------");
 
-// slice(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스-1
+//* slice(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스-1
 
 let text1 = "ABCDEFGHIJK";
 console.log(text1.slice(1, 3)); 
 // 1부터 시작해서 3전에 잘린다. start, end(-1)
-console.log(text1.slice(3)); // 1부터 마지막까지 start
+console.log(text1.slice(3)); // 3부터 마지막까지
 console.log(text1.slice(3, 1)); // 안됨
 console.log(text1.slice(2, -3)); // -3을 인식해서 2번째부터 뒤에서 -3번째 이전까지 잘라낸다.
 
 console.log("----------substring----------");
 
-// substring(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스-1
+//* substring(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스-1
 
 let text2 = "ABCDEFGHIJK";
 console.log(text2.substring(1, 3));
@@ -30,20 +30,26 @@ console.log(text3.replaceAll("CEO", "COO"));
 
 console.log("----------toLowercase,toUppercase----------");
 
+//* 소문자, 대문자로 변환한다. 
+
 let text4 = "paullab CEO Leehojun CEO";
 console.log(text4.toLowerCase());
 console.log(text4.toUpperCase());
 
 console.log("----------includes----------");
 
+//* 해당 문자가 포함되어 있는지를 확인한다.
+// boolean 값으로 반환한다.
+
 let text5 = "paullab CEO Leehojun CEO";
 console.log(text5.includes("CEO"));
 console.log(text5.includes("CDO"));
 
 // 많이 사용되는것 특히 알고리즘 문제
+
 console.log("----------메서드 채이닝----------");
 
-// .찍어서 계속 이어나가는 것을 의미한다.
+//* .찍어서 계속 이어나가는 것을 의미한다.
 
 let text6 = "paullab CEO Leehojun CEO";
 console.log(text6.replace("CEO", "CDO").includes("CDO").toString().toUpperCase());
@@ -74,7 +80,7 @@ console.log(test4.replace(",", "-").split("-"));
 
 console.log("----------trim----------");
 
-// 앞 뒤 공백 제거
+//* 앞 뒤 공백 제거
 
 let text8 = "                       hello world              ";
 console.log(text8.replaceAll(" ", ""));
@@ -82,6 +88,8 @@ console.log(text8.replaceAll(" ", ""));
 console.log(text8.trim());
 
 console.log("----------padStart 1----------");
+
+//* 공백을 채운다.
 
 let text9 = '99'
 console.log(text9.padStart(5, '0'));

@@ -50,6 +50,7 @@ console.log(2**53 -1); // 자바스크립트에서 취급하는 최대수
 console.log("----------symbol----------");
 
 // 고유한 값을 만들 때 symbol을 사용한다.
+// 볼일이 거의 없다.
 console.log(typeof Symbol());
 
 console.log("----------참조타입----------");
@@ -85,6 +86,5 @@ console.log(typeof +"10"); // 실무팁
 console.log(typeof Number("10")); // 권하지 않는다.
 console.log(typeof parseInt("10")); // 권함
 console.log(typeof parseFloat("10.1"));
-s
 console.log(typeof parseInt(true)); // NaN
 console.log(typeof parseInt(false)); // NaN

@@ -17,6 +17,7 @@ let ./img/profile = run; (X)
 */
 
 console.log("----------변수의 특징----------");
+
 /* 
 변수 선언(변할 수 있는 값): var, let
 상수 선언(변할 수 없는 값, 파이, DOM): const
