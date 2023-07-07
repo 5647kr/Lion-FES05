@@ -5,7 +5,7 @@
 * CSS 특강
 
 
-## 2023.03.30 수업일정
+## 2023.03.29 수업일정
 
 1교시: Tailwindcss <br >
 2교시: Tailwindcss <br >
