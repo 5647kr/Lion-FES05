@@ -1,8 +1,0 @@
-1교시: JavaScript: [DOM, BOM, 변수]
-2교시: JavaScript: [변수, 연산]
-3교시: JavaScript: [연산, 변수의 타입]
-4교시: JavaScript: [변수의 타입, String Type]
-5교시: JavaScript: [형 변환]
-6교시: JavaScript: [String Type]
-7교시: 자습
-8교시: 자습
