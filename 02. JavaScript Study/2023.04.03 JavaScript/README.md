@@ -12,12 +12,12 @@
 * true & false 계산 연습하기
 
 
-## 2023.03.30 수업일정
+## 2023.04.03 수업일정
 
-1교시: JavaScript: [DOM, BOM, 변수] <br >
-2교시: JavaScript: [변수, 연산] <br >
-3교시: JavaScript: [연산, 변수의 타입] <br >
-4교시: JavaScript: [변수의 타입, String Type] <br >
-5교시: JavaScript: [형 변환] <br >
-6교시: JavaScript: [String Type] <br >
+1교시: JavaScript[DOM, BOM, 변수] <br >
+2교시: JavaScript[변수, 연산] <br >
+3교시: JavaScript[연산, 변수의 타입] <br >
+4교시: JavaScript[변수의 타입, String Type] <br >
+5교시: JavaScript[형 변환] <br >
+6교시: JavaScript[String Type] <br >
 
