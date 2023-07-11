@@ -43,9 +43,9 @@ git push
 
 ## 2023.02.28 수업일정
 
-1교시: 기초 CS<br>
-2교시: 기초 CS <br>
-3교시: Git & Github <br>
-4교시: Git & Github <br>
-5교시: VSC 설정 & emmet 문법 <br>
-6교시: VSC 설정 & emmet 문법 <br>
+1교시: 기초 CS<br >
+2교시: 기초 CS <br >
+3교시: Git & Github <br >
+4교시: Git & Github <br >
+5교시: VSC 설정 & emmet 문법 <br >
+6교시: VSC 설정 & emmet 문법 <br >
