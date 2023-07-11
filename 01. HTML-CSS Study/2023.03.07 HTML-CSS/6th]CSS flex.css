@@ -1,4 +1,4 @@
-/* CSS: flex */
+/** CSS: flex */
 
 [class^="container"]:not(:first-child) {
   margin-top: 50px;
