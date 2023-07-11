@@ -35,10 +35,10 @@ console.log(x);
 x = x + 0.1;
 console.log(x);
 
-console.log("----------BigInt(***)----------");
-
+console.log("----------BigInt----------");
+//! 중요
 // JS에서 큰 숫자를 사용할 때에는 BigInt를 사용합니다.
-// BigInt를 여러분 회사에서 사용하지 않을 수도 있습니다.(추가된지 2년 되었습니다.)
+// BigInt를 회사에서 사용하지 않을 수도 있습니다.(추가된지 2년 되었습니다.)
 // The proposal belongs to ECMAScript 2020, which is the 11th edition
 // console.log(Number.MAX_SAFE_INTEGER)  // 2^53 - 1
 

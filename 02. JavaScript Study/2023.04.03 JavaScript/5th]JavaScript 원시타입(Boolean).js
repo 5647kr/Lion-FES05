@@ -1,5 +1,7 @@
 console.log("----------boolean 1----------");
 
+// 결과값이 true 또는 false로 출력된다.
+
 let a = 5;
 let b = 10;
 console.log(a > b); // false

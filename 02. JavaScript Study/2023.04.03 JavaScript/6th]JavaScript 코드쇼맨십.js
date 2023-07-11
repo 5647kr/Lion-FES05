@@ -1,3 +1,5 @@
+// 이해하지 말것 복붙
+
 // step1
 fetch('http://test.api.weniv.co.kr/mall')
 .then(data => data.json())

@@ -2,7 +2,7 @@ console.log("----------null 1----------");
 // 값이 없음을 나타내는 데이터 타입
 
 let value1;
-console.log(value1);
+console.log(value1); // undefined
 
 console.log("----------null 2----------");
 
