@@ -1,8 +1,0 @@
-1교시: HTML-CSS[Layout History / sections]
-2교시: HTML-CSS[[해보기]레이아웃 나누기]
-3교시: HTML-CSS[float / [해보기]레이아웃 만들기 / [해보기]레이아웃 만들기T]
-4교시: HTML-CSS[[해보기]로그인]
-5교시: HTML-CSS[[해보기]로그인T]
-6교시: HTML-CSS[웹접근성을 고려한 숨김처리 / flex]
-7교시: 자습
-8교시: 자습
