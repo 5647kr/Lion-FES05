@@ -1,6 +1,6 @@
 console.log("----------함수 1----------");
 
-// 읽어볼만한 문헌: https://ko.javascript.info/function-basics
+//참고 URL: https://ko.javascript.info/function-basics
 /* 
 함수를 사용하는 이유
 1. 재사용성이 높아진다.
@@ -8,7 +8,7 @@ console.log("----------함수 1----------");
 3. 구조파악이 용이하다.
 */
 
-// return, console.log 를 헷갈려한다.
+//!주의 return, console.log 를 헷갈려한다.
 
 function hello(para) {
   console.log(para);
@@ -21,6 +21,7 @@ console.log("----------함수 2----------");
 
 let x = console.log("hello");
 console.log(x);
+// return 값이 없어서 undefined가 출력된다.
 
 console.log("----------함수 3----------");
 

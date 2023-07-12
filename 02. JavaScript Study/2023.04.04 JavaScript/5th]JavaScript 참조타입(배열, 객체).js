@@ -1,6 +1,6 @@
 console.log("----------sort 1----------");
 
-// 메소드는 배열의 요소를 정렬하는데 숫자를 정렬할땐 제대로 되지 않는다.
+// sort는 배열의 요소를 정렬하는데 숫자를 정렬할땐 제대로 되지 않는다.
 const avengers = ["아이언맨", "스파이더맨", "헐크", "토르"];
 console.log(avengers.sort());
 
@@ -34,7 +34,7 @@ console.log(num5.sort((a, b) => {
   console.log(a - b);
   }));
 
-// https://www.notion.so/paullabworkspace/JavaScript-sort-compare-function-ff38f176e79e4c5d9ade9c4734620ffd
+//참고URL: https://www.notion.so/paullabworkspace/JavaScript-sort-compare-function-ff38f176e79e4c5d9ade9c4734620ffd
 
 console.log("----------sort 실무 사용----------");
 
@@ -51,7 +51,8 @@ function sort(key){
 }
 
 console.log("----------객체 1----------");
-// 키 와 값이 쌍으로 이루어져 있다.
+
+//* 키 와 값이 쌍으로 이루어져 있다.
 
 const human = {
   name: "hojun",
@@ -81,6 +82,7 @@ console.log(arr1[0]);
 console.log(arr1[1]);
 console.log(arr1[2]);
 console.log(arr1.length);
-// 배열이 아닌, 유사배열객체라고 한다.
+
+//! 배열이 아닌, 유사배열객체라고 한다.
 // 똑같은 요소로 만들어도 arr1이 순회할 때 더 빠르다.
 // 유사배열객체는 실무에서는 사용하지 않는다.

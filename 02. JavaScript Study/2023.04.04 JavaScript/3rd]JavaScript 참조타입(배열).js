@@ -13,7 +13,7 @@ console.log(arr2.splice(2, 2));
 
 console.log("----------slice 1----------");
 
-// slice(start, end): 자르지만 원본은 살아 있다. end는 하나 전까지 자른다.
+//* slice(start, end): 자르지만 원본은 살아 있다. end는 하나 전까지 자른다.
 
 const arr3 = ["사과", "바나나", "체리", "두리안", "베리", "딸기", "복숭아"];
 console.log(arr3.slice(1, 4));
@@ -24,12 +24,12 @@ console.log("----------slice 2----------");
 
 const arr4 = ["사과", "바나나", "체리", "두리안", "베리", "딸기", "복숭아"];
 console.log(arr4.slice(1));
-// slice(1, 4): 1부터 그 이후로 자른다.
+// slice(1): 1부터 그 이후로 자른다.
 console.log(arr4);
 
 console.log("----------forEach 1----------");
 
-// forEach: 배열의 각 요소에 대해 주어진 함수를 실행한다.
+//* forEach: 배열의 각 요소에 대해 주어진 함수를 실행한다.
 // 돌아가면서 작업할때 사용한다.
 
 const arr5 = [10, 20, 30, 40, 50];
@@ -104,8 +104,9 @@ console.log(arr15);
 
 console.log("----------map 1----------");
 
-// map: 데이터를 뽑는 용도로 사용하고 forEach랑 다르게 새로운 배열을 생성한다.
+//* map: 데이터를 뽑는 용도로 사용하고 forEach랑 다르게 새로운 배열을 생성한다.
 // map의 반환값은 배열이며, 원본배열은 변하지 않는다.
+// return을 사용해야 한다.
 const arr16 = [1, 2, 3];
 const arr17 = arr16.map(function (a) {
   return a ** 2;

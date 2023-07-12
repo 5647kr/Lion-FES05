@@ -16,6 +16,7 @@ delete human.job;
 console.log("age" in human);
 
 console.log("----------in 연산자----------");
+
 // in 연산자 (다른 언어와 동작방식이 달라 주의해야한다.)
 
 console.log(20 in [10, 20, 30, 40]);
@@ -30,12 +31,12 @@ const aespa = {
     return "적대적인 고난과 슬픔은 널 더 popping 진화시켜!"
   }
 };
-// hasOwnProperty v**
+//! hasOwnProperty 중요
 console.log(aespa.hasOwnProperty('itzy'));
 console.log(aespa.hasOwnProperty('sing'));
 
 console.log("----------key----------");
 
-// keys v***
+//! keys 중요
 console.log(Object.keys(aespa)); // 불편한 코드이다.
 console.log(Object.values(aespa));

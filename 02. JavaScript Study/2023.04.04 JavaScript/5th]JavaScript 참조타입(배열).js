@@ -15,6 +15,7 @@ console.log("----------reduce----------");
 
 const arr3 = [1, 2, 3, 4, 5];
 arr3.reduce((a, c) => a + c, 0); // 0을 항상 넣어줘야하는걸 기억할 것, 배열의 값을 합한다
+// 0은 초기값이다.
 console.log(arr3.reduce((a, c) => a + c, 0));
 
 console.log("----------includes----------");
@@ -32,8 +33,11 @@ console.log(arr5.join("!"));
 const arr6 = ["010", "5044", "2903"];
 console.log(arr6.join("-"));
 
+/* 
 const arr7 = [010, 5044, 2903];
 console.log(arr7.join("-"));
+8-5044-2903으로 출력됨 이진법
+*/
 
 console.log("----------2진법----------");
 

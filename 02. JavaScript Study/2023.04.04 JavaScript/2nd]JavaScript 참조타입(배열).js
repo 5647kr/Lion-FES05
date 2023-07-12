@@ -1,20 +1,20 @@
-console.log("----------배열 메서드----------");
+// 배열 메서드
 
 console.log("----------push----------");
 
-// push: 배열의 뒤, 마지막에 값을 추가한다.
+//* push: 배열의 뒤, 마지막에 값을 추가한다.
 const arr1 = [1, 2, 3];
 arr1.push(4);
 console.log(arr1);
 
 console.log("----------pop----------");
 
-// pop: 배열의 마지막에서 값을 꺼내고 그 꺼낸 값을 반환(return)한다.
+//* pop: 배열의 마지막에서 값을 꺼내고 그 꺼낸 값을 반환(return)한다.
 const arr2 = [1, 2, 3, 4, 5];
 console.log(arr2.pop());
 console.log(arr2);
 
-console.log("----------pop 응용----------");
+console.log("----------pop 반환----------");
 
 const arr3 = [1, 2, 3, 4, 5];
 const lastValue = arr3.pop();
@@ -22,21 +22,22 @@ console.log(lastValue);
 
 console.log("----------unshift----------");
 
-// unshift: 배열의 앞에 값을 추가한다.
+//* unshift: 배열의 앞에 값을 추가한다.
 const arr4 = ["사과", "바나나", "수박"];
 arr4.unshift("오이", "배");
 console.log(arr4);
 
 console.log("----------shift----------");
 
-// shift: 배열의 앞에서 값을 꺼내고 그 꺼낸 값을 반환(return)한다.
+//* shift: 배열의 앞에서 값을 꺼내고 그 꺼낸 값을 반환(return)한다.
 const arr5 = ["사과", "바나나", "수박"];
 console.log(arr5.shift()); 
 console.log(arr5);
 
 console.log("----------splice 추가 1----------");
 
-// splice: 배열의 요소를 추가, 제거 또는 교체한다.
+//* splice: 배열의 요소를 추가, 제거 또는 교체한다.
+
 // splice(start, deletecount, add)
 // arr.splice().splice(): splice는 arr가 아닌 삭제된 값을 반환하기 때문에 메소드 체이닝이 안된다.
 // 추가
@@ -67,8 +68,8 @@ console.log("----------splice 연습문제----------");
 const arr9 = [10, 20, 30, 40, 50];
 const x = [1, 2, 3];
 // splice만 사용하기
-arr9.splice(1, 0 , ...x);
-arr9.splice(7, 0 , ...x);
+arr9.splice(1, 0, ...x);
+arr9.splice(7, 0, ...x);
 console.log(arr9);
 
 console.log("----------splice 삭제 1----------");
