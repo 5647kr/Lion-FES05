@@ -1,0 +1,33 @@
+div {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+div:nth-child(1) {
+  background-color: #343f50;
+  border: 3px solid #000;
+  color: #fff;
+  box-shadow: inset 3px 3px #4a5568;
+}
+
+div:nth-child(2) {
+  background: linear-gradient(90deg, rgba(6,79,167,1) 64%, rgba(0,212,255,1) 100%);
+  border: 3px dashed gray;
+  border-radius: 50px;
+  color: #fff;
+  background-clip: padding-box;
+  /* 배경 이미지 또는 배경색을 박스 중 어디에 넣을 지 정하는 속성이다. */
+}
+
+div:nth-child(3) {
+  border: 1px solid gray;
+  border-radius: 0 50px 50px 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
