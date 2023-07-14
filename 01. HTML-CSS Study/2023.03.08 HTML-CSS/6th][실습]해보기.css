@@ -1,6 +1,6 @@
-/* CSS: grid */
+/** CSS: grid */
 
-/* [실습]해보기 */
+/** [실습]해보기 */
 
 [class^="container"]:not(:first-child) {
   margin-top: 100px;
@@ -14,7 +14,7 @@
 }
 .grid-item1 {
   background: skyblue;
-  border: 3px solid royalblue;
+  border: 3px solid #4169e1;
 }
 .grid-item1:first-child {
   background: gold;

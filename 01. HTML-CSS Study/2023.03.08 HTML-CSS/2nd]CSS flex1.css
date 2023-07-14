@@ -14,7 +14,7 @@
   width: 200px;
 }
 
-/* wrap */
+/** wrap */
 /* 한줄에 배치할건지, 여러행으로 나눌건지를 결정한다. */
 /* 웹브라우저 창 줄여보며 비교 */
 .wrap {
@@ -24,7 +24,7 @@
   flex-wrap: nowrap;
 }
 
-/* flow 속성 */
+/** flow 속성 */
 /* flex-direction, wrap의 단축 속성이다. */
 .flow {
   flex-flow: row wrap;

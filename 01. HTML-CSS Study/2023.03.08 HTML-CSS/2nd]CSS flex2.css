@@ -7,7 +7,7 @@
   height: 150px;
 }
 
-/* flex-basis */
+/** flex-basis */
 
 .flex-item {
   background: skyblue;
@@ -17,13 +17,13 @@
   flex-basis: 100px;
 }
 
-/* flex-shrink */
+/** flex-shrink */
 
 .shrink {
   flex-shrink: 0;
 }
 
-/* flex-grow */
+/** flex-grow */
 
 .grow {
   flex-direction: row;

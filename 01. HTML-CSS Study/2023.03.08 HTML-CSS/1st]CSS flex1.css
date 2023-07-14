@@ -1,6 +1,6 @@
-/* justify-content */
+/** justify-content */
 
-/* 기본 설정 */
+/** 기본 설정 */
 [class^="container"]:not(:first-child) {
   margin-top: 50px;
 }
