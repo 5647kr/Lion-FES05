@@ -82,7 +82,7 @@ section {
 
 .float-wrap {
   overflow: hidden; 
-  /* float 로 띄워진 요소들을 다 묶어주고 그 다음에 오는 요소들이 영향을 받지 않게 해준다. */
+/* float 로 띄워진 요소들을 다 묶어주고 그 다음에 오는 요소들이 영향을 받지 않게 해준다. */
 }
 
 .desc-text {
