@@ -11,6 +11,7 @@
   height: 100px;
   /* 인라인 요소는 width, height, margin상하값이 적용되지 않는다. */
 }
+
 /** width */
 /* 
 auto: 기본값
