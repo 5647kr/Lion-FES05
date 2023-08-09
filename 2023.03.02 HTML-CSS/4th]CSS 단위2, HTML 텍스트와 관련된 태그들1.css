@@ -1,0 +1,22 @@
+/** CSS: CSS 단위2 */
+
+html {
+  font-size: 10px;
+}
+/* html을 기본 10px로 설정하여 사용하여 계산하기 편하게 한다. */
+.hello1 {
+  font-size: 2em;
+}
+.strong1 {
+  font-size: 2em;
+}
+
+.hello2 {
+  font-size: 1rem;
+}
+.strong2 {
+  font-size: 0.5rem;
+}
+
+/*? html 기준인 10px에서 0.5rem이면 5px이여야 하는데 왜 10px인가? */
+/* 크롬의 최소 폰트 사이즈가 10px로 고정되어있기 때문에 10px미만의 값을 지정해도 10px로 고정되어 출력된다. */
