@@ -1,0 +1,120 @@
+/* CSS: 텍스트 꾸미기 */
+
+/** text-shadow */
+.shadow {
+  text-shadow: 1px 1px 0px royalblue; /* 중첩하여 사용할 수 있다. */
+  /* x좌표, y좌표, 번짐정도, 색상 */
+}
+
+/** text-align */
+/* 텍스트의 가로정렬을 설정한다. */
+.alignBox {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+}
+.align {
+  text-align: justify;
+  word-break: break-all;  /* justify 때문에 사용한다. */
+}
+/* 
+left: 왼쪽 정렬
+right: 오른쪽 정렬
+center: 중앙 정렬
+justify: 양쪽정렬
+justify-all: 양쪽정렬(마지막 줄 적용) */
+
+/** vertical-align */
+/* 텍스트의 세로정렬을 설정한다. 텍스트 기준으로 정렬한다. */
+/*! 인라인, 인라인 블록 및 테이블 셀요소에만 적용된다. */
+.va {
+  font-size:2rem;
+}
+.va strong {
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+/* 
+top
+middle
+baseline
+bottom 
+순서로 위에서 아래로 정렬한다.
+*/
+
+/** line-height */
+.lh1 {
+  line-height: 20px;
+} 
+/* 배수로 사용하는것이 좋다. */
+.box {
+  background-color: salmon;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+/** letter-spacing */
+/* 글자 하나하나를 분리시킨다. */
+.ls {
+  letter-spacing: 20px;
+}
+
+/** word-spacing */
+/* 단어 하나하나를 분리시킨다. */
+.ws {
+  word-spacing: 20px;
+}
+
+/** text-indent */
+/* 들여쓰기 */
+.ti {
+  text-indent: 2em;
+}
+
+/** word-break */
+.wrap {
+  display: flex;
+  gap: 10px;
+}
+.wb1box {
+  background-color: red;
+  width: 300px;
+}
+.wb1 {
+  word-break: normal;
+}
+.wb2box {
+  background-color: orange;
+  width: 300px;
+}
+.wb2 {
+  word-break: break-all;
+}
+.wb3box {
+  background-color: yellow;
+  width: 300px;
+}
+.wb3 {
+  word-break: keep-all;
+}
+
+
+/** text-overflow */
+/* 말줄임 표시를 설정한다. */
+.tof {
+  width: 400px;
+  border: 2px solid black;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden; /* 400px이 넘어가는건 숨김처리 한다. */
+  text-overflow: ellipsis; /* 그리고 그 넘어간 건 말줄임 표시를 한다. */
+}
+.multi-ellipsis {
+  overflow: hidden;  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 3줄이 지나면 말줄임 표시를 한다. */
+}
