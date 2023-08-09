@@ -1,0 +1,54 @@
+/** HTML: 이미지 img */
+
+.wrap {
+  background-color: yellow;
+}
+img {
+  vertical-align: top;
+}
+/* img가 인라인 요소라서 이미지 하단에 빈 공간이 생긴다. */
+/* 해결하기 위해 vertical-align: top으로 해결한다. */
+
+/** CSS: 이미지 비율 유지하기 */
+
+.ratio {
+  display: block;
+  width: 300px;
+  aspect-ratio: 2/1;
+  object-fit: cover; /* 이미지를 짤라서 꽉차게끔 설정한다. */
+}
+
+.padding-ratio {
+  position: relative;
+  height: 0;
+  padding-top: 50%;
+}
+.padding-ratio img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/** position */
+
+/* static */
+
+/* 
+기본값으로 움직임이 없이 고정된 상태를 의미한다.
+html를 작성한 순으로 정상적인 흐름(normal flow)에 따라 위치가 지정된다.*/
+
+/* relative */
+
+/* 
+자신이 있어야하는 위치에 상대적이며, 다른 콘텐츠들의 위치에 영향을 미치지 않는다. */
+
+/* absolute */
+/* 
+static을 제외한 position 속성을 가진 가장 가까운 조상의 위치를 기준으로 자리를 잡는다. */
+
+/* fixed */
+/* 브라우저 화면(뷰포트)을 기준으로 위치를 지정한다. */
+/* ! 단 요소의 조상 중 하나가 transform, perspective, filter 속성 중 하나라도 none이 아니라면 뷰포트 대신 그 조상을 콘테이닝 블록으로 삼는다. */
