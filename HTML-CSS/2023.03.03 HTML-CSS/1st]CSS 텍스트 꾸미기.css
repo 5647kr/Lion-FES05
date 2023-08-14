@@ -1,0 +1,43 @@
+/** CSS: 텍스트 꾸미기 */
+
+/** font-family */
+
+/* import 연결: dokdo 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+/* font-face 연결: Pretendard-regular, bold 폰트 */
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("font/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-bold";
+  src: url("font/Pretendard-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  font-family: Pretendard-Regular, "Times New Roman", Dotum, "돋움", sans-serif;
+}
+
+.black-han-sans {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.dokdo {
+  font-family: 'East Sea Dokdo', cursive;
+}
+
+.pre-re {
+  font-family: 'Pretendard-Regular';
+}
+
+.pre-bold {
+  font-family: 'Pretendard-bold';
+  font-style: italic;
+}

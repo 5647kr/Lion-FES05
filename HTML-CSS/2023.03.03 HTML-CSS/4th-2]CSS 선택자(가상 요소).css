@@ -1,0 +1,24 @@
+/** CSS: CSS 선택자(가상 요소) */
+/* 선택한 요소에 자식을 생성합니다 */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul::before {
+  content: '';
+}
+li::before, li::after {
+  content: '';
+  display: block;
+  /* 기본값은 inline이라 block으로 변경해서 */
+  width: 10px;
+  height: 10px;
+  /* width, height, margin값을 지정할 수 있다 */
+  background: red;
+}
