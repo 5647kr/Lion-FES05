@@ -1,9 +1,0 @@
-.one .box {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  transition: all 0.5s;
-}
-.one .box:hover {
-  background-color: green;
-}/*# sourceMappingURL=3rd]SASS 부모선택자, 엠퍼샌드1.css.map */
