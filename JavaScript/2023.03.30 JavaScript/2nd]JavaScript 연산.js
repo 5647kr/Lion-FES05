@@ -1,4 +1,4 @@
-console.log("----------산술연산----------");
+console.log("==========산술연산==========");
 
 const x = 10;
 const y = 3;
@@ -6,10 +6,11 @@ console.log(x + y); // 더하기
 console.log(x - y); // 빼기
 console.log(x * y); // 곱하기
 console.log(x ** y);// 제곱
-console.log(x / y); // 나누기
+console.log(x / y); // 나누기 (몫만 구하기: parseInt & math.floor: 버림)
+//* 소숫점 이하 버리기: math.trunc
 console.log(x % y); // 나머지
 
-console.log("----------논리연산----------");
+console.log("==========논리연산==========");
 
 // and는 하나라도 false면 false 
 // or은 하나라도 true 면 true
@@ -33,7 +34,7 @@ console.log(~~3.14);
 console.log(parseInt(3.14));
 // parseInt를 사용한다.
 
-console.log("----------논리연산 문제----------");
+console.log("==========논리연산 문제==========");
 /* 
 ture && true //true
 true && false //false

@@ -1,4 +1,4 @@
-console.log("----------비교연산----------");
+console.log("==========비교연산==========");
 
 const x = 3;
 const y = 7;
@@ -11,7 +11,7 @@ console.log(x === y); // x가 y랑 같은가 (변수의 타입을 확인한다.)
 console.log(x != y); // x가 y랑 다른가
 console.log(x !== y); // x가 y랑 다른가 (변수의 타입을 확인한다.)
 
-console.log("----------비교연산 예시----------");
+console.log("==========비교연산 예시==========");
 
 const a = 1; // 수
 const b = "1"; // 문자
@@ -21,7 +21,7 @@ console.log(a === b); //! 권장 i가 j랑 같은가 (변수의 타입을 확인
 console.log(a != b);
 console.log(a !== b);
 
-console.log("----------연산 실무예제 1----------");
+console.log("==========논리연산 실무예제 1==========");
 
 for(let i = 0; i < 101; i++) {
   // console.log(i);
@@ -30,7 +30,7 @@ for(let i = 0; i < 101; i++) {
   }
 }
 
-console.log("----------연산 실무예제 2----------");
+console.log("==========논리연산 실무예제 2==========");
 
 for(let i = 0; i < 101; i++) {
   // console.log(i);
@@ -39,7 +39,7 @@ for(let i = 0; i < 101; i++) {
   }
 }
 
-console.log("----------연산 실무예제 3----------");
+console.log("==========논리연산 실무예제 3==========");
 
 let z = 0;
 for(let i = 0; i < 1001; i++) {

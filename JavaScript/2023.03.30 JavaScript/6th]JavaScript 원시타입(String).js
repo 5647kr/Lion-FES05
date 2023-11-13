@@ -1,6 +1,6 @@
-console.log("----------slice----------");
+console.log("==========slice==========");
 
-//* slice(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스-1
+//* slice(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스 - 1
 
 let text1 = "ABCDEFGHIJK";
 console.log(text1.slice(1, 3)); 
@@ -9,26 +9,28 @@ console.log(text1.slice(3)); // 3부터 마지막까지
 console.log(text1.slice(3, 1)); // 안됨
 console.log(text1.slice(2, -3)); // -3을 인식해서 2번째부터 뒤에서 -3번째 이전까지 잘라낸다.
 
-console.log("----------substring----------");
+console.log("==========substring==========");
 
-//* substring(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스-1
+//* substring(시작인덱스, 종료인덱스): 시작인덱스 ~ 종료인덱스 - 1
 
 let text2 = "ABCDEFGHIJK";
 console.log(text2.substring(1, 3));
 console.log(text2.substring(3));
-console.log(text2.substring(3, 1)); // 작동한다.
+console.log(text2.substring(3, 1)); // 작동한다. -> slice와의 차이
 console.log(text2.substring(2, -3)); 
 // -3을 0으로 인식한다. 즉(2, 0)와 마찬가지이다.
 
-console.log("----------replace(All)----------");
+console.log("==========replace(ALL)==========");
+
+//* 문자를 변경한다.
 
 let text3 = "paullab CEO Leehojun CEO";
 console.log(text3.replace("CEO", "COO")); //! 첫번째 CEO만 바뀐다.
 console.log(text3.replace(/CEO/g, "COO")); // g: global(정규표현식)
-console.log(text3.replaceAll("CEO", "COO")); 
+console.log(text3.replaceAll("CEO", "CDO")); 
 // replaceAll은 21년도에 추가되어 아직은 replace사용을 권장한다.
 
-console.log("----------toLowercase,toUppercase----------");
+console.log("==========toLowercase, toUppercase==========");
 
 //* 소문자, 대문자로 변환한다. 
 
@@ -36,7 +38,7 @@ let text4 = "paullab CEO Leehojun CEO";
 console.log(text4.toLowerCase());
 console.log(text4.toUpperCase());
 
-console.log("----------includes----------");
+console.log("==========includes==========");
 
 //* 해당 문자가 포함되어 있는지를 확인한다.
 // boolean 값으로 반환한다.
@@ -47,21 +49,22 @@ console.log(text5.includes("CDO"));
 
 // 많이 사용되는것 특히 알고리즘 문제
 
-console.log("----------메서드 채이닝----------");
+console.log("==========메서드 채이닝==========");
 
 //* .찍어서 계속 이어나가는 것을 의미한다.
 
 let text6 = "paullab CEO Leehojun CEO";
 console.log(text6.replace("CEO", "CDO").includes("CDO").toString().toUpperCase());
 
-console.log("----------split----------");
+console.log("==========split==========");
 
-// 정말 많이 사용되는 메서드
+//! 정말 많이 사용되는 메서드
 
+// 띄어쓰기 단위로 나뉜다.
 let text7 = "paullab CEO Leehojun CEO";
 console.log(text7.split(" "));
 
-console.log("----------split 문제----------");
+console.log("==========split 문제==========");
 
 let test1 = "aa bb cc dd";
 let test2 = "aa-bb-cc-dd";
@@ -78,7 +81,7 @@ console.log(test4.replace(",", "-").split("-"));
 
 // 자주 사용하진 않지만, 이걸 몰라서 직접 구현하면 번거로운 메서드
 
-console.log("----------trim----------");
+console.log("==========trim==========");
 
 //* 앞 뒤 공백 제거
 
@@ -87,7 +90,7 @@ console.log(text8.replaceAll(" ", ""));
 // 이렇게 쓰지 말것 hello 와 world사이 띄어쓰기도 삭제해버림
 console.log(text8.trim());
 
-console.log("----------padStart 1----------");
+console.log("==========padStart 1==========");
 
 //* 공백을 채운다.
 
@@ -95,7 +98,8 @@ let text9 = '99'
 console.log(text9.padStart(5, '0'));
 // 5자리 맞춰주고 그 빈 자리는 0 으로 채운다.
 
-console.log("----------padStart 2----------");
+console.log("==========padStart 2==========");
 
 let text10 = '99'
 console.log(text10.padStart(5, '-'));
+
