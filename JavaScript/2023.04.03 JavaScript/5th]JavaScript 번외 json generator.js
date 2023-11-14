@@ -52,3 +52,13 @@ console.log(회원정보[0]["name"]);
 console.log(회원정보[0]["company"]);
 let 나이평균 = (회원정보[0]["age"] + 회원정보[1]["age"] + 회원정보[2]["age"] + 회원정보[3]["age"] + 회원정보[4]["age"]) / 5;
 console.log(나이평균);
+
+// for문으로 나이 평균 구해보기
+
+let sum = 0;
+
+for(let i = 0; i < 회원정보.length; i++) {
+  sum += 회원정보[i].age;
+}
+let avg = sum / 회원정보.length
+console.log(avg);

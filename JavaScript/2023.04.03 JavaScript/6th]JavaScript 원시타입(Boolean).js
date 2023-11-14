@@ -1,4 +1,4 @@
-console.log("----------boolean 1----------");
+console.log("==========boolean 1==========");
 //! 중요 
 console.log(Boolean("hello")); // true
 console.log(Boolean("")); // false
@@ -12,7 +12,7 @@ console.log(Boolean(undefined)); //false
 console.log(Boolean(null)); // false
 console.log(Boolean(NaN)); // false
 
-console.log("----------boolean 2----------");
+console.log("==========boolean 2==========");
 //! 중요 
 if(undefined) {
   console.log("hello");
