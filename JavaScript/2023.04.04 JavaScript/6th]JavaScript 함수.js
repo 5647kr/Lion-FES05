@@ -1,4 +1,4 @@
-console.log("----------함수 1----------");
+console.log("==========함수 1==========");
 
 //참고 URL: https://ko.javascript.info/function-basics
 /* 
@@ -17,15 +17,15 @@ function hello(para) {
 }
 console.log(hello(10));
 
-console.log("----------함수 2----------");
+console.log("==========함수 2==========");
 
 let x = console.log("hello");
 console.log(x);
 // return 값이 없어서 undefined가 출력된다.
 
-console.log("----------함수 3----------");
+console.log("==========함수 3==========");
 
-// 함수, 메소드(메소드는 클래스 안에서 사용되는 함수)
+// 함수, 메서드(메소드는 클래스 안에서 사용되는 함수)
 // .을 찍어 접근할 수 있는 함수는 메서드이다.
 
 // 함수를 호출할 수 있는 이름은 결국 변수이다.
@@ -33,7 +33,7 @@ console.log("----------함수 3----------");
 let a = console.log;
 a("hello world1");
 
-console.log("----------함수 4----------");
+console.log("==========함수 4==========");
 
 // 3개 모두 같은코드이다.
 function hello1() {
@@ -57,22 +57,22 @@ console.log(c);
 let d = hello3();
 console.log(d);
 
-console.log("----------함수 5----------");
+console.log("==========함수 5==========");
 
 function hello4() {
-  console.log("hello");
-  console.log("hello");
-  console.log("hello");
+  console.log("hello1");
+  console.log("hello2");
+  console.log("hello3");
   return
-  console.log("hello");
-  console.log("hello");
-  console.log("hello");
+  console.log("hello4");
+  console.log("hello5");
+  console.log("hello6");
 }
 console.log(hello4());
 
 function hello5() {
   if(true) {
-    if(false) {
+    if(false) { // false를 true로 바꿔보기
       if(true) {
         return
       }
@@ -81,7 +81,7 @@ function hello5() {
   console.log("hello");
 }
 
-console.log("----------함수 6----------");
+console.log("==========함수 6==========");
 
 // return을 하더라도 1회 반복만 종료되는것이지 전체반복이 종료되는것은 아니다.
 
@@ -92,7 +92,7 @@ e.forEach(el => {
   console.log("world");
 })
 
-console.log("----------함수 7----------");
+console.log("==========함수 7==========");
 
 function 함수1(a, b, c) {
   return a + b + c
@@ -100,14 +100,14 @@ function 함수1(a, b, c) {
 console.log(함수1(10, 20, 30, 40)); // error가 발생하지 않는다.
 console.log(함수1(10, 20)); // error가 발생하지 않는다.
 
-console.log("----------함수 8----------");
+console.log("==========함수 8==========");
 
 function 함수2(a=10, b=20, c=30){
   return a + b + c
 }
 console.log(함수2(1, 1)); 
 
-console.log("----------함수 9----------");
+console.log("==========함수 9==========");
 
 // a와 c에 들어갈것 같지만 a와 b에 들어간다.
 function 함수3(a=10, b=20, c=30){
@@ -115,7 +115,7 @@ function 함수3(a=10, b=20, c=30){
 }
 console.log(함수3(a = 1, c = 1)); 
 
-console.log("----------함수 10----------");
+console.log("==========함수 10==========");
 
 // 식별이슈가 있을경우 object로 넘기는데 이를 roro기법이라 한다.
 function runPython(user, time, code, lv) {
@@ -132,7 +132,7 @@ runPython({
   code: "function...",
   lv: 3
 })
-// 기본값 설정
+// 기본값 설정은 등호(=)로 한다.
 function runPython({
   user= "",
   time= 0,
@@ -140,7 +140,7 @@ function runPython({
   lv= 0
 }) {}
 
-console.log("----------함수 11----------");
+console.log("==========함수 11==========");
 
 // 읽어볼만한 문헌 : https://ko.javascript.info/arrow-functions-basics
 
@@ -162,7 +162,9 @@ let 결과 = 함수6(2);
 
 console.log(결과);
 
-console.log("----------함수 12----------");
+console.log("==========함수 12==========");
+
+//괄호를 감싸주는 걸 즉시 실행 함수라 한다.
 
 (function() {
   console.log('이 함수는 만들어지자마자 바로 실행됩니다!');

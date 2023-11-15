@@ -1,4 +1,4 @@
-console.log("----------함수----------");
+console.log("==========함수==========");
 
 // 함수선언문(파선아실)
 
@@ -10,19 +10,19 @@ console.log(one(7, 3));
 
 // a, b는 parameter(파라미터) / 7, 3은 argument(아규먼트, 인자)
 
-console.log("----------화살표 함수----------");
+console.log("==========화살표 함수==========");
 
 const two = (a, b) => (a + b) ** 2;
 console.log(two(10, 10));
 
-console.log("----------이름 없는 함수----------");
+console.log("==========이름 없는 (익명)함수==========");
 const three = function (a, b) {
   let z = a + b;
   return z ** 2;
 };
 console.log(three(15, 15));
 
-console.log("----------콜백함수----------");
+console.log("==========콜백 함수==========");
 function four(a, b, c) {
   let z = c(a, b) + c(a, b);
   return z * 2;
@@ -36,3 +36,11 @@ function four(a, b, c) {
   return z * 2;
 }
 console.log(four(7, 3, one));
+
+console.log("==========Array filter 1==========");
+
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+arr1.filter(function(el) {
+  return el % 2 === 0
+})
