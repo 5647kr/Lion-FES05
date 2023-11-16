@@ -7,6 +7,7 @@ import CreateComponent1 from './2nd Class/CreateComponent1';
 import CreateComponent2 from './3rd Class/CreateComponent2';
 import BasicHook1 from './4th Class/BasicHook1';
 import BasicHook2 from './5th Class/BasicHook2';
+import Mood from './6th Class/Mood';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path='/CreateComponent2' element={<CreateComponent2 />} />
         <Route path='/BasicHook1' element={<BasicHook1 />} />
         <Route path='/BasicHook2' element={<BasicHook2/>} />
-        {/* <Route path='' element={} /> */}
+        <Route path='/Mood' element={<Mood />} />
       </Routes>
     </Router>
   );

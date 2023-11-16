@@ -1,0 +1,29 @@
+.Btn-Box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.MoodBtn {
+  padding: 20px;
+  font-size: 20px;
+}
+.MoodBtn:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+.MoodBtn:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.MoodBox {
+  border: 2px solid black;
+  height: 300px;
+}
+
+.MoodBox h2 {
+  text-align: center;
+  line-height: 300px;
+  margin: 0;
+}

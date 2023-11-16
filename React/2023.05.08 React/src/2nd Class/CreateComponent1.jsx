@@ -48,7 +48,7 @@ export function User(props) {
       <h1 style={someStyle2}>안녕, {name2} 1호</h1>
       <h1>안녕, {props.name} 2호!</h1>
       <div className="newClass"/>
-  </div>
+    </div>
   )
 }
 
