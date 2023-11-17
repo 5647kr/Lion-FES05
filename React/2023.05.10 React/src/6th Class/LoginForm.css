@@ -1,0 +1,17 @@
+.login-form {
+  display: flow-root;
+  padding: 20px;
+}
+
+.login-form, .login-form input {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 20px 0;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  float: right;
+}
