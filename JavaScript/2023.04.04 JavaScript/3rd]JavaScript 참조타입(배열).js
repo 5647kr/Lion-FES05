@@ -123,6 +123,7 @@ console.log("==========Array map 3==========");
 
 const arr19 = Array(10).fill(0);
 console.log(arr19.map((v, i) => i));
+//v: value, i: index
 
 console.log("==========Array map 4==========");
 

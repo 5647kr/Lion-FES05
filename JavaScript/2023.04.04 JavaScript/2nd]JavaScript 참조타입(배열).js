@@ -42,7 +42,7 @@ console.log("==========Array splice 1==========");
 
 const arr6 = [1, 2, 3];
 arr6.splice(1, 0, 4); 
-// arr6에 1: 첫번째에, 0: 아무것도 삭제하지 않고, 4: 4를 넣겠다.\
+// arr6에 1: 첫번째에, 0: 아무것도 삭제하지 않고, 4: 4를 넣겠다.
 console.log(arr6);
 
 console.log("==========Array splice 2==========");
