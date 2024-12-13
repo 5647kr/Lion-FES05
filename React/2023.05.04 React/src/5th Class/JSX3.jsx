@@ -36,6 +36,27 @@ export default function JSX3() {
       {함수()}
       {변수}
       {값?'one':'two'}
+
+      <Time />
+    </div>
+  )
+}
+
+function Time() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+
+  const hour = date.getHours()
+  const min = date.getMinutes();
+  const sec = date.getSeconds();
+
+  return (
+    <div style={{backgroundColor : "black", color: "white"}}>
+      <h2 style={{color : "red"}}>년: {year}</h2>
+      <h2>월/일: {month}/{day}</h2>
+      <h2>시간: {hour}시 {min}분 {sec}초</h2>
     </div>
   )
 }
