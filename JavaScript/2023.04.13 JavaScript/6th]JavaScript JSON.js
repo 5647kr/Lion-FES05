@@ -1,3 +1,8 @@
+/**
+ * JSON.parse(): JSON 문자열을 자바스크립트 객체로 변환한다(문자열 => 객체)
+ * JSON.stringify(): 자바스크립트 객체를 JSON 문자열로 변환한다(객체 => 문자열)
+ */
+
 console.log("----------JSON 1----------");
 
 const json1 = '{"result":true, "count":42}';

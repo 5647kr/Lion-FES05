@@ -1,5 +1,5 @@
 console.log("----------This call 1----------");
-// 메소드의 인수에
+// 메소드의 인수에 this로 사용할 값을 전달할 수 있다.
 
 var peter = {
   name: "peter parker",

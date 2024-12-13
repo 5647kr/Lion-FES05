@@ -15,6 +15,10 @@ var c = {
   "b": b // var c = {b}
 }
 
+console.log(a.say())
+console.log(b.a.say())
+console.log(c.b.a.say())
+
 console.log("----------set 문제 1----------");
 // 교집합의 갯수 구하는 문제
 /* 

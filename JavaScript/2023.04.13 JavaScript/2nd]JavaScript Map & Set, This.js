@@ -1,3 +1,14 @@
+/**
+ * set, map, object, array, string이 이터러블 객체인지? 순서는 보장하는지?
+ * 
+ * 이터러블한 객체란 순회가 가능한 객체이다.
+ * 순회가 가능한 객체로는 set, map, array, string이 이에 포함된다.
+ * 
+ * 순서를 보장하는가?
+ * 
+ * set, map, array, string은 순서를 보장하나 object는 순서를 보장하지 않는다.
+ */
+
 console.log("----------Set 1----------");
 //* 가지고 있기
 

@@ -46,6 +46,6 @@ console.log(a.getFullYear());
 
 console.log("----------Date 4----------");
 // new Date(2023.06.30)
-console.log(new Date(2023, 05, 30)); 
-console.log(new Date(2023, 05, 30, 18)); 
+console.log(new Date(2023, 5, 30)); 
+console.log(new Date(2023, 5, 30, 18)); 
 
