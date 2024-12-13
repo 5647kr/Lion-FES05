@@ -9,6 +9,8 @@
 <body>
   <div id="parent"></div>
   <script>
+    // DocumentFragment는 오직 메모리상에서만 존재하는 경량화된 DOM 트리이다. DocumentFragment를 객체로 만들어 요소를 자식으로 넣을 수 있다.
+
     const parent = document.querySelector("#parent");
     const txt = document.createElement("p");
     txt.textContent = "문자입니다.";
