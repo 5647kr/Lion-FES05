@@ -14,6 +14,7 @@ export default function Main() {
       <button onClick={() => navigate('/BasicHook1')}>4교시</button>
       <button onClick={() => navigate('/BasicHook2')}>5교시</button>
       <button onClick={() => navigate('/Mood')}>6교시</button>
+      <button onClick={() => navigate('/MoodApp')}>7교시</button>
     </div>
   )
 }

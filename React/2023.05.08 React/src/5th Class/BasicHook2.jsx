@@ -9,7 +9,7 @@ export default function BasicHook2() {
   )
 }
 
-export function Resume1(props) {
+function Resume1() {
   const [like, setLike] = useState(false);
 
   function clickLike() {

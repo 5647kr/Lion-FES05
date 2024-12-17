@@ -8,6 +8,8 @@ import CreateComponent2 from './3rd Class/CreateComponent2';
 import BasicHook1 from './4th Class/BasicHook1';
 import BasicHook2 from './5th Class/BasicHook2';
 import Mood from './6th Class/Mood';
+import MoodApp from './7th Class/MoodApp';
+
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Route path='/BasicHook1' element={<BasicHook1 />} />
         <Route path='/BasicHook2' element={<BasicHook2/>} />
         <Route path='/Mood' element={<Mood />} />
+        <Route path='/MoodApp' element={<MoodApp />} />
       </Routes>
     </Router>
   );

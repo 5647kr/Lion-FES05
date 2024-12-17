@@ -11,7 +11,7 @@ export default function BasicHook1() {
   )
 }
 
-export function Resume1(props) {
+function Resume1() {
   let like = 0;
 
   function clickLike() {
@@ -26,12 +26,17 @@ export function Resume1(props) {
   )
 }
 
-export function Resume2(props) {
+function Resume2() {
+  console.log(useState(0))
   const [like, setLike] = useState(0);
   const [txt, setTxt] = useState("hello")
 
   function clickLike() {
     setLike(like + 1);
+  }
+
+  function handleTxt(event) {
+    setTxt(event.target.value)
   }
 
   return(
@@ -43,7 +48,7 @@ export function Resume2(props) {
       <button onClick={() => setLike(like + 1)}>like 
         <span>{like}</span>
       </button>
-      <input type="text" value={txt}/>
+      <input type="text" value={txt} onChange={handleTxt}/>
     </div>
   )
 }
