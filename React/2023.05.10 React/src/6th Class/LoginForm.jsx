@@ -20,6 +20,7 @@ export default function LoginForm() {
 function EventForm({addData}) {
   const [title, setTitle] = useState('');
   const [date, setDate] = useState('');
+  const [food, setFood] = useState('짜장면');
 
   //초기화 기능
   function resetForm() {
@@ -34,7 +35,8 @@ function EventForm({addData}) {
     const formdata = {
       id: Math.floor(Math.random() * 1000),
       title: title,
-      date: date
+      date: date,
+      food: food
     }
     console.log(formdata)
 
@@ -53,6 +55,13 @@ function EventForm({addData}) {
         <strong>Login Date: </strong>
         <input type="date" value={date} onChange={(event) => setDate(event.target.value)}/>
       </label>
+      <label>
+        <select onChange={(event) => {setFood(event.target.value)}}>
+          <option value="짜장면">짜장면</option>
+          <option value="짬뽕">짬뽕</option>
+          <option value="유산슬">유산슬</option>
+        </select>
+      </label>
 
       <button type='submit'>제출</button>
       <button type='reset' onClick={resetForm}>초기화</button>
@@ -70,6 +79,7 @@ function ItemCreator({datas}) {
             <div key={data.id}>
               <h2>{data.title}</h2>
               <time>{data.date}</time>
+              <strong>{data.food}</strong>
             </div>
           )
         })}
