@@ -24,7 +24,7 @@ export function ItemList1() {
   // }
 
 
-  //* React는 state 함수의 호출의 일관성을 유지하기 위해서 내부적으로 동일한 내용의 state함수 호출이 여러번 반복뵈면 하나의 업데이트로 취급하여 처리한다.
+  //* React는 state 함수의 호출의 일관성을 유지하기 위해서 내부적으로 동일한 내용의 state함수 호출이 여러번 반복되면 하나의 업데이트로 취급하여 처리한다.
   function handleRemoveList(id) {
     // setUserData(
     //   // 배열에 조건을 두고 만족한 원소만 새로운 배열로 반환하는것
