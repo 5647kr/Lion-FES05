@@ -23,7 +23,8 @@ export function Counter (){
       console.log("짝수입니다")
     }
   // 다시 렌더링을 하기 이전에 컴포넌트를 지우고 다시 그리겠죠?
-	// 이 과정에서 지우기 전에 실행되는 부분입니다! clean-up이라고도 하죠. 
+	// 이 과정에서 지우기 전에 실행되는 부분입니다! clean-up이라고도 하죠.
+  // useEffect안에 있는 콜백함수는 바뀔때 실행하는 함수인데, 바뀌기 직전에 뭔갈 하고 싶을 때 return문을 사용한다.
     return () => {console.log('카운트가 바뀜')};
   }, [count]) //dependency Array(의존성 배열)
   

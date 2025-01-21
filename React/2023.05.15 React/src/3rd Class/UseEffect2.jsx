@@ -28,7 +28,8 @@ export function Counter (){
         alert("짝수입니다")
       }
     }
-  }, [count, isFirstRender]) 
+  }, [count]) 
+  // 의존성 배열에 isFirstRender를 넣게 되면 처음 페이지에 접속했을 때 알라트가 뜨기 때문에 원하는방향이 아니고 꼭 무조건 다 넣을 필요는 없다.
 
   return (
     <>
