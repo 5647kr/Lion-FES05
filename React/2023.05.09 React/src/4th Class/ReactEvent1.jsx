@@ -3,8 +3,20 @@ import React, { useState } from 'react'
 export default function ReactEvent1() {
   return (
     <div>
-      <h1>ReactEvent1</h1>
+      <h1>ReactEvent</h1>
 
+      <p>JSX를 사용하여 함수로 이벤트 핸들러를 전달한다.</p>
+
+      <h2>이벤트 종류</h2>
+      <ul>
+        <li>onClick</li>
+        <li>onChange</li>
+        <li>onInput</li>
+        <li>onFocus</li>
+        <li>onMouseEnter</li>
+        <li>onMouseLeave</li>
+      </ul>
+      
       <Event1 />
       <Event2 />
       <LoginEvent />
