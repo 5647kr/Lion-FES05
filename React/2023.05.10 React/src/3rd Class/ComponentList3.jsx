@@ -35,6 +35,13 @@ export function ItemList1() {
     // )
 
     //* 함수형 업데이트라고 표현한다. 함수형 업데이트를 사용하면 함수의 인자로 전달되는 state 값을 react가 이전 state의 값으로 보정한다. 따라서 상태 업데이트가 비동기적으로 처리된다고 해도 안정적으로 이전 값과 이후 값을 비교하여 처리할 수 있다.
+
+    // setUserData(
+    //   userdata.filter((item) => {
+    //     return id !== item.id
+    //   })
+    // )
+    
     setUserData((prevData) => {
       return prevData.filter((item) => {
         return id !== item.id
