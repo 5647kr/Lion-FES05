@@ -3,7 +3,46 @@ import reset from 'styled-reset'
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 
+
+
+const GlobalStyle = createGlobalStyle`
+${reset}
+
+span {
+color: red;
+font-size: 12px;
+}
+
+a{
+  text-decoration : none;
+  color : inherit;
+}
+
+button{
+  border : none;
+  cursor : pointer;
+}
+
+* {
+box-sizing: border-box;
+}
+`
+
+
 export default function StyledComponent2() {
+  return (
+    <div>
+      <h1>StyledComponent2</h1>
+
+      <Example1 />
+      <Example2 />
+      <Example3 />
+      <Example4 />
+    </div>
+  )
+  }
+
+export function Example1() {
   const name = '이호준'
   const age = 10
 
@@ -19,48 +58,41 @@ export default function StyledComponent2() {
 
   console.log(인사문구)
   return (
-    <div>
-      <h1>StyledComponent2</h1>
-
-      <Example />
-      <Test2 />
-      <Test3 />
-    </div>
+    <>
+      <h2>Example1</h2>
+      <strong>{인사`이름은 ${name}이고 나이는 ${age+age}입니다.`}</strong>
+      <p>==========================</p>
+    </>
   )
-  }
-
-  const GlobalStyle = createGlobalStyle`
-  ${reset}
-  
-  span {
-  color: red;
-  font-size: 12px;
-  }
-
-  a{
-    text-decoration : none;
-    color : inherit;
-  }
-
-  button{
-    border : none;
-    cursor : pointer;
-  }
-
-  * {
-  box-sizing: border-box;
-  }
-`
+}
 
 
-export function Example() {
+export function Example2() {
   return (
     <>
       <GlobalStyle/>
+      <h1>Example2</h1>
       <h1>hello world 1</h1>
       <span>hello world 2</span>
+      <p>==========================</p>
     </>
   )
+}
+
+export function Example3() {
+  return (
+    <ContentDiv>
+      <h1>Example3</h1>
+      <ContentH2 name="hello">Q&A</ContentH2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia blanditiis fugit recusandae officiis maiores quidem similique amet alias quam excepturi dolore, veniam soluta maxime perspiciatis, labore cum adipisci porro.</p>
+      <ContentHello />
+      <p>==========================</p>
+    </ContentDiv>
+  )
+}
+
+function ContentHello() {
+  return <ContentH2>hello world</ContentH2>
 }
 
 const ContentDiv = styled.div`
@@ -68,39 +100,22 @@ const ContentDiv = styled.div`
 `;
 
 const ContentH2 = styled.h2`
-    color: ${(props) => (props.name === 'hello'? 'red' : 'black')};
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
+  color: ${(props) => (props.name === 'hello'? 'red' : 'black')};
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
 `;
 
 
-const Test2 = () => {
-	return (
-		<ContentDiv>
-      <ContentH2 name="hello">Q&A</ContentH2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi
-        corrupti quo blanditiis! Adipisci amet corporis ipsum odio minima
-        aliquid quisquam! Dignissimos natus laborum qui veritatis quaerat eaque!
-        Nemo, ullam.
-      </p>
-      <Hello />
-    </ContentDiv>
-	);
-};
 
-function Hello(){
-  return <ContentH2>hello world</ContentH2>
-}
-
-
-function Test3() {
+function Example4() {
   return (
     <div>
+      <h1>Example4</h1>
       <ContentOne>hello world</ContentOne>
       <ContentTwo>hello world</ContentTwo>
       <ContentThree>hello world</ContentThree>
+      <p>==========================</p>
     </div>
   );
   

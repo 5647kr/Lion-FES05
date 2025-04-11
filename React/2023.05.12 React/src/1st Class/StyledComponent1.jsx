@@ -8,11 +8,15 @@ export default function StyledComponent1() {
       <h1>StyledComponent1</h1>
 
       <GlobalStyle/>
+      <h1>hello world 1</h1>
+      <span>hello world 2</span>
       <Example/>
     </div>
   )
 }
 
+
+// 글로벌 스타일은 모든 컴포넌트에서 공통으로 적용되는 스타일이다.
 const GlobalStyle = createGlobalStyle`
 span {
   color: red;
