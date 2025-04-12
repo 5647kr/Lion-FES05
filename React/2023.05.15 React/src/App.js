@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Main from './Main';
 
-import Router1, { One, Two, Three } from './1st Class/Router1';
+import Router1, { One, Two, HojunIndex, HojunOne, HojunTwo, Blog } from './1st Class/Router1';
 import Router2, { Products, ProductsNotice, Cart, Users, UsersCoupon, UsersQuestion, UsersNotice } from './2nd Class/Router2'
 import UseEffect1 from './3rd Class/UseEffect1'
 import UseEffect2 from './3rd Class/UseEffect2'
@@ -14,7 +14,7 @@ import UseMemo from './6th Class/UseMemo';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Main />} />
 
@@ -22,16 +22,21 @@ function App() {
           <Route index element={<Router1 />} />
           <Route path="one" element={<One name="licat" />} />
           <Route path="two" element={<Two />} />
-          <Route path="three" element={<Three />} />
+          <Route path="three" element={<Outlet />}>
+            <Route index element={<HojunIndex />} />
+            <Route path="hojunone" element={<HojunOne />} />
+            <Route path="hojuntwo" element={<HojunTwo />} />
+          </Route>
+          <Route path="blog/:id" element={<Blog />}/>
         </Route>
 
         <Route path='/Router2/*' element={<Outlet />}>
           <Route index element={<Router2 />} />
-          <Route path="Cart" element={<Cart name="licat" />} />
-          <Route path="Users" element={<Users />} />
-          <Route path="UsersCoupon" element={<UsersCoupon />} />
-          <Route path="UsersQuestion" element={<UsersQuestion />} />
-          <Route path="UsersNotice" element={<UsersNotice />} />
+          <Route path="cart" element={<Cart name="licat" />} />
+          <Route path="users" element={<Users />} />
+          <Route path="usersCoupon" element={<UsersCoupon />} />
+          <Route path="usersQuestion" element={<UsersQuestion />} />
+          <Route path="usersNotice" element={<UsersNotice />} />
           <Route path="products/:id" element={<Products />} />
           <Route path="products/:id/notice" element={<ProductsNotice />} />
         </Route>
@@ -44,7 +49,7 @@ function App() {
         <Route path='/UseRef3' element={<UseRef3 />} />
         <Route path='/UseMemo' element={<UseMemo />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
