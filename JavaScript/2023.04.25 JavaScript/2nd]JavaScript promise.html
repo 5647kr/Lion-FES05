@@ -9,11 +9,12 @@
 <body>
   <script>
     // 커피를 주문하는 프로미스 객체를 생성합니다. 생성자에는 약속을 지키기 위한 resolve와, 약속을 지키지 못했을 때를 대비한 reject 두 가지를 인자로 전달합니다.
+    // resolve와 reject를 excutor라 한다.
 const orderCoffee = new Promise((resolve, reject) => {
 
-const requestObj = new XMLHttpRequest();
-requestObj.open('GET', 'orderCoffee.txt');
-requestObj.onreadystatechange = () => {
+  const requestObj = new XMLHttpRequest();
+  requestObj.open('GET', 'orderCoffee.txt');
+  requestObj.onreadystatechange = () => {
     if (requestObj.readyState === 4 && requestObj.status === 200) {
     const result = requestObj.responseText;
     // resolve 메소드가 실행되면 then 메소드가 자동으로 호출됩니다.
@@ -21,7 +22,7 @@ requestObj.onreadystatechange = () => {
       // resolve 메소드 호출이 없는 상태에서 reject 메소드가 실행되거나 통신에 문제가 발생하면 catch 메소드가 자동으로 호출됩니다.
       // reject(result);
     }
-};
+  };
 requestObj.send();
 
 });
