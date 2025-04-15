@@ -2,29 +2,20 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5th]JavaScript AJAX(async, await)</title>
+  <title>asyncawait</title>
 </head>
 <body>
   <script>
-    async function message() {
-    let hello = await new Promise((resolve) => {
-      setTimeout(() => {
-        resolve('hello');
-      }, 100)
-    })
+let result1 = fetch("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json");
+result1
+  .then((data) => data.json())
+  .then((data) => {
+  console.log("result1-data: ", data)
+}).catch((result) => {
+  console.log(new Error(result))
+})
 
-    let world = await new Promise((resolve) => {
-      setTimeout(() => {
-        resolve('world');
-      }, 100)
-    })
-
-    console.log(`${hello} ${world}`);
-}
-
-message();
   </script>
 </body>
 </html>
