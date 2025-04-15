@@ -80,6 +80,7 @@
     userStorage.searchUser(
       userName,
       password,
+      // onSuccess 함수
       (name) => {
         userStorage.sayHi(
           name,
@@ -91,6 +92,7 @@
           }
         )
       },
+      // onError 함수
       (error) => {
         console.log(error);
       }
