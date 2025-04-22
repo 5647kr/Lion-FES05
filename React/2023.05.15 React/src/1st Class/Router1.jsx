@@ -73,63 +73,63 @@ export function HojunTwo() {
 
 function Example1() {
   const codeString = `
-    function Routers() {
-      return (
-        <div>
-          <Link to="/"> home </Link>
-          <Link to="/one"> one </Link>
-          <Link to="/two"> two </Link>
-          <Link to="/three"> three </Link>
-          {/* 라우트를 감싸줍니다. */}
-          <Routes>
-            <Route path="/" element={<Index />}/>
-            <Route path="Router1/one" element={<One name='licat' />}/>
-            <Route path="/two" element={<Two />}/>
-            <Route path="/three/*" element={<Outlet />}>
-              <Route index element={<HojunIndex />} />
-              <Route path="hojunone" element={<HojunOne />} />
-              <Route path="hojuntwo" element={<HojunTwo />} />
-            </Route>
-            <Route path="/blog/:id" element={<Blog />}/>
-          </Routes>
-        </div>
-      )
-    }
+function Routers() {
+  return (
+    <div>
+      <Link to="/"> home </Link>
+      <Link to="/one"> one </Link>
+      <Link to="/two"> two </Link>
+      <Link to="/three"> three </Link>
+      {/* 라우트를 감싸줍니다. */}
+      <Routes>
+        <Route path="/" element={<Index />}/>
+        <Route path="Router1/one" element={<One name='licat' />}/>
+        <Route path="/two" element={<Two />}/>
+        <Route path="/three/*" element={<Outlet />}>
+          <Route index element={<HojunIndex />} />
+          <Route path="hojunone" element={<HojunOne />} />
+          <Route path="hojuntwo" element={<HojunTwo />} />
+        </Route>
+        <Route path="/blog/:id" element={<Blog />}/>
+      </Routes>
+    </div>
+  )
+}
 
-    export function Index(){
-      return <h1>hello world0</h1>
-    }
+export function Index(){
+  return <h1>hello world0</h1>
+}
 
-    export function One({name}){
-      return <h1>{name} world1</h1>
-    }
+export function One({name}){
+  return <h1>{name} world1</h1>
+}
 
-    export function Two(){
-      return <h1>hello world2</h1>
-    }
+export function Two(){
+  return <h1>hello world2</h1>
+}
 
-    export function Three(){
-      return <h1>hello world3</h1>
-    }
+export function Three(){
+  return <h1>hello world3</h1>
+}
 
-    export function Blog(){
-      const location = useLocation();
-      const {id} = useParams();
-      console.log(location)
-      return <h1>hello Blog {id}</h1>
-    }
+export function Blog(){
+  const location = useLocation();
+  const {id} = useParams();
+  console.log(location)
+  return <h1>hello Blog {id}</h1>
+}
 
-    export function HojunIndex() {
-      return <h2>hello Hojun index</h2>
-    }
+export function HojunIndex() {
+  return <h2>hello Hojun index</h2>
+}
 
-    export function HojunOne() {
-      return <h2>hello Hojun 1</h2>
-    }
+export function HojunOne() {
+  return <h2>hello Hojun 1</h2>
+}
 
-    export function HojunTwo() {
-      return <h2>hello Hojun 2</h2>
-    }
+export function HojunTwo() {
+  return <h2>hello Hojun 2</h2>
+}
   `
   
   return (
