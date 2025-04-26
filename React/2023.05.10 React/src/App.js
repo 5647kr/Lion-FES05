@@ -6,8 +6,9 @@ import ComponentList1 from './1st Class/ComponentList1';
 import ComponentList2 from './2nd Class/ComponentList2';
 import ComponentList3 from './3rd Class/ComponentList3';
 import Counter from './4th Class/Counter';
-import Randering from './5th Class/Randering';
+import Rendering from './5th Class/Rendering';
 import LoginForm from './6th Class/LoginForm';
+
 
 
 
@@ -20,7 +21,7 @@ function App() {
         <Route path='/ComponentList2' element={<ComponentList2 />} />
         <Route path='/ComponentList3' element={<ComponentList3 />} />
         <Route path='/Counter' element={<Counter />} />
-        <Route path='/Randering' element={<Randering />} />
+        <Route path='/Rendering' element={<Rendering />} />
         <Route path='/LoginForm' element={<LoginForm />} />
       </Routes>
     </Router>
