@@ -1,108 +1,176 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { Wrap, Title, ContentWrap } from '../style/CommonStyle'
-
+import { Wrap, Title, ContentWrap, CodeWrap, ResultWrap } from '../style/CommonStyle'
 
 export default function StyledComponent3() {
   return (
-    <main style={{margin: "0 300px"}}>
-      <h1>StyledComponent3</h1>
-
-      <Example1 />
+    <main style={{margin: "0 100px"}}>
+      <Example1/>
+      <Example2/>
     </main>
   )
 }
 
 
+const One = css`
+  color: red;
+`
+
+const Two = css`
+  border: 1px solid black;
+`
+
+const Three = styled.div`
+  ${One}
+  ${Two}
+`
+
+function StyledComponentPratice1() {
+  return (
+    <Three>Lorem ipsum dolor sit</Three>
+  )
+}
+
+
 function Example1() {
-  const codeString1 = `
-  function BtnPractice1() {
-    return (
-      <>
-        <Btn1>버튼1</Btn1>
-        <Btn2>버튼2</Btn2>
-        <Btn3>버튼3</Btn3>
-      </>
-    )
-  }
+  const codeString = `
+const One = css\`
+  color: red;
+\`
 
-  const Btn1 = styled.button\`
-    width: 100px;
-    height: 60px;
-    border: 1px solid #000;
-    background-color: #ff0;
-    color: #000;
-  \`
+const Two = css\`
+  border: 1px solid black;
+\`
 
-  const Btn2 = styled(Btn1)\`
-    border-radius: 30px;
-    background-color: #00f;
-    color: #fff;
-  \`
+const Three = styled.div\`
+  \${One}
+  \${Two}
+\`
 
-  const Btn3 = styled(Btn1)\`
-    border-radius: 10px;
-    background-color: #bac;
-    &:hover {
-      background-color: #000;
-      color: #fff;
-      cursor: pointer;
-    }
-  \`
+function StyledComponentPratice1() {
+  return (
+    <Three>Lorem ipsum dolor sit</Three>
+  )
+}
   `
-
+  
   return (
     <Wrap>
-      <Title>버튼 상속 실습</Title>
-        <p>버튼 3개를 만든다. 그 중 2개의 버튼은 첫번째 버튼의 스타일을 확장하여 만든다.</p>
+      <Title>StyledComponent</Title>
       <ContentWrap>
-        <div>
+        <CodeWrap>
           <strong>코드</strong>
           <pre>
             <code>
-              {codeString1}
+              {codeString}
             </code>
           </pre>
-        </div>
-        <div>
+        </CodeWrap>
+        <ResultWrap>
           <strong>실행 결과</strong>
-          <BtnPractice1 />
-        </div>
+          <StyledComponentPratice1 />
+        </ResultWrap>
       </ContentWrap>
     </Wrap>
   )
 }
 
-  function BtnPractice1() {
-    return (
-      <>
-        <Btn1>버튼1</Btn1>
-        <Btn2>버튼2</Btn2>
-        <Btn3>버튼3</Btn3>
-      </>
-    )
+
+const Base = css`
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+`;
+
+const Btn1 = styled.button`
+  ${Base}
+  background-color: skyblue;
+  color: white;
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   }
-
-  const Btn1 = styled.button`
-    width: 100px;
-    height: 60px;
-    border: 1px solid #000;
-    background-color: #ff0;
-    color: #000;
   `
-
-  const Btn2 = styled(Btn1)`
-    border-radius: 30px;
-    background-color: #00f;
-    color: #fff;
+const Btn2 = styled(Btn1)`
+  ${Base}
+  background-color: #333;
+  color: yellow;
   `
+const Btn3 = styled(Btn1)`
+  ${Base}
+  background-color: gray;
+  border: 1px solid black;
+`
 
-  const Btn3 = styled(Btn1)`
-    border-radius: 10px;
-    background-color: #bac;
-    &:hover {
-      background-color: #000;
-      color: #fff;
-      cursor: pointer;
-    }
+function StyledComponentPratice2() {
+  return (
+    <>
+      <Btn1>버튼1</Btn1>
+      <Btn2>버튼2</Btn2>
+      <Btn3>버튼3</Btn3>
+    </>
+  )
+}
+
+
+function Example2() {
+  const codeString = `
+const Base = css\`
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+\`;
+
+const Btn1 = styled.button\`
+  \${Base}
+  background-color: skyblue;
+  color: white;
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+\`
+const Btn2 = styled(Btn1)\`
+  \${Base}
+  background-color: #333;
+  color: yellow;
+\`
+const Btn3 = styled(Btn1)\`
+  \${Base}
+  background-color: gray;
+  border: 1px solid black;
+\`
+
+function StyledComponentPratice2() {
+  return (
+    <>
+      <Btn1>버튼1</Btn1>
+      <Btn2>버튼2</Btn2>
+      <Btn3>버튼3</Btn3>
+    </>
+  )
+}
   `
+  
+  return (
+    <Wrap>
+      <Title>StyledComponent 실습</Title>
+      <ContentWrap>
+        <CodeWrap>
+          <strong>코드</strong>
+          <pre>
+            <code>
+              {codeString}
+            </code>
+          </pre>
+        </CodeWrap>
+        <ResultWrap>
+          <strong>실행 결과</strong>
+          <StyledComponentPratice2 />
+        </ResultWrap>
+      </ContentWrap>
+    </Wrap>
+  )
+}
