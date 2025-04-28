@@ -3,7 +3,7 @@ import { Wrap, Title, ContentWrap, CodeWrap, ResultWrap } from '../style/CommonS
 
 export default function CompositionComponent1() {
   return (
-    <main style={{margin: "0 300px"}}>
+    <main style={{margin: "0 100px"}}>
       <Example1 />
     </main>
   )
