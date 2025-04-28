@@ -8,7 +8,7 @@ import StyledComponent3 from './3rd Class/StyledComponent3';
 import CompositionComponent1 from './4th Class/CompositionComponent1';
 import CompositionComponent2 from './4th Class/CompositionComponent2';
 import Router1, { One, Two, Three } from './5th Class/Router1';
-import Router2, { Blog, First, Second, HojunIndex, HojunOne, Hojunsecond } from './6th Class/Router2';
+import Router2, { One2, Two2, Three2, Blog2 } from './6th Class/Router2';
 
 function App() {
   return (
@@ -30,14 +30,10 @@ function App() {
 
         <Route path='/Router2/*' element={<Outlet />}>
           <Route index element={<Router2 />} />
-          <Route path="first" element={<First name="licat" />} />
-          <Route path="second" element={<Second />} />
-          <Route path="third/*" element={<Outlet />}>
-            <Route index element={<HojunIndex />} />
-            <Route path="hojunone" element={<HojunOne />} />
-            <Route path="hojunsecond" element={<Hojunsecond />} />
-          </Route>
-          <Route path="blog/:id" element={<Blog />} />
+          <Route path="one" element={<One2 name="licat" />} />
+          <Route path="two" element={<Two2 />} />
+          <Route path="three" element={<Three2 />} />
+          <Route path="blog/:id" element={<Blog2 />} />
         </Route>
       </Routes>
     </Router>
