@@ -12,7 +12,9 @@ export default function UseEffectFetch1() {
   function UseEffectApiFetch() {
     return (
       <>
-        <h1>hello world</h1>
+        <code>
+          데이터 생성함
+        </code>
       </>
     )
   }
@@ -21,7 +23,38 @@ export default function UseEffectFetch1() {
 
   function Example1() {
     const codeString = `
-    
+[
+  {
+    "id": "1",
+    "title": "France",
+    "population": "100",
+    "loc": "Europe"
+  },
+  {
+    "id": "2",
+    "title": "Italy",
+    "population": "200",
+    "loc": "Europe"
+  },
+  {
+    "id": "3",
+    "title": "England",
+    "population": "300",
+    "loc": "Europe"
+  },
+  {
+    "id": "4",
+    "title": "USA",
+    "population": "400",
+    "loc": "America"
+  },
+  {
+    "id": "5",
+    "title": "Korea",
+    "population": "500",
+    "loc": "Asia"
+  }
+]
     `
     
     return (

@@ -14,16 +14,16 @@ export default function UseEffectFetch2() {
     async function fetchApi() {
       try {
         const response = await fetch("http://localhost:3000/nations");
-        if(response.ok) {
-          const data1 = await response.json();
-          return data1;
+        if(!response.ok) {
+          throw new Error("error")
         }
+        const data = response.json();
+        console.log(data);
       } catch(error) {
-        console.log(error)
+        console.error(error)
       }
     }
 
-    fetchApi();
 
     return (
       <>
@@ -43,7 +43,7 @@ export default function UseEffectFetch2() {
       .then(response => {
         // http 상태코드가 200번대가 아닐 경우
         if(!response.ok) {
-          throw new Error("네이워크 응답에 문제 있음.")
+          throw new Error("네트워크 응답에 문제 있음.")
         }
 
         return response.json()
@@ -75,27 +75,28 @@ export default function UseEffectFetch2() {
 
   function Example1() {
     const codeString = `
-      function UseEffectApiFetch() {
-        async function fetchApi() {
-          try {
-            const response = await fetch("http://localhost:3000/nations");
-            if(response.ok) {
-              const data1 = await response.json();
-              return data1;
-            }
-          } catch(error) {
-            console.log(error)
-          }
-        }
-
-        fetchApi();
-
-        return (
-          <>
-            <h1>hello world</h1>
-          </>
-        )
+function UseEffectApiFetch() {
+  async function fetchApi() {
+    try {
+      const response = await fetch("http://localhost:3000/nations");
+      if(!response.ok) {
+        throw new Error("error")
       }
+      const data = await response.json();
+      return data;
+    } catch(error) {
+      console.error(error)
+    }
+  }
+
+  fetchApi();
+
+  return (
+    <>
+      <h1>hello world</h1>
+    </>
+  )
+}
     `
     
     return (
@@ -121,48 +122,47 @@ export default function UseEffectFetch2() {
         </ContentWrap>
       </Wrap>
     )
-  }
+}
 
 
   function Example2() {
     const codeString = `
-      function UseEffectApiFetchT1() {
-        const [nations, setNations] = useState([]);
+function UseEffectApiFetchT1() {
+  const [nations, setNations] = useState([]);
 
-        useEffect(() => {
-          fetch("http://localhost:3000/nations")
-          .then(response => {
-            // http 상태코드가 200번대가 아닐 경우
-            if(!response.ok) {
-              throw new Error("네이워크 응답에 문제 있음.")
-            }
-
-            return response.json()
-          })
-          .then(json => setNations(json))
-          .catch((error) => {
-            console.error(error)
-          });// 네트워크 통신에 오류가 생겼을 때
-        }, [])
-        console.log(nations)
-        // fetch함수의 결과물로 반환되는 것은 promise이다. 
-        // promise 객체를 처리하고자 할때 사용하는 키워드는 then이다.
-        // 첫번째 then의 안에 가지고 있는것은 response객체를 가지고 있다.
-
-        // const [nations, setNations] = useState([]);
-        // fetch("http://localhost:3000/nations")
-        // .then(response => response.json())
-        // .then(json => setNations(json));
-        // console.log(nations)
-        // 이상태로 실행하면 api요청이 무제한으로 실행한다. 그 이유는 useState때문인데 setState함수로 상태가 바뀌면 다시 렌더링이 되기 때문이다.
-
-        // 
-        return (
-          <>
-            <h1>hello world</h1>
-          </>
-        )
+  useEffect(() => {
+    fetch("http://localhost:3000/nations")
+    .then(response => {
+      // http 상태코드가 200번대가 아닐 경우
+      if(!response.ok) {
+        throw new Error("네이워크 응답에 문제 있음.")
       }
+
+      return response.json()
+    })
+    .then(json => setNations(json))
+    .catch((error) => {
+      console.error(error)
+    });// 네트워크 통신에 오류가 생겼을 때
+  }, [])
+  console.log(nations)
+  // fetch함수의 결과물로 반환되는 것은 promise이다. 
+  // promise 객체를 처리하고자 할때 사용하는 키워드는 then이다.
+  // 첫번째 then의 안에 가지고 있는것은 response객체를 가지고 있다.
+
+  // const [nations, setNations] = useState([]);
+  // fetch("http://localhost:3000/nations")
+  // .then(response => response.json())
+  // .then(json => setNations(json));
+  // console.log(nations)
+  // 이상태로 실행하면 api요청이 무제한으로 실행한다. 그 이유는 useState때문인데 setState함수로 상태가 바뀌면 다시 렌더링이 되기 때문이다.
+
+  return (
+    <>
+      <h1>hello world</h1>
+    </>
+  )
+}
     `
     
     return (
@@ -187,4 +187,4 @@ export default function UseEffectFetch2() {
         </ContentWrap>
       </Wrap>
     )
-  }
+}

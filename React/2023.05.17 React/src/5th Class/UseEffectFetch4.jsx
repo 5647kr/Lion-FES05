@@ -142,70 +142,70 @@ export default function UseEffectFetch4() {
 
   function Example2() {
     const codeString = `
-      function UseEffectApiFetchT1() {
-        const [nations, setNations] = useState([]);
-        const [url, setUrl] = useState("http://localhost:3000/nations")
+function UseEffectApiFetchT1() {
+  const [nations, setNations] = useState([]);
+  const [url, setUrl] = useState("http://localhost:3000/nations")
 
-        useEffect(() => {
-          const fetchData = async () => {
-            try {
-              const response = await fetch(url);
-              if(!response.ok) {
-                throw new Error("네트워크 문제 있음")
-              }
-              const json = await response.json();
-              setNations(json)
-            } catch(error) {
-              console.error(error)
-            }
-          }
-          fetchData();
-        }, [url]);
-
-        console.log(nations)
-        return (
-          <Item>
-            <h2>나라 목록</h2>
-            <ul>
-              {nations.map((nation) => {
-                return (
-                  <li key={nation.id}>
-                    <h3>나라 이름: {nation.title}</h3>
-                    <p>인구 수: {nation.population}</p>
-                  </li>
-                )
-              })}
-            </ul>
-            <div>
-              <button onClick={() => {setUrl("http://localhost:3000/nations?loc=Europe")}}>유럽 목록</button>
-              <button onClick={() => {setUrl("http://localhost:3000/nations")}}>전체 목록</button>
-            </div>
-          </Item>
-        )
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        if(!response.ok) {
+          throw new Error("네트워크 문제 있음")
+        }
+        const json = await response.json();
+        setNations(json)
+      } catch(error) {
+        console.error(error)
       }
+    }
+    fetchData();
+  }, [url]);
 
-      const Item = styled.div\`
-        margin: 60px auto;
-        position: relative;
-        ul {
-          padding: 10px;
-        }
+  console.log(nations)
+  return (
+    <Item>
+      <h2>나라 목록</h2>
+      <ul>
+        {nations.map((nation) => {
+          return (
+            <li key={nation.id}>
+              <h3>나라 이름: {nation.title}</h3>
+              <p>인구 수: {nation.population}</p>
+            </li>
+          )
+        })}
+      </ul>
+      <div>
+        <button onClick={() => {setUrl("http://localhost:3000/nations?loc=Europe")}}>유럽 목록</button>
+        <button onClick={() => {setUrl("http://localhost:3000/nations")}}>전체 목록</button>
+      </div>
+    </Item>
+  )
+}
 
-        li {
-          margin: 20px 0;
-          padding: 10px;
-          border: 1px solid black;
-          box-sizing: border-box;
-          border-radius: 10px;
-          list-style: none;
-          box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        div {
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      \`
+const Item = styled.div\`
+  margin: 60px auto;
+  position: relative;
+  ul {
+    padding: 10px;
+  }
+
+  li {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  div {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+\`
     `
     
     return (
