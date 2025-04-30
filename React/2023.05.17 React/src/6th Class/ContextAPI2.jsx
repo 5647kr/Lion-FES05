@@ -42,20 +42,20 @@ export default function ContextAPI2() {
 
   function Example1() {
     const codeString = `
-      const UserInfo = createContext({ name: "gary", id: "garyIsFree" });
+const UserInfo = createContext({ name: "gary", id: "garyIsFree" });
 
-      const HelloLicat1 = () => {
-        return (
-          <UserInfo.Consumer>
-            {(value) => (
-              <div>
-                <h2>{value.name}</h2>
-                <strong>{value.id}</strong>
-              </div>
-            )}
-          </UserInfo.Consumer>
-        );
-      };
+const HelloLicat1 = () => {
+  return (
+    <UserInfo.Consumer>
+      {(value) => (
+        <div>
+          <h2>{value.name}</h2>
+          <strong>{value.id}</strong>
+        </div>
+      )}
+    </UserInfo.Consumer>
+  );
+};
     `
     
     return (

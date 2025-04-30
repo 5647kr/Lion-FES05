@@ -42,33 +42,33 @@ export default function ContextAPI1() {
 
   function Example1() {
     const codeString = `
-      function UseContextApi1() {
-        return (
-          <>
-            <HelloLicat1 value={{ name: "gary", id: "garyIsFree" }} />
-          </>
-        )
-      }
+function UseContextApi1() {
+  return (
+    <>
+      <HelloLicat1 value={{ name: "gary", id: "garyIsFree" }} />
+    </>
+  )
+}
 
-      const HelloLicat1 = (props) => {
-        console.log(props)
-        return (
-          <div>
-            <h2>{props.value.id}</h2>
-            <strong>{props.value.name}</strong>
-            <HelloLicatTwo1 value={{name:props.value.name, id: props.value.id}}/>
-          </div>
-        );
-      };
-      
-      const HelloLicatTwo1 = (props) => {
-        return (
-          <div>
-            <h2>Two : {props.value.id}</h2>
-            <strong>Two : {props.value.name}</strong>
-          </div>
-        );
-      };
+const HelloLicat1 = (props) => {
+  console.log(props)
+  return (
+    <div>
+      <h2>{props.value.id}</h2>
+      <strong>{props.value.name}</strong>
+      <HelloLicatTwo1 value={{name:props.value.name, id: props.value.id}}/>
+    </div>
+  );
+};
+
+const HelloLicatTwo1 = (props) => {
+  return (
+    <div>
+      <h2>Two : {props.value.id}</h2>
+      <strong>Two : {props.value.name}</strong>
+    </div>
+  );
+};
     `
     
     return (
@@ -97,7 +97,7 @@ export default function ContextAPI1() {
         </ContentWrap>
       </Wrap>
     )
-  }
+}
 
   const UserInfo = createContext({ name: "gary", id: "garyIsFree" });
 
@@ -117,20 +117,20 @@ export default function ContextAPI1() {
 
   function Example2() {
     const codeString = `
-      const UserInfo = createContext({ name: "gary", id: "garyIsFree" });
+const UserInfo = createContext({ name: "gary", id: "garyIsFree" });
 
-      const HelloLicat2 = () => {
-        return (
-          <UserInfo.Consumer>
-            {(value) => (
-              <div>
-                <h2>{value.name}</h2>
-                <strong>{value.id}</strong>
-              </div>
-            )}
-          </UserInfo.Consumer>
-        );
-      };
+const HelloLicat2 = () => {
+  return (
+    <UserInfo.Consumer>
+      {(value) => (
+        <div>
+          <h2>{value.name}</h2>
+          <strong>{value.id}</strong>
+        </div>
+      )}
+    </UserInfo.Consumer>
+  );
+};
     `
     
     return (
@@ -155,4 +155,4 @@ export default function ContextAPI1() {
         </ContentWrap>
       </Wrap>
     )
-  }
+}
