@@ -30,25 +30,25 @@ export default function LazyInitialize1() {
 
   function Example1() {
     const codeString = `
-      function LazyPratice1() {
-        
-        function getName(){
-          console.log("사실은 겁나 오래기다리는중...");
-          return "개리";
-        }
+function LazyPratice1() {
+  
+  function getName(){
+    console.log("사실은 겁나 오래기다리는중...");
+    return "개리";
+  }
 
-        const [name, setName] = useState(getName());
-        const [num, setNum] = useState(0);
-        return(
-          <>
-            <div>안녕하세요 {name}! 현재 숫자는{num}입니다</div>
-            <button onClick={()=>setNum((prevNum)=>prevNum+1)}>{num}</button>
-          </>
-        )
-      }
+  const [name, setName] = useState(getName());
+  const [num, setNum] = useState(0);
+  return(
+    <>
+      <div>안녕하세요 {name}! 현재 숫자는{num}입니다</div>
+      <button onClick={()=>setNum((prevNum)=>prevNum+1)}>{num}</button>
+    </>
+  )
+}
 
-      (prevNum)=>prevNum+1) <- 함수형 업데이트라 한다.
-      함수자체를 전달하게 되면 인자의 이전 값을 보장한다.
+(prevNum)=>prevNum+1) <- 함수형 업데이트라 한다.
+함수자체를 전달하게 되면 인자의 이전 값을 보장한다.
     `
     
     return (
