@@ -44,37 +44,37 @@ export default function CustomHook2() {
 
   function Example1() {
     const codeString = `
-      function CustomHookPractice1() {
-        const loc = useMouseLoc();
-        
-        return (
-          <>
-            <HookBox1 />
-            {\`X축 위치: \${loc.x}, Y축 위치: \${loc.y}\`}
-          </>
-        )
-      }
-      
-      function HookBox1() {
-        const loc = useMouseLoc()
+  function CustomHookPractice1() {
+    const loc = useMouseLoc();
+    
+    return (
+      <>
+        <HookBox1 />
+        {\`X축 위치: \${loc.x}, Y축 위치: \${loc.y}\`}
+      </>
+    )
+  }
+  
+  function HookBox1() {
+    const loc = useMouseLoc()
 
-        console.log(loc)
-        return (
-          <div style={{height: 100, width: 100, backgroundColor: loc.y > 200 ? 'royalblue' : 'hotpink'}}></div>
-        )
-      }
+    console.log(loc)
+    return (
+      <div style={{height: 100, width: 100, backgroundColor: loc.y > 200 ? 'royalblue' : 'hotpink'}}></div>
+    )
+  }
 
-      function useMouseLoc(init) {
-        const [mouseLoc, setMouseLoc] = useState(init || {x: 0, y: 0});
+  function useMouseLoc(init) {
+    const [mouseLoc, setMouseLoc] = useState(init || {x: 0, y: 0});
 
-        useEffect(() => {
-          window.addEventListener("mousemove", (event) => {
-            setMouseLoc({x: event.x, y: event.y})
-          })
-        }, [])
+    useEffect(() => {
+      window.addEventListener("mousemove", (event) => {
+        setMouseLoc({x: event.x, y: event.y})
+      })
+    }, [])
 
-        return mouseLoc;
-      }
+    return mouseLoc;
+  }
     `
     
     return (

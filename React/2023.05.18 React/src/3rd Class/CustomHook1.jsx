@@ -3,7 +3,7 @@ import { Wrap, Title, ContentWrap, CodeWrap, ResultWrap } from '../style/CommonS
 
 export default function CustomHook1() {
   return (
-    <main style={{margin: "0 100px"}}>
+    <main style={{margin: "0 300px"}}>
       <Example1/>
       <Example2/>
     </main>
@@ -53,44 +53,44 @@ export default function CustomHook1() {
 
   function Example1() {
     const codeString = `
-      function CustomHookPractice() {
-        function InputComponent() {
-          const [value, setValue] = useState('');
-          function onChange(e) {
-              setValue(e.target.value);
-          }
-          return (
-              <>
-                  <input type="text" onChange={onChange}/>
-                  <div>
-                      {value}
-                  </div>
-              </>
-          )
-        }
+function CustomHookPractice() {
+  function InputComponent() {
+    const [value, setValue] = useState('');
+    function onChange(e) {
+        setValue(e.target.value);
+    }
+    return (
+        <>
+            <input type="text" onChange={onChange}/>
+            <div>
+                {value}
+            </div>
+        </>
+    )
+  }
 
-        function SomethingComponent() {
-          const [value, setValue] = useState('');
-          function onChange(e) {
-              setValue(e.target.value);
-          }
-          return (
-              <>
-                  <input type="text" onChange={onChange}/>
-                  <div>
-                      {value}가 강해졌다 돌격해!
-                  </div>
-              </>
-          )
-        }
+  function SomethingComponent() {
+    const [value, setValue] = useState('');
+    function onChange(e) {
+        setValue(e.target.value);
+    }
+    return (
+        <>
+            <input type="text" onChange={onChange}/>
+            <div>
+                {value}가 강해졌다 돌격해!
+            </div>
+        </>
+    )
+  }
 
-        return (
-          <>
-            <InputComponent />
-            <SomethingComponent />
-          </>
-        )
-      }
+  return (
+    <>
+      <InputComponent />
+      <SomethingComponent />
+    </>
+  )
+}
     `
     
     return (

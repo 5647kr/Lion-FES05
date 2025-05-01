@@ -45,38 +45,38 @@ export default function CustomHook4() {
 
   function Example1() {
     const codeString = `
-      function CustomHookPractice1() {
-        const [pics, setPics] = useState([]);
-        
-        useEffect(() => {
-          async function apiData() {
-            try{
-              const response = await fetch("https://picsum.photos/v2/list?page=1&limit=5");
-              if(!response.ok) {
-                throw new Error("네트워크 문제 있음")
-              }
-              const data = await response.json();
-              setPics(data)
-            } catch(error) {
-              console.error(error)
-            }
-          }
-          apiData();
-        }, [])
+  function CustomHookPractice1() {
+    const [pics, setPics] = useState([]);
 
-        console.log(pics)
-        return (
-          <ul>
-            {pics.map((pic) => {
-              return (
-                <li key={pic.id}>
-                  <img  style={{width: 100, height: 100}} src={pic.download_url} alt={pic.author} />
-                </li>
-              )
-            })}
-          </ul>
-        )
+    useEffect(() => {
+      async function apiData() {
+        try{
+          const response = await fetch("https://picsum.photos/v2/list?page=1&limit=5");
+          if(!response.ok) {
+            throw new Error("네트워크 문제 있음")
+          }
+          const data = await response.json();
+          setPics(data)
+        } catch(error) {
+          console.error(error)
+        }
       }
+      apiData();
+    }, [])
+
+    console.log(pics)
+    return (
+      <ul>
+        {pics.map((pic) => {
+          return (
+            <li key={pic.id}>
+              <img style={{width: 200, height: 160}} src={pic.download_url} alt={pic.author} />
+            </li>
+          )
+        })}
+      </ul>
+    )
+  }
     `
     
     return (
