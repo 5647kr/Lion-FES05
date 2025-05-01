@@ -28,6 +28,20 @@ export default function UseEffect1() {
 
   function Example1() {
     const codeString = `
+function EffectVsLayoutEffect() {
+  const [num, setNum] = useState(0)
+
+  useEffect(() => {
+    setNum(10)
+  }, [num])
+
+  return (
+    <>
+      <div>{num}</div>
+      <button onClick={() => setNum(prevNum => prevNum + 1)}>클릭</button>
+    </>
+  )
+}
     `
     
     return (
@@ -53,4 +67,4 @@ export default function UseEffect1() {
         </ContentWrap>
       </Wrap>
     )
-  }
+}
